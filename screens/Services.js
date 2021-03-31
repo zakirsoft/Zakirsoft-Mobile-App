@@ -4,13 +4,7 @@ import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, Logo} from '../Styles/Screen';
 
 const Services = () => {
-  return (
-    <Screen>
-      <Logo>
-        <Image source={images.logo} style={{height: 24, width: 120}} />
-      </Logo>
-    </Screen>
-  );
+  return <Screen></Screen>;
 };
 
 export default Services;
