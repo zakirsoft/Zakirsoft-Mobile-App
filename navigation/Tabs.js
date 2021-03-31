@@ -37,11 +37,23 @@ const Tabs = () => {
               source={icons.Home}
               resizeMode="contain"
               style={{
-                width: 25,
-                height: 25,
+                width: 24,
+                height: 24,
                 tintColor: focused ? COLORS.primary : COLORS.secondary,
               }}
             />
+          ),
+          tabBarLabel: ({focused}) => (
+            <View>
+              <Text
+                style={{
+                  fontSize: 11,
+                  top: -5,
+                  color: focused ? COLORS.primary : COLORS.secondary,
+                }}>
+                Home
+              </Text>
+            </View>
           ),
         }}
       />
@@ -54,11 +66,23 @@ const Tabs = () => {
               source={icons.About}
               resizeMode="contain"
               style={{
-                width: 25,
-                height: 25,
+                width: 24,
+                height: 24,
                 tintColor: focused ? COLORS.primary : COLORS.secondary,
               }}
             />
+          ),
+          tabBarLabel: ({focused}) => (
+            <View>
+              <Text
+                style={{
+                  fontSize: 11,
+                  top: -5,
+                  color: focused ? COLORS.primary : COLORS.secondary,
+                }}>
+                About
+              </Text>
+            </View>
           ),
         }}
       />
@@ -71,11 +95,23 @@ const Tabs = () => {
               source={icons.Projects}
               resizeMode="contain"
               style={{
-                width: 25,
-                height: 25,
+                width: 24,
+                height: 24,
                 tintColor: focused ? COLORS.primary : COLORS.secondary,
               }}
             />
+          ),
+          tabBarLabel: ({focused}) => (
+            <View>
+              <Text
+                style={{
+                  fontSize: 11,
+                  top: -5,
+                  color: focused ? COLORS.primary : COLORS.secondary,
+                }}>
+                Projects
+              </Text>
+            </View>
           ),
         }}
       />
@@ -88,11 +124,23 @@ const Tabs = () => {
               source={icons.Services}
               resizeMode="contain"
               style={{
-                width: 25,
-                height: 25,
+                width: 24,
+                height: 24,
                 tintColor: focused ? COLORS.primary : COLORS.secondary,
               }}
             />
+          ),
+          tabBarLabel: ({focused}) => (
+            <View>
+              <Text
+                style={{
+                  fontSize: 11,
+                  top: -5,
+                  color: focused ? COLORS.primary : COLORS.secondary,
+                }}>
+                Services
+              </Text>
+            </View>
           ),
         }}
       />
@@ -105,11 +153,23 @@ const Tabs = () => {
               source={icons.Contact}
               resizeMode="contain"
               style={{
-                width: 25,
-                height: 25,
+                width: 24,
+                height: 24,
                 tintColor: focused ? COLORS.primary : COLORS.secondary,
               }}
             />
+          ),
+          tabBarLabel: ({focused}) => (
+            <View>
+              <Text
+                style={{
+                  fontSize: 11,
+                  top: -5,
+                  color: focused ? COLORS.primary : COLORS.secondary,
+                }}>
+                Contact
+              </Text>
+            </View>
           ),
         }}
       />
