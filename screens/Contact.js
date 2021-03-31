@@ -1,11 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {COLORS, images, SIZES, FONTS} from '../constants';
+import {Screen, Logo} from '../Styles/Screen';
 
 const Contact = () => {
   return (
-    <View>
-      <Text>Contact</Text>
-    </View>
+    <Screen>
+      <Logo>
+        <Image source={images.logo} style={{height: 24, width: 120}} />
+      </Logo>
+    </Screen>
   );
 };
 
