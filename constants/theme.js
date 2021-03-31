@@ -46,7 +46,7 @@ export const FONTS = {
   largeTitle: {
     fontFamily: 'DMSans-Bold',
     fontSize: SIZES.largeTitle,
-    lineHeight: 55,
+    lineHeight: 57.6,
   },
   h1: {fontFamily: 'DMSans-Bold', fontSize: SIZES.h1, lineHeight: 36},
   h2: {fontFamily: 'DMSans-Bold', fontSize: SIZES.h2, lineHeight: 30},
