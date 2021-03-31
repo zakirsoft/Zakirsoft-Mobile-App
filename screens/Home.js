@@ -3,7 +3,7 @@ import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, Logo, PrimaryButton, SecondaryButton} from '../Styles/Screen';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <Screen>
       <View style={{flexDirection: 'column'}}>
@@ -54,7 +54,9 @@ const Home = () => {
             flexDirection: 'row',
             top: -25,
           }}>
-          <PrimaryButton style={{marginRight: 8}}>
+          <PrimaryButton
+            style={{marginRight: 8}}
+            onPress={() => navigation.navigate('Contact')}>
             <Text
               style={{
                 fontSize: SIZES.body3,
@@ -69,7 +71,8 @@ const Home = () => {
               borderColor: COLORS.lightGray,
               borderWidth: 1,
               borderRadius: 4,
-            }}>
+            }}
+            onPress={() => navigation.navigate('Projects')}>
             <Text
               style={{
                 fontSize: SIZES.body3,
