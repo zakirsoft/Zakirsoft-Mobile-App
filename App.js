@@ -30,7 +30,8 @@ const App = () => {
             headerStyle: {
               // shadowColor: COLORS.white,
               elevation: 0,
-              backgroundColor: COLORS.ScreenColor,
+              // backgroundColor: COLORS.ScreenColor,
+              backgroundColor: COLORS.primary,
             },
             headerTitle: false,
             headerLeft: () => (

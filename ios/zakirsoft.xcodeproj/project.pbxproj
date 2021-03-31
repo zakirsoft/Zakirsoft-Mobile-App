@@ -18,6 +18,8 @@
 		69BBD300EA354A72A8A37059 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDDE0155501B48DCBDEC047F /* DMSans-Medium.ttf */; };
 		F5C6614BBC8B45789DA85D5D /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 968556F1FFF84582A36B1BD8 /* DMSans-MediumItalic.ttf */; };
 		2DD0C3904B604E31BC1A334C /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 474E9262AB3E49E586C69AAF /* DMSans-Regular.ttf */; };
+		5BA2BF5C55A6483EBDE19C64 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E698BE66F9174A2D86BA7DC2 /* PlayfairDisplay-Bold.ttf */; };
+		4C6046715488423D9D0FF0C4 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AA52CEC56854660B94A535E /* PlayfairDisplay-SemiBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		DDDE0155501B48DCBDEC047F /* DMSans-Medium.ttf */ = {isa = PBXFileReference; name = "DMSans-Medium.ttf"; path = "../assets/fonts/DMSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		968556F1FFF84582A36B1BD8 /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; name = "DMSans-MediumItalic.ttf"; path = "../assets/fonts/DMSans-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		474E9262AB3E49E586C69AAF /* DMSans-Regular.ttf */ = {isa = PBXFileReference; name = "DMSans-Regular.ttf"; path = "../assets/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E698BE66F9174A2D86BA7DC2 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "PlayfairDisplay-Bold.ttf"; path = "../assets/fonts/PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9AA52CEC56854660B94A535E /* PlayfairDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "PlayfairDisplay-SemiBoldItalic.ttf"; path = "../assets/fonts/PlayfairDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 				DDDE0155501B48DCBDEC047F /* DMSans-Medium.ttf */,
 				968556F1FFF84582A36B1BD8 /* DMSans-MediumItalic.ttf */,
 				474E9262AB3E49E586C69AAF /* DMSans-Regular.ttf */,
+				E698BE66F9174A2D86BA7DC2 /* PlayfairDisplay-Bold.ttf */,
+				9AA52CEC56854660B94A535E /* PlayfairDisplay-SemiBoldItalic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -247,6 +253,8 @@
 				69BBD300EA354A72A8A37059 /* DMSans-Medium.ttf in Resources */,
 				F5C6614BBC8B45789DA85D5D /* DMSans-MediumItalic.ttf in Resources */,
 				2DD0C3904B604E31BC1A334C /* DMSans-Regular.ttf in Resources */,
+				5BA2BF5C55A6483EBDE19C64 /* PlayfairDisplay-Bold.ttf in Resources */,
+				4C6046715488423D9D0FF0C4 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

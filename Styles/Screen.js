@@ -16,7 +16,7 @@ export const PrimaryButton = styled.TouchableOpacity`
   background-color: #1558ff;
   width: 133px;
   height: 48px;
-  border-radius:5px
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
 `;

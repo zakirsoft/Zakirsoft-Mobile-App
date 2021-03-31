@@ -6,33 +6,38 @@ import {Screen, Logo, PrimaryButton, SecondaryButton} from '../Styles/Screen';
 const Home = ({navigation}) => {
   return (
     <Screen>
-      <View style={{flexDirection: 'column'}}>
+      <View style={{flexDirection: 'column', top: -5}}>
         <View>
           <Image
             source={images.home}
             resizeMode="contain"
-            style={{height: 370, width: 369, top: -10}}
+            style={{height: 365, width: 350, top: -10}}
           />
         </View>
         <View style={{flexDirection: 'column', top: -55}}>
           <Text
             style={{
+              fontFamily: 'DMSans-Bold',
               fontSize: SIZES.largeTitle,
-              fontWeight: 'bold',
+              // fontWeight: 'bold',
             }}>
             We are here to
           </Text>
           <Text
             style={{
+              fontFamily: 'DMSans-Bold',
               fontSize: SIZES.largeTitle,
-              fontWeight: 'bold',
+              // fontWeight: 'bold',
+              top: -10,
             }}>
             grow your
           </Text>
           <Text
             style={{
+              fontFamily: 'DMSans-Bold',
               fontSize: SIZES.largeTitle,
-              fontWeight: 'bold',
+              // fontWeight: 'bold',
+              top: -15,
             }}>
             business.
           </Text>
@@ -40,11 +45,16 @@ const Home = ({navigation}) => {
         <View
           style={{
             flexDirection: 'column',
-            top: -55,
+            top: -65,
             // paddingLeft: 25,
             paddingRight: 24,
           }}>
-          <Text style={{fontSize: SIZES.body3, color: COLORS.secondary}}>
+          <Text
+            style={{
+              fontSize: SIZES.body3,
+              color: COLORS.secondary,
+              lineHeight: 24,
+            }}>
             As a software company we develop innovatives website & software
             solutions. We are proud of what we do.
           </Text>
@@ -52,7 +62,7 @@ const Home = ({navigation}) => {
         <View
           style={{
             flexDirection: 'row',
-            top: -25,
+            top: -55,
           }}>
           <PrimaryButton
             style={{marginRight: 8}}
