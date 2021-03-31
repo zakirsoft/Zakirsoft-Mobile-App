@@ -10,6 +10,7 @@ export const COLORS = {
   black: '#130732',
   white: '#FFFFFF',
 
+  ScreenColor: '#EBF1F7',
   lightGray: '#CFD6DE',
   warning: '#F2AC57',
   success: '#14A38B',
