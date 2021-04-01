@@ -1,7 +1,15 @@
 import React from 'react';
 import {Image, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import {COLORS, images, SIZES, FONTS} from '../constants';
-import {Screen, Logo, ServicesCart} from '../Styles/Screen';
+import {
+  Screen,
+  Logo,
+  ServicesCart,
+  TechCart,
+  IconViewWrapper,
+  IconWrapper,
+  IconText,
+} from '../Styles/Screen';
 
 const Services = () => {
   return (
@@ -157,10 +165,11 @@ const Services = () => {
           Technology we use
         </Text>
       </View>
+      {/* Tech We use */}
       <View style={{marginTop: 32, flexDirection: 'column'}}>
         <View
           style={{
-            height: 142,
+            height: 150,
             width: 345,
             borderRadius: 10,
             backgroundColor: COLORS.white,
@@ -182,6 +191,7 @@ const Services = () => {
               marginTop: 8,
               backgroundColor: COLORS.primary,
             }}></View>
+
           <View
             style={{
               paddingRight: 29,
@@ -276,6 +286,50 @@ const Services = () => {
             </View>
           </View>
         </View>
+        <TechCart>
+          <Text
+            style={{
+              fontFamily: 'DMSans-Regular',
+              fontSize: 15,
+              fontWeight: 'bold',
+              paddingTop: 20,
+              paddingLeft: 20,
+            }}>
+            FRONT-END
+          </Text>
+          <View
+            style={{
+              width: 120,
+              height: 2.1,
+              marginTop: 8,
+              backgroundColor: COLORS.primary,
+            }}></View>
+          <IconViewWrapper>
+            <IconWrapper>
+              <Image source={images.vue} resizeMode={'center'} />
+              <IconText>Vue.js</IconText>
+            </IconWrapper>
+          </IconViewWrapper>
+        </TechCart>
+        <TechCart>
+          <Text
+            style={{
+              fontFamily: 'DMSans-Regular',
+              fontSize: 15,
+              fontWeight: 'bold',
+              paddingTop: 20,
+              paddingLeft: 20,
+            }}>
+            BACK-END
+          </Text>
+          <View
+            style={{
+              width: 120,
+              height: 2.1,
+              marginTop: 8,
+              backgroundColor: COLORS.primary,
+            }}></View>
+        </TechCart>
       </View>
     </Screen>
   );

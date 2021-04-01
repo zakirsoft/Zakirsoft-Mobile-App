@@ -37,3 +37,27 @@ export const ServicesCart = styled.View`
   border-radius: 10px;
   margin-top: 24px;
 `;
+export const TechCart = styled.View`
+  width: 345px;
+  height: 219px;
+  background-color: #ffffff;
+  margin-top: 24px;
+  border-radius: 10px;
+`;
+export const IconViewWrapper = styled.View`
+  padding-right: 29px;
+  padding-left: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 16px;
+`;
+export const IconWrapper = styled.View`
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const IconText = styled.Text`
+  font-family: 'DMSans-Regular';
+  font-size: 14px;
+  padding-top: 9px;
+`;
