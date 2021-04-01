@@ -72,7 +72,7 @@ const Services = () => {
           </View>
         </View>
       </ServicesCart>
-      <ServicesCart>
+      <ServicesCart style={{height: 360}}>
         <View
           style={{flexDirection: 'column', paddingRight: 20, paddingLeft: 20}}>
           <View style={{paddingTop: 20}}>
@@ -105,7 +105,7 @@ const Services = () => {
           </View>
         </View>
       </ServicesCart>
-      <ServicesCart>
+      <ServicesCart style={{height: 370}}>
         <View
           style={{flexDirection: 'column', paddingRight: 20, paddingLeft: 20}}>
           <View style={{paddingTop: 20}}>
@@ -139,6 +139,144 @@ const Services = () => {
           </View>
         </View>
       </ServicesCart>
+      <View
+        style={{
+          marginTop: 50,
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <Text
+          numberOfLines={1}
+          style={{
+            fontFamily: 'DMSans-Regular',
+            fontSize: 28,
+            fontWeight: 'bold',
+            // marginRight: 79,
+            // marginLeft: 79,
+          }}>
+          Technology we use
+        </Text>
+      </View>
+      <View style={{marginTop: 32, flexDirection: 'column'}}>
+        <View
+          style={{
+            height: 142,
+            width: 345,
+            borderRadius: 10,
+            backgroundColor: COLORS.white,
+          }}>
+          <Text
+            style={{
+              fontFamily: 'DMSans-Regular',
+              fontSize: 15,
+              fontWeight: 'bold',
+              paddingTop: 20,
+              paddingLeft: 20,
+            }}>
+            UI/UX
+          </Text>
+          <View
+            style={{
+              width: 100,
+              height: 2,
+              marginTop: 8,
+              backgroundColor: COLORS.primary,
+            }}></View>
+          <View
+            style={{
+              paddingRight: 29,
+              paddingLeft: 20,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              paddingTop: 16,
+            }}>
+            {/* figma */}
+            <View
+              style={{
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={images.figma}
+                // style={{height: 32, width: 21.1}}
+                resizeMode={'contain'}
+              />
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 14,
+                  paddingTop: 9,
+                }}>
+                Figma
+              </Text>
+            </View>
+            {/* Adobe XD */}
+            <View
+              style={{
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={images.xd}
+                // style={{height: 32, width: 21.1}}
+                resizeMode={'contain'}
+              />
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 14,
+                  paddingTop: 9,
+                }}>
+                Adobe XD
+              </Text>
+            </View>
+            {/* Illustrator */}
+            <View
+              style={{
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={images.ai}
+                // style={{height: 32, width: 21.1}}
+                resizeMode={'contain'}
+              />
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 14,
+                  paddingTop: 9,
+                }}>
+                Illustrator
+              </Text>
+            </View>
+            {/* Photoshop */}
+            <View
+              style={{
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={images.ps}
+                // style={{height: 32, width: 21.1}}
+                resizeMode={'contain'}
+              />
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 14,
+                  paddingTop: 9,
+                }}>
+                Photoshop
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
     </Screen>
   );
 };

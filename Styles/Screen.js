@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Screen = styled.ScrollView`
   flex: 1;
   background-color: #ebf1f7;
-  padding-left: 25px;
+  padding-left: 22px;
+  padding-right: 20px;
 `;
 export const Logo = styled.View`
   flex-direction: row;
