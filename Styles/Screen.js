@@ -28,3 +28,11 @@ export const SecondaryButton = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
 `;
+export const ServicesCart = styled.View`
+  width: 345px;
+  height: 340px;
+  background-color: #ffffff;
+  margin-right: 54px;
+  border-radius: 10px;
+  margin-top: 24px;
+`;
