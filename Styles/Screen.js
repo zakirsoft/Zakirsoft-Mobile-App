@@ -61,3 +61,8 @@ export const IconText = styled.Text`
   font-size: 14px;
   padding-top: 9px;
 `;
+export const cImage = styled.Image`
+  height: 270px;
+  width: 366px;
+  padding-top: 20px;
+`;
