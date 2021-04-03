@@ -305,9 +305,61 @@ const Services = () => {
               backgroundColor: COLORS.primary,
             }}></View>
           <IconViewWrapper>
+            {/* vue */}
             <IconWrapper>
-              <Image source={images.vue} resizeMode={'center'} />
+              <Image
+                source={images.vue}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
               <IconText>Vue.js</IconText>
+            </IconWrapper>
+            {/* css */}
+            <IconWrapper>
+              <Image
+                source={images.css}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>CSS 3</IconText>
+            </IconWrapper>
+            {/* html */}
+            <IconWrapper>
+              <Image
+                source={images.html}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>HTML 5</IconText>
+            </IconWrapper>
+            {/* ts */}
+            <IconWrapper>
+              <Image
+                source={images.ts}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>Type Script</IconText>
+            </IconWrapper>
+          </IconViewWrapper>
+          <IconViewWrapper style={{justifyContent: 'space-evenly'}}>
+            {/* react */}
+            <IconWrapper>
+              <Image
+                source={images.react}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>React</IconText>
+            </IconWrapper>
+            {/* tailwind */}
+            <IconWrapper>
+              <Image
+                source={images.Tailwind}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>Tailwind CSS</IconText>
             </IconWrapper>
           </IconViewWrapper>
         </TechCart>

@@ -39,7 +39,7 @@ export const ServicesCart = styled.View`
 `;
 export const TechCart = styled.View`
   width: 345px;
-  height: 219px;
+  height: 225px;
   background-color: #ffffff;
   margin-top: 24px;
   border-radius: 10px;
