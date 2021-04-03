@@ -40,6 +40,7 @@ const App = () => {
             ),
           }}
         />
+        <Stack.Screen name="ProjectDetails" component={ProjectDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );

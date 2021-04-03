@@ -66,3 +66,10 @@ export const cImage = styled.Image`
   width: 366px;
   padding-top: 20px;
 `;
+export const ProjectView = styled.View`
+  width: 350px;
+  height: 318px;
+  background-color: #ffffff;
+  margin-top: 24px;
+  border-radius: 10px;
+`;

@@ -29,6 +29,7 @@ const ai = require('../assets/images/technology/UIUX/ai.png');
 const xd = require('../assets/images/technology/UIUX/xd.png');
 const figma = require('../assets/images/technology/UIUX/figma.png');
 const ps = require('../assets/images/technology/UIUX/ps.png');
+const loovum = require('../assets/images/Projects/loovum.png');
 
 export default {
   about_1,
@@ -62,4 +63,5 @@ export default {
   xd,
   figma,
   ps,
+  loovum,
 };

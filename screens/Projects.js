@@ -6,12 +6,26 @@ import {
   StyleSheet,
   Text,
   View,
+  TouchableNativeFeedback,
 } from 'react-native';
 import {COLORS, images, SIZES, FONTS} from '../constants';
-import {Screen, Logo, cImage} from '../Styles/Screen';
+import {Screen, Logo, ProjectView} from '../Styles/Screen';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+import {ProjectDetails} from '../screens';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
 
+const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
+
+const ScreenNavigator = ({navigation}) => {
+  <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="ProjectDetails" component={ProjectDetails} />
+    </Stack.Navigator>
+  </NavigationContainer>;
+};
+
 const All = () => {
   return (
     <Screen>
@@ -26,11 +40,43 @@ const WebDesign = () => {
     </Screen>
   );
 };
-const WebDevelopment = () => {
+const WebDevelopment = ({navigation}) => {
   return (
-    <Screen>
-      <Image source={images.about_1} />
-    </Screen>
+    <>
+      <View>
+        <TouchableNativeFeedback
+          onPress={() => navigation.navigate('ProjectDetails')}>
+          <ProjectView>
+            <Image source={images.loovum} style={{height: 260, width: 350}} />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Project
+              </Text>
+            </View>
+          </ProjectView>
+        </TouchableNativeFeedback>
+      </View>
+      <ProjectView>
+        <Image source={images.about_1} style={{height: 260, width: 350}} />
+      </ProjectView>
+      <ProjectView>
+        <Image source={images.about_1} style={{height: 260, width: 350}} />
+      </ProjectView>
+    </>
   );
 };
 const SPA = () => {
@@ -47,6 +93,8 @@ const PWA = () => {
     </Screen>
   );
 };
+
+const LoovumDetails = () => <Screen>me</Screen>;
 
 const MyTabs = () => {
   return (
@@ -65,11 +113,11 @@ const MyTabs = () => {
           flexWrap: 'wrap-reverse',
         },
         style: {
-          backgroundColor: COLORS.ScreenColor,
-          height: 40,
-          justifyContent: 'space-between',
-          alignItems: 'stretch',
-          elevation: 0,
+          // backgroundColor: COLORS.ScreenColor,
+          // height: 40,
+          // justifyContent: 'space-between',
+          // alignItems: 'stretch',
+          // elevation: 0,
         },
       }}>
       <Tab.Screen name="All" component={All} />
@@ -83,19 +131,7 @@ const MyTabs = () => {
 
 const Projects = () => {
   LogBox.ignoreAllLogs();
-  return (
-    <>
-      {/* <View
-        style={{
-          height: 44,
-          width: '90%',
-        }}>
-        {MyTabs()}
-      </View> */}
-      {MyTabs()}
-      <Screen></Screen>
-    </>
-  );
+  return <Screen>{MyTabs()}</Screen>;
 };
 
 export default Projects;
