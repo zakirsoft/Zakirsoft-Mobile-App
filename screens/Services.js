@@ -381,7 +381,75 @@ const Services = () => {
               marginTop: 8,
               backgroundColor: COLORS.primary,
             }}></View>
+          <IconViewWrapper>
+            {/* laravel */}
+            <IconWrapper>
+              <Image
+                source={images.laravel}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>Laravel</IconText>
+            </IconWrapper>
+            {/* php */}
+            <IconWrapper>
+              <Image
+                source={images.php}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>PHP</IconText>
+            </IconWrapper>
+            {/* Algolia */}
+            <IconWrapper>
+              <Image
+                source={images.Algolia}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>Algolia</IconText>
+            </IconWrapper>
+            {/* MySQL */}
+            <IconWrapper>
+              <Image
+                source={images.MySQL}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>MySQL</IconText>
+            </IconWrapper>
+          </IconViewWrapper>
+          <IconViewWrapper style={{justifyContent: 'space-evenly'}}>
+            {/* Redis */}
+            <IconWrapper>
+              <Image
+                source={images.Redis}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>Redis</IconText>
+            </IconWrapper>
+            {/* Elasticsearch */}
+            <IconWrapper>
+              <Image
+                source={images.Elasticsearch}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>Elasticsearch</IconText>
+            </IconWrapper>
+            {/* Firebase */}
+            <IconWrapper>
+              <Image
+                source={images.firebase}
+                resizeMode={'center'}
+                style={{height: 40, width: 40}}
+              />
+              <IconText>Firebase</IconText>
+            </IconWrapper>
+          </IconViewWrapper>
         </TechCart>
+        <View style={{height: 100}}></View>
       </View>
     </Screen>
   );
