@@ -4,7 +4,7 @@ export const Screen = styled.ScrollView`
   flex: 1;
   background-color: #ebf1f7;
   padding-left: 22px;
-  padding-right: 20px;
+  padding-right: 22px;
 `;
 export const Logo = styled.View`
   flex-direction: row;
@@ -30,7 +30,7 @@ export const SecondaryButton = styled.TouchableOpacity`
   align-items: center;
 `;
 export const ServicesCart = styled.View`
-  width: 345px;
+  width: 100%;
   height: 340px;
   background-color: #ffffff;
   margin-right: 54px;
@@ -38,7 +38,7 @@ export const ServicesCart = styled.View`
   margin-top: 24px;
 `;
 export const TechCart = styled.View`
-  width: 345px;
+  width: 100%;
   height: 225px;
   background-color: #ffffff;
   margin-top: 24px;
@@ -67,7 +67,7 @@ export const cImage = styled.Image`
   padding-top: 20px;
 `;
 export const ProjectView = styled.View`
-  width: 350px;
+  width: 100%;
   height: 318px;
   background-color: #ebf1f7;
   margin-top: 24px;

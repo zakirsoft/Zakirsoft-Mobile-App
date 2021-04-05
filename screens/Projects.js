@@ -7,6 +7,7 @@ import {
   Text,
   View,
   TouchableNativeFeedback,
+  TouchableOpacity,
 } from 'react-native';
 import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, Logo, ProjectView} from '../Styles/Screen';
@@ -34,12 +35,14 @@ const WebDesign = () => {
 };
 const WebDevelopment = ({navigation}) => {
   return (
-    <>
-      <View>
-        <TouchableNativeFeedback
-          onPress={() => navigation.navigate('ProjectDetails')}>
+    <Screen>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
           <ProjectView>
-            <Image source={images.loovum} style={{height: 260, width: 350}} />
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
             <View style={{paddingTop: 16}}>
               <Text
                 style={{
@@ -56,19 +59,13 @@ const WebDevelopment = ({navigation}) => {
                   fontSize: 20,
                   color: COLORS.primary,
                 }}>
-                Loovum - ECommerce Project
+                Loovum - ECommerce Projectttttttttt
               </Text>
             </View>
           </ProjectView>
-        </TouchableNativeFeedback>
-      </View>
-      <ProjectView>
-        <Image source={images.about_1} style={{height: 260, width: 350}} />
-      </ProjectView>
-      <ProjectView>
-        <Image source={images.about_1} style={{height: 260, width: 350}} />
-      </ProjectView>
-    </>
+        </View>
+      </TouchableOpacity>
+    </Screen>
   );
 };
 const SPA = () => {
@@ -124,7 +121,7 @@ const MyTabs = () => {
 
 const Projects = () => {
   LogBox.ignoreAllLogs();
-  return <Screen>{MyTabs()}</Screen>;
+  return <View style={{flex: 1}}>{MyTabs()}</View>;
 };
 
 export default Projects;

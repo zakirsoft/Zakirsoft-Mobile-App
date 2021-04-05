@@ -206,7 +206,7 @@ const Contact = () => {
           marginTop: 16,
         }}>
         <PrimaryButton
-          style={{width: 366}}
+          style={{width: '100%'}}
           onPress={() => {
             const args = {
               number: '01625 592566',
