@@ -11,7 +11,7 @@ const Home = ({navigation}) => {
           <Image
             source={images.home}
             resizeMode="contain"
-            style={{height: 365, width: 350, top: -10}}
+            style={{height: 365, width: '100%', top: -10}}
           />
         </View>
         <View style={{flexDirection: 'column', top: -55}}>
