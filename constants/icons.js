@@ -8,6 +8,9 @@ export const RightArrow = require('../assets/icons/RightArrow.png');
 export const Location = require('../assets/icons/Location.png');
 export const Projects = require('../assets/icons/Projects.png');
 export const Services = require('../assets/icons/Services.png');
+export const Call = require('../assets/icons/call.png');
+export const Message = require('../assets/icons/Message.png');
+export const pointer = require('../assets/icons/pointer.png');
 
 export default {
   Home,
@@ -20,4 +23,7 @@ export default {
   Location,
   Projects,
   Services,
+  Call,
+  Message,
+  pointer,
 };
