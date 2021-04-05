@@ -18,18 +18,10 @@ import {NavigationContainer} from '@react-navigation/native';
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
 
-const ScreenNavigator = ({navigation}) => {
-  <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="ProjectDetails" component={ProjectDetails} />
-    </Stack.Navigator>
-  </NavigationContainer>;
-};
-
 const All = () => {
   return (
     <Screen>
-      <Text>All</Text>
+      <Text></Text>
     </Screen>
   );
 };
@@ -104,7 +96,8 @@ const MyTabs = () => {
       tabBarOptions={{
         labelStyle: {
           fontFamily: 'DMSans-Regular',
-          fontSize: 11,
+          fontSize: 12,
+          fontWeight: 'bold',
           overflow: 'visible',
           position: 'relative',
           textTransform: 'none',
@@ -113,16 +106,16 @@ const MyTabs = () => {
           flexWrap: 'wrap-reverse',
         },
         style: {
-          // backgroundColor: COLORS.ScreenColor,
-          // height: 40,
-          // justifyContent: 'space-between',
-          // alignItems: 'stretch',
-          // elevation: 0,
+          backgroundColor: COLORS.ScreenColor,
+          height: 40,
+          justifyContent: 'space-between',
+          alignItems: 'stretch',
+          elevation: 0,
         },
       }}>
       <Tab.Screen name="All" component={All} />
       <Tab.Screen name="Design" component={WebDesign} />
-      <Tab.Screen name="Development" component={WebDevelopment} />
+      <Tab.Screen name="Develop" component={WebDevelopment} />
       <Tab.Screen name="SPA" component={SPA} />
       <Tab.Screen name="PWA" component={PWA} />
     </Tab.Navigator>
