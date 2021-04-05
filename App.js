@@ -43,6 +43,7 @@ const App = () => {
         />
         <Stack.Screen name="ProjectDetails" component={ProjectDetails} />
         <Stack.Screen name="Career" component={Career} />
+        <Stack.Screen name="CareerDetails" component={CareerDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );

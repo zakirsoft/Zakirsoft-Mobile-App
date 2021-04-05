@@ -68,6 +68,10 @@ const WebDevelopment = ({navigation}) => {
       </TouchableOpacity>
 
       <Button title="Career" onPress={() => navigation.navigate('Career')} />
+      <Button
+        title="CareerDetails"
+        onPress={() => navigation.navigate('CareerDetails')}
+      />
     </Screen>
   );
 };
