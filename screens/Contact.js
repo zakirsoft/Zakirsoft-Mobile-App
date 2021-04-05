@@ -13,34 +13,37 @@ import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import call from 'react-native-phone-call';
 
 const Contact = () => {
-  useEffect(() => {}, []);
-  let fromLoclatitude = 23.774905;
-  let fromLoclongitude = 90.351175;
+  useEffect(() => {
+    renderMap();
+  }, []);
 
-  const renderMap = () => (
-    <View style={{height: 397}}>
-      <MapView
-        initialRegion={{
-          latitude: fromLoclatitude,
-          longitude: fromLoclongitude,
-          latitudeDelta: 0.0043,
-          longitudeDelta: 0.0034,
-        }}
-        style={{flex: 1}}>
-        <Marker
-          coordinate={{latitude: 23.774905, longitude: 90.351175}}
-          title={
-            'Zakir Soft - Innovative Software & Web Development Solutions'
-          }>
-          <Image
-            source={images.logo}
-            resizeMode={'contain'}
-            style={{height: 20, width: 80}}
-          />
-        </Marker>
-      </MapView>
-    </View>
-  );
+  const renderMap = () => {
+    LogBox.ignoreAllLogs();
+    return (
+      <View style={{height: 397}}>
+        <MapView
+          initialRegion={{
+            latitude: 23.774905,
+            longitude: 90.351175,
+            latitudeDelta: 0.0043,
+            longitudeDelta: 0.0034,
+          }}
+          style={{flex: 1}}>
+          <Marker
+            coordinate={{latitude: 23.774905, longitude: 90.351175}}
+            title={
+              'Zakir Soft - Innovative Software & Web Development Solutions'
+            }>
+            <Image
+              source={images.logo}
+              resizeMode={'contain'}
+              style={{height: 20, width: 80}}
+            />
+          </Marker>
+        </MapView>
+      </View>
+    );
+  };
 
   const renderInfo = () => (
     <>
@@ -218,26 +221,26 @@ const Contact = () => {
               justifyContent: 'center',
               alignItems: 'center',
             }}>
+            <Image
+              source={icons.Call}
+              resizeMode={'contain'}
+              style={{height: 18, width: 18, tintColor: COLORS.white}}
+            />
             <Text
               style={{
                 fontSize: 16,
                 fontWeight: 'bold',
                 color: COLORS.white,
+                paddingLeft: 4,
               }}>
               Call Now
             </Text>
-            <Image
-              source={icons.Call}
-              resizeMode={'contain'}
-              style={{height: 20, width: 20, tintColor: COLORS.white}}
-            />
           </View>
         </PrimaryButton>
       </View>
     </>
   );
 
-  LogBox.ignoreAllLogs();
   return (
     <View style={{flex: 1, backgroundColor: COLORS.ScreenColor}}>
       {renderMap()}

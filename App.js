@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, LogBox, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import {
@@ -18,6 +18,7 @@ import {Logo} from './Styles/Screen';
 
 const Stack = createStackNavigator();
 const App = () => {
+  // LogBox.ignoreAllLogs();
   return (
     <NavigationContainer>
       <Stack.Navigator
