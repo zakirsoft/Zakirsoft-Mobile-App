@@ -8,6 +8,7 @@ import {
   View,
   TouchableNativeFeedback,
   TouchableOpacity,
+  Button,
 } from 'react-native';
 import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, Logo, ProjectView} from '../Styles/Screen';
@@ -65,6 +66,8 @@ const WebDevelopment = ({navigation}) => {
           </ProjectView>
         </View>
       </TouchableOpacity>
+
+      <Button title="Career" onPress={() => navigation.navigate('Career')} />
     </Screen>
   );
 };
