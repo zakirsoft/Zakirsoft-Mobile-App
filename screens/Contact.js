@@ -10,6 +10,7 @@ import {
 import {COLORS, images, SIZES, FONTS, icons} from '../constants';
 import {Screen, Logo, PrimaryButton} from '../Styles/Screen';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
+import call from 'react-native-phone-call';
 
 const Contact = () => {
   useEffect(() => {}, []);
@@ -40,6 +41,7 @@ const Contact = () => {
       </MapView>
     </View>
   );
+
   const renderInfo = () => (
     <>
       <View
@@ -200,7 +202,16 @@ const Contact = () => {
           position: 'relative',
           marginTop: 16,
         }}>
-        <PrimaryButton style={{width: 366}}>
+        <PrimaryButton
+          style={{width: 366}}
+          onPress={() => {
+            const args = {
+              number: '01625 592566',
+              prompt: false, // Optional boolean property. Determines if the user should be prompt prior to the call
+            };
+
+            call(args).catch(console.error);
+          }}>
           <View
             style={{
               flexDirection: 'row',
