@@ -34,56 +34,58 @@ const About = ({navigation}) => {
 
   const renderItem = ({item}) => (
     <View style={{flex: 1, justifyContent: 'space-between'}}>
-      <Image source={item.Img} style={{height: 250}} resizeMode={'cover'} />
+      <Image
+        source={item.Img}
+        style={{height: 250, marginRight: 2}}
+        resizeMode={'cover'}
+      />
     </View>
   );
   const renderFlatlist = () => {
-    return (
-      <View>
-        <FlatList
-          data={AboutImgData}
-          renderItem={renderItem}
-          keyExtractor={item => item.id}
-          horizontal
-          pagingEnabled
-          // onScroll={}
-          showsHorizontalScrollIndicator={false}
-          scrollEventThrottle={16}
-          snapToAlignment="center"
-        />
-      </View>
-    );
-  };
-  const renderDots = () => {
     const [active, setActive] = useState(0);
 
     const change = ({nativeEvent}) => {
       const slide = Math.ceil(
-        nativeEvent.x / nativeEvent.layoutMeasurement.width,
+        nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width,
       );
       if (slide !== active) {
-        setActive({active: slide});
+        setActive(slide);
       }
     };
     return (
-      <View
-        style={{
-          flexDirection: 'row',
-          position: 'relative',
-          bottom: -8,
-          alignSelf: 'center',
-        }}>
-        {AboutImgData.map((i, k) => (
-          <Text
-            key={k}
-            style={{
-              color: active?.id == i.id ? COLORS.primary : '#C4D6FB',
-              marginRight: 8,
-            }}>
-            ⬤
-          </Text>
-        ))}
-      </View>
+      <>
+        <View>
+          <FlatList
+            data={AboutImgData}
+            renderItem={renderItem}
+            keyExtractor={item => item.id}
+            horizontal
+            pagingEnabled
+            onScroll={change}
+            showsHorizontalScrollIndicator={false}
+            scrollEventThrottle={16}
+            snapToAlignment="center"
+          />
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            position: 'relative',
+            bottom: -8,
+            alignSelf: 'center',
+          }}>
+          {AboutImgData.map((i, k) => (
+            <Text
+              key={k}
+              style={{
+                color: k == active ? COLORS.primary : '#C4D6FB',
+                marginRight: 8,
+              }}>
+              ⬤
+            </Text>
+          ))}
+        </View>
+      </>
     );
   };
 
@@ -405,7 +407,7 @@ const About = ({navigation}) => {
   return (
     <Screen>
       {renderFlatlist()}
-      {renderDots()}
+      {/* {renderDots()} */}
       {renderBody({navigation})}
       {renderBottom()}
     </Screen>
