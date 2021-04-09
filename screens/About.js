@@ -171,7 +171,7 @@ const About = ({navigation}) => {
                 }}>
                 <Image
                   source={icons.GoBack}
-                  style={{tintColor: COLORS.white}}
+                  style={{tintColor: COLORS.white, height: 16, width: 16}}
                   resizeMode={'contain'}
                 />
               </View>
@@ -189,7 +189,7 @@ const About = ({navigation}) => {
                 }}>
                 <Image
                   source={icons.GoForward}
-                  style={{tintColor: COLORS.black}}
+                  style={{tintColor: COLORS.black, height: 16, width: 16}}
                   resizeMode={'contain'}
                 />
               </View>
@@ -263,7 +263,7 @@ const About = ({navigation}) => {
                 }}>
                 <Image
                   source={icons.GoBack}
-                  style={{tintColor: COLORS.white}}
+                  style={{tintColor: COLORS.white, height: 16, width: 16}}
                   resizeMode={'contain'}
                 />
               </View>
@@ -281,7 +281,7 @@ const About = ({navigation}) => {
                 }}>
                 <Image
                   source={icons.GoForward}
-                  style={{tintColor: COLORS.black}}
+                  style={{tintColor: COLORS.black, height: 16, width: 16}}
                   resizeMode={'contain'}
                 />
               </View>
