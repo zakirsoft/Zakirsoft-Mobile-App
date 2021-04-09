@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Animated,
   FlatList,
@@ -28,25 +28,68 @@ const AboutImgData = [
 ];
 
 const About = () => {
+  const scrollX = new Animated.Value(0);
+
   const renderItem = ({item}) => (
-    <View style={{flex: 1, justifyContent: 'center'}}>
-      <Image source={item.Img} style={{height: 250}} />
+    <View style={{flex: 1, justifyContent: 'space-between'}}>
+      <Image source={item.Img} style={{height: 250}} resizeMode={'cover'} />
       <Text>{item.id}</Text>
     </View>
   );
+  const renderFlatlist = () => {
+    return (
+      <View>
+        <FlatList
+          data={AboutImgData}
+          renderItem={renderItem}
+          keyExtractor={item => item.id}
+          horizontal
+          pagingEnabled
+          onScroll={}
+          showsHorizontalScrollIndicator={false}
+          scrollEventThrottle={16}
+          snapToAlignment="center"
+        />
+      </View>
+    );
+  };
+  const renderDots = () => {
+    const [active, setActive] = useState(0);
+
+    export const change = ({nativeEvent}) => {
+      const slide = Math.ceil(
+        nativeEvent.x / nativeEvent.layoutMeasurement.width,
+      );
+      if (slide !== active) {
+        setActive({active: slide});
+      }
+    };
+    return (
+      <View
+        style={{
+          flexDirection: 'row',
+          position: 'absolute',
+          bottom: 0,
+          alignSelf: 'center',
+        }}>
+        {AboutImgData.map((i, k) => (
+          <Text
+            key={k}
+            style={{
+              color: active?.id == i.id ? COLORS.primary : '#C4D6FB',
+              marginRight: 8,
+            }}>
+            ⬤
+          </Text>
+        ))}
+      </View>
+    );
+  };
 
   return (
     <Screen>
-      <FlatList
-        data={AboutImgData}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-        horizontal
-        pagingEnabled
-        showsHorizontalScrollIndicator={false}
-        scrollEventThrottle={16}
-        snapToAlignment="center"
-      />
+      {renderFlatlist()}
+      {renderDots()}
     </Screen>
   );
 };
