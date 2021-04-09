@@ -45,7 +45,7 @@ const About = () => {
           keyExtractor={item => item.id}
           horizontal
           pagingEnabled
-          onScroll={}
+          // onScroll={}
           showsHorizontalScrollIndicator={false}
           scrollEventThrottle={16}
           snapToAlignment="center"
@@ -56,7 +56,7 @@ const About = () => {
   const renderDots = () => {
     const [active, setActive] = useState(0);
 
-    export const change = ({nativeEvent}) => {
+    const change = ({nativeEvent}) => {
       const slide = Math.ceil(
         nativeEvent.x / nativeEvent.layoutMeasurement.width,
       );
