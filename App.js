@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, LogBox, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
+import SplashScreen from 'react-native-splash-screen';
 import {
   Home,
   About,
@@ -18,6 +19,7 @@ import {Logo} from './Styles/Screen';
 
 const Stack = createStackNavigator();
 const App = () => {
+  SplashScreen.hide();
   // LogBox.ignoreAllLogs();
   return (
     <NavigationContainer>
