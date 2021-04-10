@@ -49,12 +49,12 @@ const Contact = () => {
     <>
       <View
         style={{
-          width: 366,
+          width: '100%',
           height: 240,
           borderRadius: 10,
           top: -40,
           backgroundColor: COLORS.white,
-          marginLeft: 24,
+          // marginLeft: 24,
           position: 'relative',
         }}>
         <View
@@ -197,11 +197,11 @@ const Contact = () => {
       </View>
       <View
         style={{
-          width: 366,
+          width: '100%',
           height: 240,
           borderRadius: 10,
           top: -40,
-          marginLeft: 24,
+          // marginLeft: 24,
           position: 'relative',
           marginTop: 16,
         }}>
@@ -242,10 +242,10 @@ const Contact = () => {
   );
 
   return (
-    <View style={{flex: 1, backgroundColor: COLORS.ScreenColor}}>
+    <Screen>
       {renderMap()}
       {renderInfo()}
-    </View>
+    </Screen>
   );
 };
 
