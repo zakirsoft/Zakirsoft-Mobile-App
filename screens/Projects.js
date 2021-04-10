@@ -20,23 +20,340 @@ import {NavigationContainer} from '@react-navigation/native';
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
 
-const All = () => {
+const All = ({navigation}) => {
   return (
     <Screen>
-      <Text></Text>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
     </Screen>
   );
 };
-const WebDesign = () => {
+const WebDesign = ({navigation}) => {
   return (
     <Screen>
-      <Text>PWA</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
     </Screen>
   );
 };
 const WebDevelopment = ({navigation}) => {
   return (
     <Screen>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
         <View>
           <ProjectView>
@@ -75,17 +392,247 @@ const WebDevelopment = ({navigation}) => {
     </Screen>
   );
 };
-const SPA = () => {
+const SPA = ({navigation}) => {
   return (
     <Screen>
-      <Text>PWA</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
     </Screen>
   );
 };
-const PWA = () => {
+const PWA = ({navigation}) => {
   return (
     <Screen>
-      <Text>PWA</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ProjectDetails')}>
+        <View>
+          <ProjectView>
+            <Image
+              source={images.loovum}
+              style={{height: 260, width: '100%'}}
+            />
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 12,
+                  color: COLORS.secondary,
+                }}>
+                Laravel Project
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 20,
+                  color: COLORS.primary,
+                }}>
+                Loovum - ECommerce Projectttttttttt
+              </Text>
+            </View>
+          </ProjectView>
+        </View>
+      </TouchableOpacity>
     </Screen>
   );
 };

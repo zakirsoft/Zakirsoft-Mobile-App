@@ -33,11 +33,11 @@ const About = ({navigation}) => {
   const scrollX = new Animated.Value(0);
 
   const renderItem = ({item}) => (
-    <View style={{flex: 1, justifyContent: 'space-between'}}>
+    <View style={{flex: 1, justifyContent: 'center'}}>
       <Image
         source={item.Img}
         style={{height: 250, marginRight: 2}}
-        resizeMode={'cover'}
+        resizeMode={'contain'}
       />
     </View>
   );
