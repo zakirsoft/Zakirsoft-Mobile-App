@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Image, LogBox, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
@@ -19,7 +19,9 @@ import {Logo} from './Styles/Screen';
 
 const Stack = createStackNavigator();
 const App = () => {
-  SplashScreen.hide();
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   // LogBox.ignoreAllLogs();
   return (
     <NavigationContainer>
