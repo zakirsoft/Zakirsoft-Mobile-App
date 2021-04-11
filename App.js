@@ -3,6 +3,7 @@ import {Image, LogBox, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
+import Onboarding from 'react-native-onboarding-swiper';
 import {
   Home,
   About,
@@ -21,119 +22,167 @@ const Stack = createStackNavigator();
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
+    <Onboarding
+      pages={[
+        {
+          backgroundColor: '#fff',
+          image: <Image source={images.onboarding_1} />,
+          title: 'We design & build website that get you real results.',
+          subtitle:
+            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
+        },
+        {
+          backgroundColor: '#fff',
+          image: <Image source={images.onboarding_2} />,
+          title: 'We design & build website that get you real results.',
+          subtitle:
+            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
+        },
+        {
+          backgroundColor: '#fff',
+          image: <Image source={images.onboarding_3} />,
+          title: 'We design & build website that get you real results.',
+          subtitle:
+            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
+        },
+      ]}
+    />;
   }, []);
   // LogBox.ignoreAllLogs();
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{headerShown: true}}
-        initialRouteName={Home}>
-        <Stack.Screen
-          name="Home"
-          component={Tabs}
-          options={{
-            headerStyle: {
-              // shadowColor: COLORS.white,
-              elevation: 0,
-              backgroundColor: COLORS.ScreenColor,
-            },
-            headerTitle: false,
-            headerLeft: () => (
-              <View style={{margin: 24}}>
-                <Image source={images.logo} style={{height: 24, width: 120}} />
-              </View>
-            ),
-          }}
-        />
-        <Stack.Screen
-          name="ProjectDetails"
-          component={ProjectDetails}
-          options={{
-            headerStyle: {
-              // shadowColor: COLORS.white,
-              elevation: 0,
-              backgroundColor: COLORS.ScreenColor,
-            },
-            headerTitle: false,
-            headerRight: () => (
-              <View style={{margin: 24}}>
-                <Image source={images.logo} style={{height: 24, width: 120}} />
-              </View>
-            ),
-            headerRight: () => (
-              <View style={{margin: 24}}>
-                <Image source={images.logo} style={{height: 24, width: 120}} />
-              </View>
-            ),
-            headerBackImage: () => (
-              <Image
-                source={icons.GoBack}
-                resizeMode={'contain'}
-                style={{height: 15, width: 30, tintColor: COLORS.black}}
-              />
-            ),
-          }}
-        />
-        <Stack.Screen
-          name="Career"
-          component={Career}
-          options={{
-            headerStyle: {
-              // shadowColor: COLORS.white,
-              elevation: 0,
-              backgroundColor: COLORS.ScreenColor,
-            },
-            headerTitle: false,
-            headerRight: () => (
-              <View style={{margin: 24}}>
-                <Image source={images.logo} style={{height: 24, width: 120}} />
-              </View>
-            ),
-            headerRight: () => (
-              <View style={{margin: 24}}>
-                <Image source={images.logo} style={{height: 24, width: 120}} />
-              </View>
-            ),
-            headerBackImage: () => (
-              <Image
-                source={icons.GoBack}
-                resizeMode={'contain'}
-                style={{height: 15, width: 30, tintColor: COLORS.black}}
-              />
-            ),
-          }}
-        />
-        <Stack.Screen
-          name="CareerDetails"
-          component={CareerDetails}
-          options={{
-            headerStyle: {
-              // shadowColor: COLORS.white,
-              elevation: 0,
-              backgroundColor: COLORS.ScreenColor,
-            },
-            headerTitle: false,
-            headerRight: () => (
-              <View style={{margin: 24}}>
-                <Image source={images.logo} style={{height: 24, width: 120}} />
-              </View>
-            ),
-            headerRight: () => (
-              <View style={{margin: 24}}>
-                <Image source={images.logo} style={{height: 24, width: 120}} />
-              </View>
-            ),
-            headerBackImage: () => (
-              <Image
-                source={icons.GoBack}
-                resizeMode={'contain'}
-                style={{height: 15, width: 30, tintColor: COLORS.black}}
-              />
-            ),
-          }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{headerShown: true}}
+          initialRouteName={Home}>
+          <Stack.Screen
+            name="Home"
+            component={Tabs}
+            options={{
+              headerStyle: {
+                // shadowColor: COLORS.white,
+                elevation: 0,
+                backgroundColor: COLORS.ScreenColor,
+              },
+              headerTitle: false,
+              headerLeft: () => (
+                <View style={{margin: 24}}>
+                  <Image
+                    source={images.logo}
+                    style={{height: 24, width: 120}}
+                  />
+                </View>
+              ),
+            }}
+          />
+          <Stack.Screen
+            name="ProjectDetails"
+            component={ProjectDetails}
+            options={{
+              headerStyle: {
+                // shadowColor: COLORS.white,
+                elevation: 0,
+                backgroundColor: COLORS.ScreenColor,
+              },
+              headerTitle: false,
+              headerRight: () => (
+                <View style={{margin: 24}}>
+                  <Image
+                    source={images.logo}
+                    style={{height: 24, width: 120}}
+                  />
+                </View>
+              ),
+              headerRight: () => (
+                <View style={{margin: 24}}>
+                  <Image
+                    source={images.logo}
+                    style={{height: 24, width: 120}}
+                  />
+                </View>
+              ),
+              headerBackImage: () => (
+                <Image
+                  source={icons.GoBack}
+                  resizeMode={'contain'}
+                  style={{height: 15, width: 30, tintColor: COLORS.black}}
+                />
+              ),
+            }}
+          />
+          <Stack.Screen
+            name="Career"
+            component={Career}
+            options={{
+              headerStyle: {
+                // shadowColor: COLORS.white,
+                elevation: 0,
+                backgroundColor: COLORS.ScreenColor,
+              },
+              headerTitle: false,
+              headerRight: () => (
+                <View style={{margin: 24}}>
+                  <Image
+                    source={images.logo}
+                    style={{height: 24, width: 120}}
+                  />
+                </View>
+              ),
+              headerRight: () => (
+                <View style={{margin: 24}}>
+                  <Image
+                    source={images.logo}
+                    style={{height: 24, width: 120}}
+                  />
+                </View>
+              ),
+              headerBackImage: () => (
+                <Image
+                  source={icons.GoBack}
+                  resizeMode={'contain'}
+                  style={{height: 15, width: 30, tintColor: COLORS.black}}
+                />
+              ),
+            }}
+          />
+          <Stack.Screen
+            name="CareerDetails"
+            component={CareerDetails}
+            options={{
+              headerStyle: {
+                // shadowColor: COLORS.white,
+                elevation: 0,
+                backgroundColor: COLORS.ScreenColor,
+              },
+              headerTitle: false,
+              headerRight: () => (
+                <View style={{margin: 24}}>
+                  <Image
+                    source={images.logo}
+                    style={{height: 24, width: 120}}
+                  />
+                </View>
+              ),
+              headerRight: () => (
+                <View style={{margin: 24}}>
+                  <Image
+                    source={images.logo}
+                    style={{height: 24, width: 120}}
+                  />
+                </View>
+              ),
+              headerBackImage: () => (
+                <Image
+                  source={icons.GoBack}
+                  resizeMode={'contain'}
+                  style={{height: 15, width: 30, tintColor: COLORS.black}}
+                />
+              ),
+            }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
   );
 };
 
