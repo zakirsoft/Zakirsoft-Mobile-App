@@ -33,11 +33,19 @@ const About = ({navigation}) => {
   const scrollX = new Animated.Value(0);
 
   const renderItem = ({item}) => (
-    <View style={{flex: 1, justifyContent: 'center'}}>
+    <View
+      style={{
+        // flex: 1,
+        height: 250,
+        width: SIZES.width,
+        marginRight: 10,
+        // backgroundColor: 'red',
+        justifyContent: 'center',
+      }}>
       <Image
         source={item.Img}
-        style={{height: 250, marginRight: 2}}
-        resizeMode={'contain'}
+        style={{height: 250, width: SIZES.width, borderRadius: 10}}
+        resizeMode={'cover'}
       />
     </View>
   );
@@ -60,7 +68,10 @@ const About = ({navigation}) => {
             renderItem={renderItem}
             keyExtractor={item => item.id}
             horizontal
-            pagingEnabled
+            pagingEnabled={true}
+            automaticallyAdjustContentInsets={true}
+            // bounces={true}
+            // focusable={true}
             onScroll={change}
             showsHorizontalScrollIndicator={false}
             scrollEventThrottle={16}
@@ -198,7 +209,7 @@ const About = ({navigation}) => {
             </TouchableOpacity>
           </View>
         </View>
-        <TechCart style={{height: 280}}>
+        <TechCart style={{height: 295}}>
           <View style={{marginTop: 16, marginLeft: 16, marginRight: 16}}>
             <Text
               style={{
@@ -290,14 +301,14 @@ const About = ({navigation}) => {
             </TouchableOpacity>
           </View>
         </View>
-        <TechCart style={{height: 450}}>
-          <View>
-            <Image
-              source={images.News}
-              resizeMode={'contain'}
-              style={{height: 260, width: '100%'}}
-            />
-          </View>
+        <TechCart style={{height: 450, backgroundColor: 'green'}}>
+          {/* <View style={{justifyContent: 'center'}}> */}
+          <Image
+            source={images.News}
+            resizeMode={'cover'}
+            style={{height: 260, width: '100%'}}
+          />
+          {/* </View> */}
           <View style={{marginTop: 26, marginLeft: 16}}>
             <Text
               style={{
