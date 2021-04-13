@@ -3,7 +3,7 @@ import {Image, LogBox, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
-import Onboarding from 'react-native-onboarding-swiper';
+
 import {
   Home,
   About,
@@ -17,36 +17,12 @@ import {
 import Tabs from './navigation/Tabs';
 import {COLORS, icons, images} from './constants';
 import {Logo} from './Styles/Screen';
+import Onboarding from './screens/Onboarding';
 
 const Stack = createStackNavigator();
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
-    <Onboarding
-      pages={[
-        {
-          backgroundColor: '#fff',
-          image: <Image source={images.onboarding_1} />,
-          title: 'We design & build website that get you real results.',
-          subtitle:
-            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
-        },
-        {
-          backgroundColor: '#fff',
-          image: <Image source={images.onboarding_2} />,
-          title: 'We design & build website that get you real results.',
-          subtitle:
-            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
-        },
-        {
-          backgroundColor: '#fff',
-          image: <Image source={images.onboarding_3} />,
-          title: 'We design & build website that get you real results.',
-          subtitle:
-            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
-        },
-      ]}
-    />;
   }, []);
   // LogBox.ignoreAllLogs();
   return (
@@ -54,7 +30,8 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator
           screenOptions={{headerShown: true}}
-          initialRouteName={Home}>
+          initialRouteName={Onboarding}>
+          <Stack.Screen name="Onboarding" component={Onboarding} />
           <Stack.Screen
             name="Home"
             component={Tabs}
