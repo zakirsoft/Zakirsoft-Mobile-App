@@ -1,7 +1,8 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import OnboardingScreen from 'react-native-onboarding-swiper';
-import {images} from '../constants';
+import {COLORS, images, SIZES} from '../constants';
+import {PrimaryButton} from '../Styles/Screen';
 
 const Onboarding = ({navigation}) => {
   return (
@@ -10,25 +11,72 @@ const Onboarding = ({navigation}) => {
       onDone={() => navigation.navigate('Home')}
       pages={[
         {
-          backgroundColor: '#fff',
-          image: <Image source={images.onboarding_1} />,
-          title: 'We design & build website that get you real results.',
+          backgroundColor: COLORS.primary,
+
+          image: (
+            <Image
+              source={images.onboarding_1}
+              resizeMode={'contain'}
+              style={{height: 434, width: SIZES.width}}
+            />
+          ),
+          titleStyles: {
+            fontFamily: 'DMSans-Regular',
+            fontSize: 28,
+            fontWeight: 'bold',
+          },
+          subTitleStyles: {
+            fontFamily: 'DMSans-Regular',
+            fontSize: 16,
+          },
+          title: 'We are here to grow your business',
           subtitle:
-            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
+            'As a software company we develop innovatives website & software solutions. We are proud of what we do.',
         },
         {
-          backgroundColor: '#fff',
-          image: <Image source={images.onboarding_2} />,
-          title: 'We design & build website that get you real results.',
+          backgroundColor: COLORS.black,
+          image: (
+            <Image
+              source={images.onboarding_2}
+              resizeMode={'contain'}
+              style={{height: 434, width: SIZES.width}}
+            />
+          ),
+          titleStyles: {
+            fontFamily: 'DMSans-Regular',
+            fontSize: 28,
+            fontWeight: 'bold',
+          },
+          subTitleStyles: {
+            fontFamily: 'DMSans-Regular',
+            fontSize: 16,
+          },
+          title:
+            'We design and Develop web apps & Mobile Apps that get you real results.',
           subtitle:
-            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
+            'Zakirsoft specialize in working directly with other organizations to create sustainable partnerships.',
         },
         {
-          backgroundColor: '#fff',
-          image: <Image source={images.onboarding_3} />,
-          title: 'We design & build website that get you real results.',
+          backgroundColor: COLORS.ScreenColor,
+          image: (
+            <Image
+              source={images.onboarding_3}
+              resizeMode={'contain'}
+              style={{height: 434, width: SIZES.width}}
+            />
+          ),
+          titleStyles: {
+            fontFamily: 'DMSans-Regular',
+            fontSize: 28,
+            fontWeight: 'bold',
+          },
+          subTitleStyles: {
+            fontFamily: 'DMSans-Regular',
+            fontSize: 16,
+          },
+          title: 'Who We are',
           subtitle:
-            'Etiam porttitor posuere ultrices. Phasellus sodales purus vitae nisi accumsan, eu mollis lectus maximus.',
+            ' We Develop Softwares for your business and we also provide quality software training in Adabor Since 2020.',
         },
       ]}
     />
