@@ -38,12 +38,153 @@ const App = () => {
     return null;
   } else if (isFirstLaunch === true) {
     return (
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={{headerShown: false}}>
-          <Stack.Screen name="Onboarding" component={Onboarding} />
-          <Stack.Screen name="Home" component={Tabs} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      // <NavigationContainer>
+      //   <Stack.Navigator screenOptions={{headerShown: false}}>
+      //     <Stack.Screen name="Onboarding" component={Onboarding} />
+      //     <Stack.Screen name="Home" component={Tabs} />
+      //   </Stack.Navigator>
+      // </NavigationContainer>
+
+      <>
+        <NavigationContainer>
+          <Stack.Navigator
+            screenOptions={{headerShown: true}}
+            initialRouteName={Onboarding}>
+            <Stack.Screen
+              name="Onboarding"
+              component={Onboarding}
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen
+              name="Home"
+              component={Tabs}
+              options={{
+                headerStyle: {
+                  // shadowColor: COLORS.white,
+                  elevation: 0,
+                  backgroundColor: COLORS.ScreenColor,
+                },
+                headerTitle: false,
+                headerLeft: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
+                ),
+              }}
+            />
+            <Stack.Screen
+              name="ProjectDetails"
+              component={ProjectDetails}
+              options={{
+                headerStyle: {
+                  // shadowColor: COLORS.white,
+                  elevation: 0,
+                  backgroundColor: COLORS.ScreenColor,
+                },
+                headerTitle: false,
+                headerRight: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
+                ),
+                headerRight: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
+                ),
+                headerBackImage: () => (
+                  <Image
+                    source={icons.GoBack}
+                    resizeMode={'contain'}
+                    style={{height: 15, width: 30, tintColor: COLORS.black}}
+                  />
+                ),
+              }}
+            />
+            <Stack.Screen
+              name="Career"
+              component={Career}
+              options={{
+                headerStyle: {
+                  // shadowColor: COLORS.white,
+                  elevation: 0,
+                  backgroundColor: COLORS.ScreenColor,
+                },
+                headerTitle: false,
+                headerRight: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
+                ),
+                headerRight: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
+                ),
+                headerBackImage: () => (
+                  <Image
+                    source={icons.GoBack}
+                    resizeMode={'contain'}
+                    style={{height: 15, width: 30, tintColor: COLORS.black}}
+                  />
+                ),
+              }}
+            />
+            <Stack.Screen
+              name="CareerDetails"
+              component={CareerDetails}
+              options={{
+                headerStyle: {
+                  // shadowColor: COLORS.white,
+                  elevation: 0,
+                  backgroundColor: COLORS.ScreenColor,
+                },
+                headerTitle: false,
+                headerRight: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
+                ),
+                headerRight: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
+                ),
+                headerBackImage: () => (
+                  <Image
+                    source={icons.GoBack}
+                    resizeMode={'contain'}
+                    style={{height: 15, width: 30, tintColor: COLORS.black}}
+                  />
+                ),
+              }}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </>
     );
   } else {
     return (
