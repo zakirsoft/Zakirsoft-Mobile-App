@@ -22,6 +22,7 @@ import Onboarding from './screens/Onboarding';
 
 const Stack = createStackNavigator();
 const App = () => {
+  LogBox.ignoreAllLogs();
   const [isFirstLaunch, setIsFirstLaunch] = useState(null);
   useEffect(() => {
     AsyncStorage.getItem('alreadyLaunched').then(value => {
