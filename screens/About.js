@@ -301,7 +301,7 @@ const About = ({navigation}) => {
             </TouchableOpacity>
           </View>
         </View>
-        <TechCart style={{height: 450, backgroundColor: 'green'}}>
+        <TechCart style={{height: 450}}>
           {/* <View style={{justifyContent: 'center'}}> */}
           <Image
             source={images.News}

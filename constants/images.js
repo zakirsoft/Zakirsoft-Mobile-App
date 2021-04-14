@@ -31,6 +31,8 @@ const figma = require('../assets/images/technology/UIUX/figma.png');
 const ps = require('../assets/images/technology/UIUX/ps.png');
 const loovum = require('../assets/images/Projects/loovum.png');
 const News = require('../assets/images/about/News.png');
+const FreelancerManagementSpa = require('../assets/images/Projects/FreelancerManagementSpa.png');
+const Cuckoos = require('../assets/images/Projects/Cuckoos.png');
 
 export default {
   about_1,
@@ -66,4 +68,6 @@ export default {
   ps,
   loovum,
   News,
+  FreelancerManagementSpa,
+  Cuckoos,
 };
