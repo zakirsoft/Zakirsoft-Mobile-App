@@ -170,7 +170,7 @@ const About = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'stretch',
               justifyContent: 'space-between',
-              marginLeft: 31,
+              marginLeft: 27,
             }}>
             <TouchableOpacity>
               <View
