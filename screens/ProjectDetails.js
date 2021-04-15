@@ -78,7 +78,7 @@ const ProjectDetails = ({route}) => {
         </Text>
       </View>
       <PrimaryButton
-        style={{marginTop: 10, width: 204}}
+        style={{marginTop: 10, width: 204, marginBottom: 10}}
         onPress={() => Linking.openURL(URL)}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <View style={{justifyContent: 'center'}}>
