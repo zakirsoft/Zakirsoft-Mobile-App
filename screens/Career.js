@@ -3,7 +3,7 @@ import {Image, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, Logo, TechCart, PrimaryButton} from '../Styles/Screen';
 
-const Career = () => {
+const Career = ({navigation}) => {
   return (
     <Screen>
       <TechCart style={{height: 263}}>
@@ -28,7 +28,9 @@ const Career = () => {
             UI Kit, Prototype, etc. Entrepreneur minded people are always
             welcome. Send your cv at - zakirsoft20@gmail.com
           </Text>
-          <PrimaryButton style={{marginTop: 20}}>
+          <PrimaryButton
+            style={{marginTop: 20}}
+            onPress={() => navigation.navigate('CareerDetails')}>
             <Text
               style={{
                 fontSize: SIZES.body3,
@@ -61,7 +63,9 @@ const Career = () => {
             We need someone having experience in PHP, MySQL, Laravel & Vue.js.
             Send your cv here - zakirsoft20@gmail.com
           </Text>
-          <PrimaryButton style={{marginTop: 20}}>
+          <PrimaryButton
+            style={{marginTop: 20}}
+            onPress={() => navigation.navigate('CareerDetails')}>
             <Text
               style={{
                 fontSize: SIZES.body3,

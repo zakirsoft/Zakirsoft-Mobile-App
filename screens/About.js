@@ -400,7 +400,7 @@ const About = ({navigation}) => {
           </View>
           <PrimaryButton
             style={{marginTop: 16}}
-            onPress={() => navigation.navigate('Contact')}>
+            onPress={() => navigation.navigate('Career')}>
             <Text
               style={{
                 fontSize: SIZES.body3,
