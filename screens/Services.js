@@ -21,48 +21,43 @@ import {
 const Services = () => {
   return (
     <Screen>
-      <TouchableOpacity>
-        <ServicesCart>
-          <View
-            style={{
-              flexDirection: 'column',
-              paddingRight: 20,
-              paddingLeft: 20,
-            }}>
-            <View style={{paddingTop: 20}}>
-              <Image
-                source={images.s_frontend}
-                style={{height: 90, width: 85}}
-              />
-            </View>
-            <View style={{paddingTop: 16}}>
-              <Text
-                style={{
-                  fontFamily: FONTS.H2,
-                  fontSize: SIZES.h2,
-                  fontWeight: 'bold',
-                }}>
-                Frontend Development
-              </Text>
-            </View>
-            <View style={{paddingTop: 8}}>
-              <Text
-                style={{
-                  fontFamily: 'DMSans-Regular',
-                  fontSize: 14,
-                  color: COLORS.secondary,
-                  lineHeight: 21,
-                }}>
-                Front-end web development is the practice of converting data to
-                a graphical interface, through the use of HTML, CSS, and
-                JavaScript, so that users can view and interact with that data.
-                A front-end web developer is responsible for implementing visual
-                elements that users see and interact with in a web application.
-              </Text>
-            </View>
+      <ServicesCart>
+        <View
+          style={{
+            flexDirection: 'column',
+            paddingRight: 20,
+            paddingLeft: 20,
+          }}>
+          <View style={{paddingTop: 20}}>
+            <Image source={images.s_frontend} style={{height: 90, width: 85}} />
           </View>
-        </ServicesCart>
-      </TouchableOpacity>
+          <View style={{paddingTop: 16}}>
+            <Text
+              style={{
+                fontFamily: FONTS.H2,
+                fontSize: SIZES.h2,
+                fontWeight: 'bold',
+              }}>
+              Frontend Development
+            </Text>
+          </View>
+          <View style={{paddingTop: 8}}>
+            <Text
+              style={{
+                fontFamily: 'DMSans-Regular',
+                fontSize: 14,
+                color: COLORS.secondary,
+                lineHeight: 21,
+              }}>
+              Front-end web development is the practice of converting data to a
+              graphical interface, through the use of HTML, CSS, and JavaScript,
+              so that users can view and interact with that data. A front-end
+              web developer is responsible for implementing visual elements that
+              users see and interact with in a web application.
+            </Text>
+          </View>
+        </View>
+      </ServicesCart>
       <ServicesCart>
         <View
           style={{flexDirection: 'column', paddingRight: 20, paddingLeft: 20}}>
