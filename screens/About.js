@@ -44,7 +44,11 @@ const About = ({navigation}) => {
       }}>
       <Image
         source={item.Img}
-        style={{height: 250, width: SIZES.width, borderRadius: 10}}
+        style={{
+          height: 250,
+          width: SIZES.width,
+          borderRadius: 10,
+        }}
         resizeMode={'cover'}
       />
     </View>
@@ -71,11 +75,12 @@ const About = ({navigation}) => {
             pagingEnabled={true}
             automaticallyAdjustContentInsets={true}
             // bounces={true}
-            // focusable={true}
+            focusable={true}
             onScroll={change}
             showsHorizontalScrollIndicator={false}
             scrollEventThrottle={16}
             snapToAlignment="center"
+            centerContent={true}
           />
         </View>
         <View
@@ -170,7 +175,7 @@ const About = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'stretch',
               justifyContent: 'space-between',
-              marginLeft: 27,
+              marginLeft: 24,
             }}>
             <TouchableOpacity>
               <View
