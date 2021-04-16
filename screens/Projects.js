@@ -317,6 +317,8 @@ const MyTabs = () => {
   return (
     <Tab.Navigator
       initialRouteName={WebDesign}
+      swipeEnabled={true}
+      // swipeVelocityImpact={2}
       initialLayout={{width: SIZES.width * 2}}
       tabBarOptions={{
         labelStyle: {
@@ -343,6 +345,8 @@ const MyTabs = () => {
       <Tab.Screen name="Develop" component={WebDevelopment} />
       <Tab.Screen name="SPA" component={SPA} />
       <Tab.Screen name="PWA" component={PWA} />
+      <Tab.Screen name="ALLPWA" component={All} />
+      <Tab.Screen name="PWAAll" component={PWA} />
     </Tab.Navigator>
   );
 };
