@@ -351,9 +351,103 @@ const MyTabs = () => {
   );
 };
 
+const TabView = () => {
+  const tabNames = [
+    {
+      id: '1',
+      TabName: 'All',
+      ComponentName: 'All',
+    },
+    {
+      id: '2',
+      TabName: 'Web Design',
+    },
+    {id: '3', TabName: 'Web Development'},
+    {
+      id: '4',
+      TabName: 'SPA',
+    },
+    {
+      id: '5',
+      TabName: 'PWA',
+    },
+    {
+      id: '6',
+      TabName: 'Web Design',
+    },
+    {id: '7', TabName: 'Web Development'},
+    {
+      id: '8',
+      TabName: 'SPA',
+    },
+    {
+      id: '9',
+      TabName: 'PWA',
+    },
+  ];
+
+  const [categories, setCategories] = useState(tabNames);
+  const [selectedCategory, setSelectedCategory] = useState(1);
+
+  // const onSelectCategory = category => {
+  //   //Fillter items
+  //   let TabList = categories.filter(a => a.categories.includes(category.id));
+  //   setSelectedCategory(TabList);
+  // };
+
+  const renderItem = ({item}) => {
+    return (
+      <View
+        style={{
+          marginRight: 10,
+          marginLeft: 15,
+        }}>
+        <View>
+          <TouchableOpacity
+            style={{
+              height: '85%',
+              width: '120%',
+              // borderBottomColor:
+              //   categories.id == item.id ? COLORS.primary : COLORS.secondary,
+              // borderBottomWidth: 3,
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <Text
+              style={{
+                fontFamily: 'DMSans-Regular',
+                fontSize: 14,
+                fontWeight: 'bold',
+                color: COLORS.secondary,
+              }}>
+              {item.TabName}
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    );
+  };
+
+  return (
+    <View style={{height: '25%'}}>
+      <FlatList
+        data={tabNames}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+        horizontal
+        pagingEnabled={true}
+        showsHorizontalScrollIndicator={false}
+      />
+    </View>
+  );
+};
+
 const Projects = () => {
-  LogBox.ignoreAllLogs();
-  return <View style={{flex: 1}}>{MyTabs()}</View>;
+  // LogBox.ignoreAllLogs();
+  return (
+    // <View style={{flex: 1}}>{MyTabs()}</View>
+    <View>{TabView()}</View>
+  );
 };
 
 export default Projects;
