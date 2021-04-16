@@ -3,6 +3,7 @@ import {
   Image,
   LogBox,
   SafeAreaView,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -47,205 +48,207 @@ const Contact = () => {
 
   const renderInfo = () => (
     <>
-      <View
-        style={{
-          width: '100%',
-          height: 240,
-          borderRadius: 10,
-          top: -40,
-          backgroundColor: COLORS.white,
-          // marginLeft: 24,
-          position: 'relative',
-        }}>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
         <View
           style={{
-            flexDirection: 'row',
-            marginLeft: 16,
-            marginTop: 16,
-            marginBottom: 16,
-          }}>
-          <View
-            style={{
-              height: 48,
-              width: 48,
-              borderRadius: 10,
-              backgroundColor: COLORS.ScreenColor,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Image
-              source={icons.Location}
-              resizeMode={'contain'}
-              style={{
-                height: 22,
-                width: 18,
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            />
-          </View>
-          <View style={{justifyContent: 'center', alignItems: 'center'}}>
-            <Text
-              style={{
-                fontFamily: 'DMSans-Regular',
-                fontSize: 16,
-                color: COLORS.black,
-                marginLeft: 10,
-              }}>
-              Home# 1024/N, Road# 17/A, Adabor, Dhaka-1207
-            </Text>
-          </View>
-        </View>
-        <View
-          style={{
-            width: 330,
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: COLORS.ScreenColor,
-            // top: 80,
-            height: 1,
-            left: 16,
-          }}></View>
-        <View
-          style={{
-            flexDirection: 'row',
-            marginLeft: 16,
-            marginTop: 16,
-            marginBottom: 16,
-          }}>
-          <View
-            style={{
-              height: 48,
-              width: 48,
-              borderRadius: 10,
-              backgroundColor: COLORS.ScreenColor,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Image
-              source={icons.Call}
-              resizeMode={'contain'}
-              style={{
-                height: 22,
-                width: 18,
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            />
-          </View>
-          <View style={{justifyContent: 'center', alignItems: 'center'}}>
-            <Text
-              style={{
-                fontFamily: 'DMSans-Regular',
-                fontSize: 16,
-                color: COLORS.black,
-                marginLeft: 10,
-              }}>
-              +8801625 592566
-            </Text>
-          </View>
-        </View>
-        <View
-          style={{
-            width: 330,
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: COLORS.ScreenColor,
-            // top: 80,
-            height: 1,
-            left: 16,
-          }}></View>
-        <View
-          style={{
-            flexDirection: 'row',
-            marginLeft: 16,
-            marginTop: 16,
-            marginBottom: 16,
-          }}>
-          <View
-            style={{
-              height: 48,
-              width: 48,
-              borderRadius: 10,
-              backgroundColor: COLORS.ScreenColor,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Image
-              source={icons.Call}
-              resizeMode={'contain'}
-              style={{
-                height: 22,
-                width: 18,
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            />
-          </View>
-          <View style={{justifyContent: 'center', alignItems: 'center'}}>
-            <Text
-              style={{
-                fontFamily: 'DMSans-Regular',
-                fontSize: 16,
-                color: COLORS.black,
-                marginLeft: 10,
-              }}>
-              zakirsoft20@gmail.com
-            </Text>
-          </View>
-        </View>
-      </View>
-      <View
-        style={{
-          width: '100%',
-          height: 240,
-          borderRadius: 10,
-          top: -40,
-          // marginLeft: 24,
-          position: 'relative',
-          marginTop: 16,
-        }}>
-        <PrimaryButton
-          style={{width: '100%'}}
-          onPress={() => {
-            const args = {
-              number: '01625 592566',
-              prompt: false, // Optional boolean property. Determines if the user should be prompt prior to the call
-            };
-
-            call(args).catch(console.error);
+            width: '90%',
+            height: 240,
+            borderRadius: 10,
+            top: -40,
+            backgroundColor: COLORS.white,
+            // marginLeft: 24,
+            position: 'relative',
           }}>
           <View
             style={{
               flexDirection: 'row',
-              justifyContent: 'center',
-              alignItems: 'center',
+              marginLeft: 16,
+              marginTop: 16,
+              marginBottom: 16,
             }}>
-            <Image
-              source={icons.Call}
-              resizeMode={'contain'}
-              style={{height: 18, width: 18, tintColor: COLORS.white}}
-            />
-            <Text
+            <View
               style={{
-                fontSize: 16,
-                fontWeight: 'bold',
-                color: COLORS.white,
-                paddingLeft: 4,
+                height: 48,
+                width: 48,
+                borderRadius: 10,
+                backgroundColor: COLORS.ScreenColor,
+                justifyContent: 'center',
+                alignItems: 'center',
               }}>
-              Call Now
-            </Text>
+              <Image
+                source={icons.Location}
+                resizeMode={'contain'}
+                style={{
+                  height: 22,
+                  width: 18,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              />
+            </View>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 16,
+                  color: COLORS.black,
+                  marginLeft: 10,
+                }}>
+                Home# 1024/N, Road# 17/A, Adabor, Dhaka-1207
+              </Text>
+            </View>
           </View>
-        </PrimaryButton>
+          <View
+            style={{
+              width: 330,
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: COLORS.ScreenColor,
+              // top: 80,
+              height: 1,
+              left: 16,
+            }}></View>
+          <View
+            style={{
+              flexDirection: 'row',
+              marginLeft: 16,
+              marginTop: 16,
+              marginBottom: 16,
+            }}>
+            <View
+              style={{
+                height: 48,
+                width: 48,
+                borderRadius: 10,
+                backgroundColor: COLORS.ScreenColor,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={icons.Call}
+                resizeMode={'contain'}
+                style={{
+                  height: 22,
+                  width: 18,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              />
+            </View>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 16,
+                  color: COLORS.black,
+                  marginLeft: 10,
+                }}>
+                +8801625 592566
+              </Text>
+            </View>
+          </View>
+          <View
+            style={{
+              width: 330,
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: COLORS.ScreenColor,
+              // top: 80,
+              height: 1,
+              left: 16,
+            }}></View>
+          <View
+            style={{
+              flexDirection: 'row',
+              marginLeft: 16,
+              marginTop: 16,
+              marginBottom: 16,
+            }}>
+            <View
+              style={{
+                height: 48,
+                width: 48,
+                borderRadius: 10,
+                backgroundColor: COLORS.ScreenColor,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={icons.Call}
+                resizeMode={'contain'}
+                style={{
+                  height: 22,
+                  width: 18,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              />
+            </View>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: 16,
+                  color: COLORS.black,
+                  marginLeft: 10,
+                }}>
+                zakirsoft20@gmail.com
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            width: '90%',
+            height: 240,
+            borderRadius: 10,
+            top: -40,
+            // marginLeft: 24,
+            // position: 'relative',
+            marginTop: 16,
+          }}>
+          <PrimaryButton
+            style={{width: '100%'}}
+            onPress={() => {
+              const args = {
+                number: '01625 592566',
+                prompt: false, // Optional boolean property. Determines if the user should be prompt prior to the call
+              };
+
+              call(args).catch(console.error);
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={icons.Call}
+                resizeMode={'contain'}
+                style={{height: 18, width: 18, tintColor: COLORS.white}}
+              />
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: COLORS.white,
+                  paddingLeft: 4,
+                }}>
+                Call Now
+              </Text>
+            </View>
+          </PrimaryButton>
+        </View>
       </View>
     </>
   );
 
   return (
-    <Screen>
+    <ScrollView>
       {renderMap()}
       {renderInfo()}
-    </Screen>
+    </ScrollView>
   );
 };
 
