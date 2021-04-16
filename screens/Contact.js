@@ -36,9 +36,9 @@ const Contact = () => {
               'Zakir Soft - Innovative Software & Web Development Solutions'
             }>
             <Image
-              source={images.logo}
+              source={icons.placeholder}
               resizeMode={'contain'}
-              style={{height: 20, width: 80}}
+              style={{height: 65, width: 45}}
             />
           </Marker>
         </MapView>

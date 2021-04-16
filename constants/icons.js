@@ -11,6 +11,7 @@ export const Services = require('../assets/icons/Services.png');
 export const Call = require('../assets/icons/call.png');
 export const Message = require('../assets/icons/Message.png');
 export const pointer = require('../assets/icons/pointer.png');
+export const placeholder = require('../assets/icons/placeholder.png');
 
 export default {
   Home,
@@ -26,4 +27,5 @@ export default {
   Call,
   Message,
   pointer,
+  placeholder,
 };
