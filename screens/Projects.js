@@ -374,42 +374,6 @@ const PWA = () => {
   );
 };
 
-// const MyTabs = () => {
-//   return (
-//     <Tab.Navigator
-//       initialRouteName={WebDesign}
-//       swipeEnabled={true}
-//       // swipeVelocityImpact={2}
-//       initialLayout={{width: SIZES.width * 2}}
-//       tabBarOptions={{
-//         labelStyle: {
-//           fontFamily: 'DMSans-Regular',
-//           fontSize: 12,
-//           fontWeight: 'bold',
-//           overflow: 'visible',
-//           position: 'relative',
-//           textTransform: 'none',
-//           textAlign: 'left',
-//           direction: 'inherit',
-//           flexWrap: 'wrap-reverse',
-//         },
-//         style: {
-//           backgroundColor: COLORS.ScreenColor,
-//           height: 40,
-//           justifyContent: 'space-between',
-//           alignItems: 'stretch',
-//           elevation: 0,
-//         },
-//       }}>
-//       <Tab.Screen name="All" component={All} />
-//       <Tab.Screen name="Design" component={WebDesign} />
-//       <Tab.Screen name="Develop" component={WebDevelopment} />
-//       <Tab.Screen name="SPA" component={SPA} />
-//       <Tab.Screen name="PWA" component={PWA} />
-//     </Tab.Navigator>
-//   );
-// };
-
 const TabView = () => {
   const tabNames = [
     {
@@ -506,7 +470,6 @@ const TabView = () => {
 
   return (
     <View style={{flex: 1}}>
-      {/* {flartlist()} */}
       <View style={{height: '5%'}}>
         <View>{flartlist()}</View>
       </View>
@@ -518,13 +481,8 @@ const TabView = () => {
 };
 
 const Projects = () => {
-  // LogBox.ignoreAllLogs();
-  return (
-    // <View style={{flex: 1}}>{MyTabs()}</View>
-    <View style={{flex: 1}}>{TabView()}</View>
-  );
+  return <View style={{flex: 1}}>{TabView()}</View>;
 };
 
 export default Projects;
-
 const styles = StyleSheet.create({});
