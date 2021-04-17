@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   Button,
   FlatList,
+  ScrollView,
 } from 'react-native';
 import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, Logo, ProjectView} from '../Styles/Screen';
@@ -62,301 +63,318 @@ const AllCategories = [
   },
 ];
 
-const All = ({navigation}) => {
+const All = () => {
   const renderItem = ({item}) => {
     return (
-      <Screen>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('ProjectDetails', item)}>
-          <View>
-            <ProjectView>
-              <Image
-                source={item.Img}
-                resizeMode={'contain'}
-                style={{height: 260, width: '100%'}}
-              />
-
-              <View style={{paddingTop: 16}}>
-                <Text
-                  style={{
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 12,
-                    color: COLORS.secondary,
-                  }}>
-                  {item.Category}
-                </Text>
-                <Text
-                  style={{
-                    paddingTop: 2,
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 20,
-                    color: COLORS.primary,
-                  }}>
-                  {item.Title}
-                </Text>
-              </View>
-            </ProjectView>
-          </View>
-        </TouchableOpacity>
-      </Screen>
-    );
-  };
-
-  return (
-    <View style={{flex: 1}}>
-      <FlatList
-        data={AllCategories}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-      />
-    </View>
-  );
-};
-const WebDesign = ({navigation}) => {
-  const renderItem = ({item}) => {
-    return (
-      <Screen>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('ProjectDetails', item)}>
-          <View>
-            <ProjectView>
-              <Image
-                source={item.Img}
-                resizeMode={'contain'}
-                style={{height: 260, width: '100%'}}
-              />
-
-              <View style={{paddingTop: 16}}>
-                <Text
-                  style={{
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 12,
-                    color: COLORS.secondary,
-                  }}>
-                  {item.Category}
-                </Text>
-                <Text
-                  style={{
-                    paddingTop: 2,
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 20,
-                    color: COLORS.primary,
-                  }}>
-                  {item.Title}
-                </Text>
-              </View>
-            </ProjectView>
-          </View>
-        </TouchableOpacity>
-      </Screen>
-    );
-  };
-
-  return (
-    <View style={{flex: 1}}>
-      <FlatList
-        data={AllCategories}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-      />
-    </View>
-  );
-};
-const WebDevelopment = ({navigation}) => {
-  const renderItem = ({item}) => {
-    return (
-      <Screen>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('ProjectDetails', item)}>
-          <View>
-            <ProjectView>
-              <Image
-                source={item.Img}
-                resizeMode={'contain'}
-                style={{height: 260, width: '100%'}}
-              />
-
-              <View style={{paddingTop: 16}}>
-                <Text
-                  style={{
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 12,
-                    color: COLORS.secondary,
-                  }}>
-                  {item.Category}
-                </Text>
-                <Text
-                  style={{
-                    paddingTop: 2,
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 20,
-                    color: COLORS.primary,
-                  }}>
-                  {item.Title}
-                </Text>
-              </View>
-            </ProjectView>
-          </View>
-        </TouchableOpacity>
-      </Screen>
-    );
-  };
-
-  return (
-    <View style={{flex: 1}}>
-      <FlatList
-        data={AllCategories}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-      />
-    </View>
-  );
-};
-const SPA = ({navigation}) => {
-  const renderItem = ({item}) => {
-    return (
-      <Screen>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('ProjectDetails', item)}>
-          <View>
-            <ProjectView>
-              <Image
-                source={item.Img}
-                resizeMode={'contain'}
-                style={{height: 260, width: '100%'}}
-              />
-
-              <View style={{paddingTop: 16}}>
-                <Text
-                  style={{
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 12,
-                    color: COLORS.secondary,
-                  }}>
-                  {item.Category}
-                </Text>
-                <Text
-                  style={{
-                    paddingTop: 2,
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 20,
-                    color: COLORS.primary,
-                  }}>
-                  {item.Title}
-                </Text>
-              </View>
-            </ProjectView>
-          </View>
-        </TouchableOpacity>
-      </Screen>
-    );
-  };
-
-  return (
-    <View style={{flex: 1}}>
-      <FlatList
-        data={AllCategories}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-      />
-    </View>
-  );
-};
-const PWA = ({navigation}) => {
-  const renderItem = ({item}) => {
-    return (
-      <Screen>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('ProjectDetails', item)}>
-          <View>
-            <ProjectView>
-              <Image
-                source={item.Img}
-                resizeMode={'contain'}
-                style={{height: 260, width: '100%'}}
-              />
-
-              <View style={{paddingTop: 16}}>
-                <Text
-                  style={{
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 12,
-                    color: COLORS.secondary,
-                  }}>
-                  {item.Category}
-                </Text>
-                <Text
-                  style={{
-                    paddingTop: 2,
-                    fontFamily: 'DMSans-Regular',
-                    fontSize: 20,
-                    color: COLORS.primary,
-                  }}>
-                  {item.Title}
-                </Text>
-              </View>
-            </ProjectView>
-          </View>
-        </TouchableOpacity>
-      </Screen>
-    );
-  };
-
-  return (
-    <View style={{flex: 1}}>
-      <FlatList
-        data={AllCategories}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-      />
-    </View>
-  );
-};
-
-const MyTabs = () => {
-  return (
-    <Tab.Navigator
-      initialRouteName={WebDesign}
-      swipeEnabled={true}
-      // swipeVelocityImpact={2}
-      initialLayout={{width: SIZES.width * 2}}
-      tabBarOptions={{
-        labelStyle: {
-          fontFamily: 'DMSans-Regular',
-          fontSize: 12,
-          fontWeight: 'bold',
-          overflow: 'visible',
-          position: 'relative',
-          textTransform: 'none',
-          textAlign: 'left',
-          direction: 'inherit',
-          flexWrap: 'wrap-reverse',
-        },
-        style: {
+      <View
+        style={{
           backgroundColor: COLORS.ScreenColor,
-          height: 40,
-          justifyContent: 'space-between',
-          alignItems: 'stretch',
-          elevation: 0,
-        },
-      }}>
-      <Tab.Screen name="All" component={All} />
-      <Tab.Screen name="Design" component={WebDesign} />
-      <Tab.Screen name="Develop" component={WebDevelopment} />
-      <Tab.Screen name="SPA" component={SPA} />
-      <Tab.Screen name="PWA" component={PWA} />
-      <Tab.Screen name="ALLPWA" component={All} />
-      <Tab.Screen name="PWAAll" component={PWA} />
-    </Tab.Navigator>
+        }}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ProjectDetails', item)}
+          style={{marginLeft: 22, marginRight: 22}}>
+          <View>
+            <ProjectView>
+              <Image
+                source={item.Img}
+                resizeMode={'contain'}
+                style={{height: 260, width: '100%'}}
+              />
+
+              <View style={{paddingTop: 16}}>
+                <Text
+                  style={{
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 12,
+                    color: COLORS.secondary,
+                  }}>
+                  {item.Category}
+                </Text>
+                <Text
+                  style={{
+                    paddingTop: 2,
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 20,
+                    color: COLORS.primary,
+                  }}>
+                  {item.Title}
+                </Text>
+              </View>
+            </ProjectView>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
+  return (
+    <View style={{flex: 1}}>
+      <FlatList
+        data={AllCategories}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+      />
+    </View>
   );
 };
+const WebDesign = () => {
+  const renderItem = ({item}) => {
+    return (
+      <View
+        style={{
+          backgroundColor: COLORS.ScreenColor,
+        }}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ProjectDetails', item)}
+          style={{marginLeft: 22, marginRight: 22}}>
+          <View>
+            <ProjectView>
+              <Image
+                source={item.Img}
+                resizeMode={'contain'}
+                style={{height: 260, width: '100%'}}
+              />
+
+              <View style={{paddingTop: 16}}>
+                <Text
+                  style={{
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 12,
+                    color: COLORS.secondary,
+                  }}>
+                  {item.Category}
+                </Text>
+                <Text
+                  style={{
+                    paddingTop: 2,
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 20,
+                    color: COLORS.primary,
+                  }}>
+                  {item.Title}
+                </Text>
+              </View>
+            </ProjectView>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
+  return (
+    <View style={{flex: 1}}>
+      <FlatList
+        data={AllCategories}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+      />
+    </View>
+  );
+};
+const WebDevelopment = () => {
+  const renderItem = ({item}) => {
+    return (
+      <View
+        style={{
+          backgroundColor: COLORS.ScreenColor,
+        }}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ProjectDetails', item)}
+          style={{marginLeft: 22, marginRight: 22}}>
+          <View>
+            <ProjectView>
+              <Image
+                source={item.Img}
+                resizeMode={'contain'}
+                style={{height: 260, width: '100%'}}
+              />
+
+              <View style={{paddingTop: 16}}>
+                <Text
+                  style={{
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 12,
+                    color: COLORS.secondary,
+                  }}>
+                  {item.Category}
+                </Text>
+                <Text
+                  style={{
+                    paddingTop: 2,
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 20,
+                    color: COLORS.primary,
+                  }}>
+                  {item.Title}
+                </Text>
+              </View>
+            </ProjectView>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
+  return (
+    <View style={{flex: 1}}>
+      <FlatList
+        data={AllCategories}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+      />
+    </View>
+  );
+};
+const SPA = () => {
+  const renderItem = ({item}) => {
+    return (
+      <View
+        style={{
+          backgroundColor: COLORS.ScreenColor,
+        }}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ProjectDetails', item)}
+          style={{marginLeft: 22, marginRight: 22}}>
+          <View>
+            <ProjectView>
+              <Image
+                source={item.Img}
+                resizeMode={'contain'}
+                style={{height: 260, width: '100%'}}
+              />
+
+              <View style={{paddingTop: 16}}>
+                <Text
+                  style={{
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 12,
+                    color: COLORS.secondary,
+                  }}>
+                  {item.Category}
+                </Text>
+                <Text
+                  style={{
+                    paddingTop: 2,
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 20,
+                    color: COLORS.primary,
+                  }}>
+                  {item.Title}
+                </Text>
+              </View>
+            </ProjectView>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
+  return (
+    <View style={{flex: 1}}>
+      <FlatList
+        data={AllCategories}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+      />
+    </View>
+  );
+};
+const PWA = () => {
+  const renderItem = ({item}) => {
+    return (
+      <View
+        style={{
+          backgroundColor: COLORS.ScreenColor,
+        }}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ProjectDetails', item)}
+          style={{marginLeft: 22, marginRight: 22}}>
+          <View>
+            <ProjectView>
+              <Image
+                source={item.Img}
+                resizeMode={'contain'}
+                style={{height: 260, width: '100%'}}
+              />
+
+              <View style={{paddingTop: 16}}>
+                <Text
+                  style={{
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 12,
+                    color: COLORS.secondary,
+                  }}>
+                  {item.Category}
+                </Text>
+                <Text
+                  style={{
+                    paddingTop: 2,
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 20,
+                    color: COLORS.primary,
+                  }}>
+                  {item.Title}
+                </Text>
+              </View>
+            </ProjectView>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
+  return (
+    <View style={{flex: 1}}>
+      <FlatList
+        data={AllCategories}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+      />
+    </View>
+  );
+};
+
+// const MyTabs = () => {
+//   return (
+//     <Tab.Navigator
+//       initialRouteName={WebDesign}
+//       swipeEnabled={true}
+//       // swipeVelocityImpact={2}
+//       initialLayout={{width: SIZES.width * 2}}
+//       tabBarOptions={{
+//         labelStyle: {
+//           fontFamily: 'DMSans-Regular',
+//           fontSize: 12,
+//           fontWeight: 'bold',
+//           overflow: 'visible',
+//           position: 'relative',
+//           textTransform: 'none',
+//           textAlign: 'left',
+//           direction: 'inherit',
+//           flexWrap: 'wrap-reverse',
+//         },
+//         style: {
+//           backgroundColor: COLORS.ScreenColor,
+//           height: 40,
+//           justifyContent: 'space-between',
+//           alignItems: 'stretch',
+//           elevation: 0,
+//         },
+//       }}>
+//       <Tab.Screen name="All" component={All} />
+//       <Tab.Screen name="Design" component={WebDesign} />
+//       <Tab.Screen name="Develop" component={WebDevelopment} />
+//       <Tab.Screen name="SPA" component={SPA} />
+//       <Tab.Screen name="PWA" component={PWA} />
+//     </Tab.Navigator>
+//   );
+// };
 
 const TabView = () => {
   const tabNames = [
     {
       id: '1',
       TabName: 'All',
-      ComponentName: 'All',
     },
     {
       id: '2',
@@ -373,16 +391,7 @@ const TabView = () => {
     },
     {
       id: '6',
-      TabName: 'Web Design',
-    },
-    {id: '7', TabName: 'Web Development'},
-    {
-      id: '8',
-      TabName: 'SPA',
-    },
-    {
-      id: '9',
-      TabName: 'PWA',
+      TabName: 'Mobile',
     },
   ];
   const [viewMode, setViewMode] = useState(1);
@@ -396,8 +405,8 @@ const TabView = () => {
         <View>
           <TouchableOpacity
             style={{
-              height: '85%',
-              width: '120%',
+              height: '100%',
+              width: '110%',
 
               borderBottomColor: COLORS.primary,
               borderBottomWidth: viewMode == item.id ? 3 : null,
@@ -419,17 +428,51 @@ const TabView = () => {
       </View>
     );
   };
+  const ProjectView = () => {
+    if (viewMode == 1) {
+      return All();
+    }
+    if (viewMode == 2) {
+      return WebDesign();
+    }
+    if (viewMode == 3) {
+      return WebDevelopment();
+    }
+    if (viewMode == 4) {
+      return SPA();
+    }
+    if (viewMode == 5) {
+      return PWA();
+    }
+    if (viewMode == 6) {
+      return PWA(); //there is no mobile view thats why its returning PWA view
+    }
+  };
+
+  const flartlist = () => {
+    return (
+      <View>
+        <FlatList
+          data={tabNames}
+          renderItem={renderItem}
+          keyExtractor={item => item.id}
+          horizontal
+          // pagingEnabled={true}
+          showsHorizontalScrollIndicator={false}
+        />
+      </View>
+    );
+  };
 
   return (
-    <View style={{height: '25%'}}>
-      <FlatList
-        data={tabNames}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-        horizontal
-        pagingEnabled={true}
-        showsHorizontalScrollIndicator={false}
-      />
+    <View style={{flex: 1}}>
+      {/* {flartlist()} */}
+      <View style={{height: '5%'}}>
+        <View>{flartlist()}</View>
+      </View>
+      <View style={{marginTop: 5, flex: 1}}>
+        <View style={{height: '100%'}}>{ProjectView()}</View>
+      </View>
     </View>
   );
 };
@@ -438,7 +481,7 @@ const Projects = () => {
   // LogBox.ignoreAllLogs();
   return (
     // <View style={{flex: 1}}>{MyTabs()}</View>
-    <View>{TabView()}</View>
+    <View style={{flex: 1}}>{TabView()}</View>
   );
 };
 
