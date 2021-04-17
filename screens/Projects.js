@@ -385,16 +385,7 @@ const TabView = () => {
       TabName: 'PWA',
     },
   ];
-
-  const [categories, setCategories] = useState(tabNames);
-  const [selectedCategory, setSelectedCategory] = useState(1);
-
-  // const onSelectCategory = category => {
-  //   //Fillter items
-  //   let TabList = categories.filter(a => a.categories.includes(category.id));
-  //   setSelectedCategory(TabList);
-  // };
-
+  const [viewMode, setViewMode] = useState(1);
   const renderItem = ({item}) => {
     return (
       <View
@@ -407,12 +398,13 @@ const TabView = () => {
             style={{
               height: '85%',
               width: '120%',
-              // borderBottomColor:
-              //   categories.id == item.id ? COLORS.primary : COLORS.secondary,
-              // borderBottomWidth: 3,
+
+              borderBottomColor: COLORS.primary,
+              borderBottomWidth: viewMode == item.id ? 3 : null,
               justifyContent: 'center',
               alignItems: 'center',
-            }}>
+            }}
+            onPress={() => setViewMode(item.id)}>
             <Text
               style={{
                 fontFamily: 'DMSans-Regular',
