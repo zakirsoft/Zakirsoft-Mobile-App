@@ -62,6 +62,46 @@ const AllCategories = [
     URL: 'https://loovum.com/',
   },
 ];
+const AllCategories2 = [
+  {
+    id: 1,
+    Img: images.loovum,
+    Category: 'Web Development',
+    Title: 'Loovum - ECommerce Project',
+    Description:
+      'Loovum is a daily boutique deal eCommerce website. We created this site in 2019. Since then, we are working with Loovum.com. Loovum has very high security and great speed in terms of site quality. .',
+    Roles:
+      'Website Design / Frontend Development / Backend Development / REST API Development',
+    ToolUsed:
+      'HTML / CSS / Bootstrap / JavaScript / Vue.js  / Nuxt.js / Webp Image Compression / PHP / Laravel  / MySQL / REST API',
+    URL: 'https://loovum.com/',
+  },
+  {
+    id: 2,
+    Img: images.FreelancerManagementSpa,
+    Category: 'SPA',
+    Title: 'Freelancer Management SPA',
+    Description:
+      'This is a freelancer management solution built with Laravel and Vue.js for Germany Company.',
+    Roles: 'Frontend Development / Backend Development / SPA Development',
+    ToolUsed:
+      'HTML / CSS / JavaScript / Vue.js / SPA / PHP / MySQL / Laravel / API',
+    URL: 'https://freelance.wcg.de/login',
+  },
+  {
+    id: 3,
+    Img: images.Cuckoos,
+    Category: 'PWA',
+    Title: 'Cuckoos - ECommerce Platform With Multi-Level Affiliate System',
+    Description:
+      'Cuckoos.shop is an online eCommerce platform with a multilevel Affiliate marketing feature. This is an Indian company with the target of MLM Business.',
+    Roles:
+      'Frontend Development / Backend Development / REST API Development / SMS API Integration',
+    ToolUsed:
+      'HTML / CSS / Bootstrap / JavaScript / Vue.js / Nuxt.js / PHP / Laravel / MySQL / REST API',
+    URL: 'https://cuckoos.shop/',
+  },
+];
 
 const All = () => {
   const renderItem = ({item}) => {
@@ -164,7 +204,7 @@ const WebDesign = () => {
   return (
     <View style={{flex: 1}}>
       <FlatList
-        data={AllCategories}
+        data={AllCategories2}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
@@ -272,7 +312,7 @@ const SPA = () => {
   return (
     <View style={{flex: 1}}>
       <FlatList
-        data={AllCategories}
+        data={AllCategories2}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
