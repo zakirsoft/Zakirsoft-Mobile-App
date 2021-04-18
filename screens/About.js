@@ -311,7 +311,7 @@ const About = ({navigation}) => {
     const NewsData = [
       {
         id: 1,
-        image: images.News,
+        image: images.News_1,
         title: 'We Just Redesign Our Website',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
@@ -319,7 +319,7 @@ const About = ({navigation}) => {
       },
       {
         id: 2,
-        image: images.News,
+        image: images.News_2,
         title: 'We Just Redesign Our Website',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
@@ -327,7 +327,7 @@ const About = ({navigation}) => {
       },
       {
         id: 3,
-        image: images.News,
+        image: images.News_3,
         title: 'We Just Redesign Our Website',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
@@ -397,7 +397,7 @@ const About = ({navigation}) => {
         <TechCart style={{height: 450, width: '100%', marginBottom: 80}}>
           {/* <View style={{justifyContent: 'center'}}> */}
           <Image
-            source={images.News}
+            source={images.News_1}
             resizeMode={'cover'}
             style={{
               height: 260,

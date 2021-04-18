@@ -30,10 +30,12 @@ const xd = require('../assets/images/technology/UIUX/xd.png');
 const figma = require('../assets/images/technology/UIUX/figma.png');
 const ps = require('../assets/images/technology/UIUX/ps.png');
 const loovum = require('../assets/images/Projects/loovum.png');
-const News = require('../assets/images/about/News.png');
+const News_1 = require('../assets/images/about/News.png');
 const FreelancerManagementSpa = require('../assets/images/Projects/FreelancerManagementSpa.png');
 const Cuckoos = require('../assets/images/Projects/Cuckoos.png');
 const Google = require('../assets/images/about/Google.png');
+const News_2 = require('../assets/images/about/News_1.jpg');
+const News_3 = require('../assets/images/about/News_2.jpg');
 
 export default {
   about_1,
@@ -68,7 +70,9 @@ export default {
   figma,
   ps,
   loovum,
-  News,
+  News_1,
+  News_2,
+  News_3,
   FreelancerManagementSpa,
   Cuckoos,
   Google,
