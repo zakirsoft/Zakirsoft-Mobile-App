@@ -368,7 +368,7 @@ const About = ({navigation}) => {
             </TouchableOpacity>
           </View>
         </View>
-        <TechCart style={{height: 450, width: '100%'}}>
+        <TechCart style={{height: 450, width: '100%', marginBottom: 80}}>
           {/* <View style={{justifyContent: 'center'}}> */}
           <Image
             source={images.News}
@@ -381,7 +381,7 @@ const About = ({navigation}) => {
             }}
           />
           {/* </View> */}
-          <View style={{marginTop: 26, marginLeft: 16}}>
+          <View style={{marginTop: 24, marginLeft: 16}}>
             <Text
               style={{
                 fontSize: 20,
@@ -395,7 +395,7 @@ const About = ({navigation}) => {
                 fontSize: SIZES.body3,
                 color: COLORS.secondary,
                 lineHeight: 24,
-                paddingTop: 15,
+                paddingTop: 8,
               }}>
               Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus
               egestas libero, nec porttitor augue leo sed mi.
@@ -413,13 +413,23 @@ const About = ({navigation}) => {
                     fontWeight: 'bold',
                     color: COLORS.primary,
                   }}>
-                  Launch Site
+                  Read More
                 </Text>
-                <View style={{justifyContent: 'center'}}>
+                <View
+                  style={{
+                    justifyContent: 'center',
+                    // alignItems: 'center',
+                    top: 1,
+                    marginLeft: 8,
+                  }}>
                   <Image
                     source={icons.RightArrow}
                     resizeMode={'contain'}
-                    style={{width: 16, height: 9, tintColor: COLORS.primary}}
+                    style={{
+                      width: 20,
+                      height: 11,
+                      tintColor: COLORS.primary,
+                    }}
                   />
                 </View>
               </View>
