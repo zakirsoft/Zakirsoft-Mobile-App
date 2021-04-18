@@ -101,6 +101,280 @@ const About = ({navigation}) => {
       </>
     );
   };
+  const renderTestimonial = () => {
+    const TestimonialData = [
+      {
+        id: 1,
+        text:
+          '"Zakir Soft has been the best web development company I have worked with. They have met or exceeded my expectations on every project… They have allowed me to bring all of my projects together under one roof and begin to develop an integrated product and code base that can be leveraged across all of my existing and forthcoming services."',
+        name: 'Caroline Aumeran',
+        position: 'Head of Product Development',
+        image: images.Google,
+      },
+      {
+        id: 2,
+        text:
+          '"Zakir Soft has been the best web development company I have worked with. They have met or exceeded my expectations on every project… They have allowed me to bring all of my projects together under one roof and begin to develop an integrated product and code base that can be leveraged across all of my existing and forthcoming services."',
+        name: 'Zakir Hossen',
+        position: 'CEO & Founder',
+        image: images.logo,
+      },
+    ];
+    const renderItem = ({item}) => {
+      return (
+        <View>
+          <TechCart
+            style={{
+              height: 310,
+              width: 350,
+              marginBottom: 50,
+              marginLeft: 22,
+              marginRight: 22,
+            }}>
+            <View style={{marginTop: 16, marginLeft: 16, marginRight: 16}}>
+              <Text
+                style={{
+                  fontSize: SIZES.body3,
+                  color: COLORS.secondary,
+                  lineHeight: 24,
+                }}>
+                {item.text}
+              </Text>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontFamily: 'DMSans-Regular',
+                  fontWeight: 'bold',
+                  marginTop: 16,
+                }}>
+                {item.name}
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    fontSize: 12,
+                    color: COLORS.secondary,
+                    lineHeight: 24,
+                  }}>
+                  {item.position}
+                </Text>
+                <Image
+                  source={item.image}
+                  resizeMode={'contain'}
+                  style={{height: 20, width: 64}}
+                />
+              </View>
+            </View>
+          </TechCart>
+        </View>
+      );
+    };
+
+    return (
+      <View style={{backgroundColor: '#E7EBEF'}}>
+        <View style={{}}>
+          <View
+            style={{
+              marginTop: 24,
+              flexDirection: 'row',
+              position: 'relative',
+              marginRight: 22,
+              marginLeft: 22,
+            }}>
+            <Text
+              style={{
+                fontSize: 28,
+                fontFamily: 'DMSans-Regular',
+                fontWeight: 'bold',
+              }}>
+              Clients Testimonial
+            </Text>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'stretch',
+                justifyContent: 'space-between',
+                marginLeft: 24,
+              }}>
+              <TouchableOpacity>
+                <View
+                  style={{
+                    height: 36,
+                    width: 36,
+                    borderRadius: 18,
+                    backgroundColor: COLORS.primary,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={icons.GoBack}
+                    style={{tintColor: COLORS.white, height: 16, width: 16}}
+                    resizeMode={'contain'}
+                  />
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <View
+                  style={{
+                    height: 36,
+                    width: 36,
+                    borderRadius: 18,
+                    backgroundColor: COLORS.white,
+                    marginLeft: 5,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={icons.GoForward}
+                    style={{tintColor: COLORS.black, height: 16, width: 16}}
+                    resizeMode={'contain'}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View>
+            <FlatList
+              data={TestimonialData}
+              renderItem={renderItem}
+              keyExtractor={item => {
+                item.id;
+              }}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              pagingEnabled={true}
+            />
+          </View>
+        </View>
+      </View>
+    );
+  };
+  const renderNews = () => {
+    return (
+      <View style={{marginRight: 22, marginLeft: 22}}>
+        <View
+          style={{
+            marginTop: 50,
+            flexDirection: 'row',
+            position: 'relative',
+          }}>
+          <Text
+            style={{
+              fontSize: 28,
+              fontFamily: 'DMSans-Regular',
+              fontWeight: 'bold',
+            }}>
+            Our Latest News
+          </Text>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'stretch',
+              justifyContent: 'space-between',
+              marginLeft: 56,
+            }}>
+            <TouchableOpacity>
+              <View
+                style={{
+                  height: 36,
+                  width: 36,
+                  borderRadius: 18,
+                  backgroundColor: COLORS.primary,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  source={icons.GoBack}
+                  style={{tintColor: COLORS.white, height: 16, width: 16}}
+                  resizeMode={'contain'}
+                />
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View
+                style={{
+                  height: 36,
+                  width: 36,
+                  borderRadius: 18,
+                  backgroundColor: COLORS.white,
+                  marginLeft: 5,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  source={icons.GoForward}
+                  style={{tintColor: COLORS.black, height: 16, width: 16}}
+                  resizeMode={'contain'}
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
+        </View>
+        <TechCart style={{height: 450, width: '100%'}}>
+          {/* <View style={{justifyContent: 'center'}}> */}
+          <Image
+            source={images.News}
+            resizeMode={'cover'}
+            style={{
+              height: 260,
+              width: '100%',
+              borderTopLeftRadius: 10,
+              borderTopRightRadius: 10,
+            }}
+          />
+          {/* </View> */}
+          <View style={{marginTop: 26, marginLeft: 16}}>
+            <Text
+              style={{
+                fontSize: 20,
+                fontFamily: 'DMSans-Regular',
+                fontWeight: 'bold',
+              }}>
+              We Just Redesign Our Website
+            </Text>
+            <Text
+              style={{
+                fontSize: SIZES.body3,
+                color: COLORS.secondary,
+                lineHeight: 24,
+                paddingTop: 15,
+              }}>
+              Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus
+              egestas libero, nec porttitor augue leo sed mi.
+            </Text>
+            <TouchableOpacity
+              style={{marginTop: 20}}
+              onPress={() => {
+                Linking.openURL('https://zakirsoft.com/');
+              }}>
+              <View style={{flexDirection: 'row'}}>
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontFamily: 'DMSans-Regular',
+                    fontWeight: 'bold',
+                    color: COLORS.primary,
+                  }}>
+                  Launch Site
+                </Text>
+                <View style={{justifyContent: 'center'}}>
+                  <Image
+                    source={icons.RightArrow}
+                    resizeMode={'contain'}
+                    style={{width: 16, height: 9, tintColor: COLORS.primary}}
+                  />
+                </View>
+              </View>
+            </TouchableOpacity>
+          </View>
+        </TechCart>
+      </View>
+    );
+  };
 
   const renderBody = ({navigation}) => {
     return (
@@ -154,231 +428,6 @@ const About = ({navigation}) => {
               Contact Us
             </Text>
           </PrimaryButton>
-        </View>
-        <View style={{backgroundColor: '#E7EBEF'}}>
-          <View style={{marginRight: 22, marginLeft: 22}}>
-            <View
-              style={{
-                marginTop: 24,
-                flexDirection: 'row',
-                position: 'relative',
-              }}>
-              <Text
-                style={{
-                  fontSize: 28,
-                  fontFamily: 'DMSans-Regular',
-                  fontWeight: 'bold',
-                }}>
-                Clients Testimonial
-              </Text>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'stretch',
-                  justifyContent: 'space-between',
-                  marginLeft: 24,
-                }}>
-                <TouchableOpacity>
-                  <View
-                    style={{
-                      height: 36,
-                      width: 36,
-                      borderRadius: 18,
-                      backgroundColor: COLORS.primary,
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                    }}>
-                    <Image
-                      source={icons.GoBack}
-                      style={{tintColor: COLORS.white, height: 16, width: 16}}
-                      resizeMode={'contain'}
-                    />
-                  </View>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                  <View
-                    style={{
-                      height: 36,
-                      width: 36,
-                      borderRadius: 18,
-                      backgroundColor: COLORS.white,
-                      marginLeft: 5,
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                    }}>
-                    <Image
-                      source={icons.GoForward}
-                      style={{tintColor: COLORS.black, height: 16, width: 16}}
-                      resizeMode={'contain'}
-                    />
-                  </View>
-                </TouchableOpacity>
-              </View>
-            </View>
-            <TechCart style={{height: 310, marginBottom: 50}}>
-              <View style={{marginTop: 16, marginLeft: 16, marginRight: 16}}>
-                <Text
-                  style={{
-                    fontSize: SIZES.body3,
-                    color: COLORS.secondary,
-                    lineHeight: 24,
-                  }}>
-                  "Zakir Soft has been the best web development company I have
-                  worked with. They have met or exceeded my expectations on
-                  every project… They have allowed me to bring all of my
-                  projects together under one roof and begin to develop an
-                  integrated product and code base that can be leveraged across
-                  all of my existing and forthcoming services."
-                </Text>
-                <Text
-                  style={{
-                    fontSize: 16,
-                    fontFamily: 'DMSans-Regular',
-                    fontWeight: 'bold',
-                    marginTop: 16,
-                  }}>
-                  Caroline Aumeran
-                </Text>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                  }}>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      color: COLORS.secondary,
-                      lineHeight: 24,
-                    }}>
-                    Head of Product Development
-                  </Text>
-                  <Image
-                    source={images.Google}
-                    resizeMode={'contain'}
-                    style={{height: 20, width: 64}}
-                  />
-                </View>
-              </View>
-            </TechCart>
-          </View>
-        </View>
-        <View style={{marginRight: 22, marginLeft: 22}}>
-          <View
-            style={{
-              marginTop: 50,
-              flexDirection: 'row',
-              position: 'relative',
-            }}>
-            <Text
-              style={{
-                fontSize: 28,
-                fontFamily: 'DMSans-Regular',
-                fontWeight: 'bold',
-              }}>
-              Our Latest News
-            </Text>
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'stretch',
-                justifyContent: 'space-between',
-                marginLeft: 56,
-              }}>
-              <TouchableOpacity>
-                <View
-                  style={{
-                    height: 36,
-                    width: 36,
-                    borderRadius: 18,
-                    backgroundColor: COLORS.primary,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}>
-                  <Image
-                    source={icons.GoBack}
-                    style={{tintColor: COLORS.white, height: 16, width: 16}}
-                    resizeMode={'contain'}
-                  />
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity>
-                <View
-                  style={{
-                    height: 36,
-                    width: 36,
-                    borderRadius: 18,
-                    backgroundColor: COLORS.white,
-                    marginLeft: 5,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}>
-                  <Image
-                    source={icons.GoForward}
-                    style={{tintColor: COLORS.black, height: 16, width: 16}}
-                    resizeMode={'contain'}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-          <TechCart style={{height: 450, width: '100%'}}>
-            {/* <View style={{justifyContent: 'center'}}> */}
-            <Image
-              source={images.News}
-              resizeMode={'cover'}
-              style={{
-                height: 260,
-                width: '100%',
-                borderTopLeftRadius: 10,
-                borderTopRightRadius: 10,
-              }}
-            />
-            {/* </View> */}
-            <View style={{marginTop: 26, marginLeft: 16}}>
-              <Text
-                style={{
-                  fontSize: 20,
-                  fontFamily: 'DMSans-Regular',
-                  fontWeight: 'bold',
-                }}>
-                We Just Redesign Our Website
-              </Text>
-              <Text
-                style={{
-                  fontSize: SIZES.body3,
-                  color: COLORS.secondary,
-                  lineHeight: 24,
-                  paddingTop: 15,
-                }}>
-                Pellentesque sagittis, quam vel tincidunt ullamcorper, massa
-                purus egestas libero, nec porttitor augue leo sed mi.
-              </Text>
-              <TouchableOpacity
-                style={{marginTop: 20}}
-                onPress={() => {
-                  Linking.openURL('https://zakirsoft.com/');
-                }}>
-                <View style={{flexDirection: 'row'}}>
-                  <Text
-                    style={{
-                      fontSize: 16,
-                      fontFamily: 'DMSans-Regular',
-                      fontWeight: 'bold',
-                      color: COLORS.primary,
-                    }}>
-                    Launch Site
-                  </Text>
-                  <View style={{justifyContent: 'center'}}>
-                    <Image
-                      source={icons.RightArrow}
-                      resizeMode={'contain'}
-                      style={{width: 16, height: 9, tintColor: COLORS.primary}}
-                    />
-                  </View>
-                </View>
-              </TouchableOpacity>
-            </View>
-          </TechCart>
         </View>
       </View>
     );
@@ -446,6 +495,8 @@ const About = ({navigation}) => {
       {renderFlatlist()}
       {/* {renderDots()} */}
       {renderBody({navigation})}
+      {renderTestimonial()}
+      {renderNews()}
       {renderBottom()}
     </ScrollView>
   );
