@@ -476,6 +476,7 @@ const About = ({navigation}) => {
                 color: COLORS.secondary,
                 lineHeight: 24,
                 paddingTop: 4,
+                textAlign: 'center',
               }}>
               We are open to Hire skilled Professionals. send your CV to us and
               get hried.
