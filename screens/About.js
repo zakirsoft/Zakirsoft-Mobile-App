@@ -315,7 +315,12 @@ const About = ({navigation}) => {
             <Image
               source={images.News}
               resizeMode={'cover'}
-              style={{height: 260, width: '100%', borderRadius: 10}}
+              style={{
+                height: 260,
+                width: '100%',
+                borderTopLeftRadius: 10,
+                borderTopRightRadius: 10,
+              }}
             />
             {/* </View> */}
             <View style={{marginTop: 26, marginLeft: 16}}>
