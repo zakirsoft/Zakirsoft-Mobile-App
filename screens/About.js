@@ -101,6 +101,62 @@ const About = ({navigation}) => {
       </>
     );
   };
+  const renderBody = ({navigation}) => {
+    return (
+      <View style={{marginTop: 24}}>
+        <View style={{marginRight: 22, marginLeft: 22, marginBottom: 50}}>
+          <View style={{marginBottom: 12}}>
+            <Text
+              style={{
+                fontSize: 20,
+                fontFamily: 'DMSans-Regular',
+                fontWeight: 'bold',
+              }}>
+              About us
+            </Text>
+          </View>
+          <View>
+            <Text
+              style={{
+                fontSize: SIZES.body3,
+                color: COLORS.secondary,
+                lineHeight: 24,
+              }}>
+              Zakir Soft is a Software company and Software Development Training
+              Institute. We develop Softwares for your business and we also
+              provide quality software training in Adabor Since 2020. We have
+              passionate teams like Full Stack Laravel Developer, Android
+              Developer, UI/UX Designer. We have management system softwares for
+              the local market.
+            </Text>
+            <Text
+              style={{
+                fontSize: SIZES.body3,
+                color: COLORS.secondary,
+                lineHeight: 24,
+                paddingTop: 15,
+              }}>
+              we also have eCommerce systems for your online business.
+            </Text>
+          </View>
+
+          <PrimaryButton
+            style={{marginTop: 20}}
+            // onPress={() => navigation.navigate('Contact')}
+            onPress={() => navigation.navigate('Contact')}>
+            <Text
+              style={{
+                fontSize: SIZES.body3,
+                fontWeight: 'bold',
+                color: COLORS.white,
+              }}>
+              Contact Us
+            </Text>
+          </PrimaryButton>
+        </View>
+      </View>
+    );
+  };
   const renderTestimonial = () => {
     const TestimonialData = [
       {
@@ -241,9 +297,7 @@ const About = ({navigation}) => {
             <FlatList
               data={TestimonialData}
               renderItem={renderItem}
-              keyExtractor={item => {
-                item.id;
-              }}
+              keyExtractor={item => `${item.id}`}
               horizontal
               showsHorizontalScrollIndicator={false}
               pagingEnabled={true}
@@ -376,62 +430,6 @@ const About = ({navigation}) => {
     );
   };
 
-  const renderBody = ({navigation}) => {
-    return (
-      <View style={{marginTop: 24}}>
-        <View style={{marginRight: 22, marginLeft: 22, marginBottom: 50}}>
-          <View style={{marginBottom: 12}}>
-            <Text
-              style={{
-                fontSize: 20,
-                fontFamily: 'DMSans-Regular',
-                fontWeight: 'bold',
-              }}>
-              About us
-            </Text>
-          </View>
-          <View>
-            <Text
-              style={{
-                fontSize: SIZES.body3,
-                color: COLORS.secondary,
-                lineHeight: 24,
-              }}>
-              Zakir Soft is a Software company and Software Development Training
-              Institute. We develop Softwares for your business and we also
-              provide quality software training in Adabor Since 2020. We have
-              passionate teams like Full Stack Laravel Developer, Android
-              Developer, UI/UX Designer. We have management system softwares for
-              the local market.
-            </Text>
-            <Text
-              style={{
-                fontSize: SIZES.body3,
-                color: COLORS.secondary,
-                lineHeight: 24,
-                paddingTop: 15,
-              }}>
-              we also have eCommerce systems for your online business.
-            </Text>
-          </View>
-
-          <PrimaryButton
-            style={{marginTop: 20}}
-            // onPress={() => navigation.navigate('Contact')}
-            onPress={() => navigation.navigate('Contact')}>
-            <Text
-              style={{
-                fontSize: SIZES.body3,
-                fontWeight: 'bold',
-                color: COLORS.white,
-              }}>
-              Contact Us
-            </Text>
-          </PrimaryButton>
-        </View>
-      </View>
-    );
-  };
   const renderBottom = () => {
     return (
       <View
