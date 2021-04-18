@@ -31,8 +31,6 @@ const AboutImgData = [
 ];
 
 const About = ({navigation}) => {
-  const scrollX = new Animated.Value(0);
-
   const renderItem = ({item}) => (
     <View
       style={{
@@ -320,7 +318,7 @@ const About = ({navigation}) => {
       {
         id: 2,
         image: images.News_2,
-        title: 'We Just Redesign Our Website',
+        title: 'Zakirsoft hired new Designer',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
         link: 'https://zakirsoft.com/',
@@ -328,19 +326,109 @@ const About = ({navigation}) => {
       {
         id: 3,
         image: images.News_3,
-        title: 'We Just Redesign Our Website',
+        title: 'We announced 100M invesment',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
         link: 'https://zakirsoft.com/',
       },
     ];
+    const [active, setActive] = useState(0);
+    const change = ({nativeEvent}) => {
+      const slide = Math.ceil(
+        nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width,
+      );
+      if (slide !== active) {
+        setActive(slide);
+      }
+    };
+    const renderItem = ({item}) => {
+      return (
+        <TechCart
+          style={{
+            height: 450,
+            width: 350,
+            marginBottom: 20,
+            marginLeft: 22,
+            marginRight: 22,
+          }}>
+          {/* <View style={{justifyContent: 'center'}}> */}
+          <Image
+            source={item.image}
+            resizeMode={'cover'}
+            style={{
+              height: 260,
+              width: '100%',
+              borderTopLeftRadius: 10,
+              borderTopRightRadius: 10,
+            }}
+          />
+          {/* </View> */}
+          <View style={{marginTop: 24, marginLeft: 16}}>
+            <Text
+              style={{
+                fontSize: 20,
+                fontFamily: 'DMSans-Regular',
+                fontWeight: 'bold',
+              }}>
+              {item.title}
+            </Text>
+            <Text
+              style={{
+                fontSize: SIZES.body3,
+                color: COLORS.secondary,
+                lineHeight: 24,
+                paddingTop: 8,
+              }}>
+              {item.description}
+            </Text>
+            <TouchableOpacity
+              style={{marginTop: 20}}
+              onPress={() => {
+                Linking.openURL(item.link);
+              }}>
+              <View style={{flexDirection: 'row'}}>
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontFamily: 'DMSans-Regular',
+                    fontWeight: 'bold',
+                    color: COLORS.primary,
+                  }}>
+                  Read More
+                </Text>
+                <View
+                  style={{
+                    justifyContent: 'center',
+                    // alignItems: 'center',
+                    top: 1,
+                    marginLeft: 8,
+                  }}>
+                  <Image
+                    source={icons.RightArrow}
+                    resizeMode={'contain'}
+                    style={{
+                      width: 20,
+                      height: 11,
+                      tintColor: COLORS.primary,
+                    }}
+                  />
+                </View>
+              </View>
+            </TouchableOpacity>
+          </View>
+        </TechCart>
+      );
+    };
+
     return (
-      <View style={{marginRight: 22, marginLeft: 22}}>
+      <View style={{}}>
         <View
           style={{
             marginTop: 50,
             flexDirection: 'row',
             position: 'relative',
+            marginRight: 22,
+            marginLeft: 22,
           }}>
           <Text
             style={{
@@ -394,74 +482,35 @@ const About = ({navigation}) => {
             </TouchableOpacity>
           </View>
         </View>
-        <TechCart style={{height: 450, width: '100%', marginBottom: 80}}>
-          {/* <View style={{justifyContent: 'center'}}> */}
-          <Image
-            source={images.News_1}
-            resizeMode={'cover'}
-            style={{
-              height: 260,
-              width: '100%',
-              borderTopLeftRadius: 10,
-              borderTopRightRadius: 10,
-            }}
+        <View>
+          <FlatList
+            data={NewsData}
+            renderItem={renderItem}
+            keyExtractor={item => `${item.id}`}
+            horizontal
+            onScroll={change}
+            showsHorizontalScrollIndicator={false}
+            pagingEnabled={true}
           />
-          {/* </View> */}
-          <View style={{marginTop: 24, marginLeft: 16}}>
-            <Text
-              style={{
-                fontSize: 20,
-                fontFamily: 'DMSans-Regular',
-                fontWeight: 'bold',
-              }}>
-              We Just Redesign Our Website
-            </Text>
-            <Text
-              style={{
-                fontSize: SIZES.body3,
-                color: COLORS.secondary,
-                lineHeight: 24,
-                paddingTop: 8,
-              }}>
-              Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus
-              egestas libero, nec porttitor augue leo sed mi.
-            </Text>
-            <TouchableOpacity
-              style={{marginTop: 20}}
-              onPress={() => {
-                Linking.openURL('https://zakirsoft.com/');
-              }}>
-              <View style={{flexDirection: 'row'}}>
-                <Text
-                  style={{
-                    fontSize: 16,
-                    fontFamily: 'DMSans-Regular',
-                    fontWeight: 'bold',
-                    color: COLORS.primary,
-                  }}>
-                  Read More
-                </Text>
-                <View
-                  style={{
-                    justifyContent: 'center',
-                    // alignItems: 'center',
-                    top: 1,
-                    marginLeft: 8,
-                  }}>
-                  <Image
-                    source={icons.RightArrow}
-                    resizeMode={'contain'}
-                    style={{
-                      width: 20,
-                      height: 11,
-                      tintColor: COLORS.primary,
-                    }}
-                  />
-                </View>
-              </View>
-            </TouchableOpacity>
+          <View
+            style={{
+              flexDirection: 'row',
+              // position: 'relative',
+              marginBottom: 50,
+              alignSelf: 'center',
+            }}>
+            {NewsData.map((i, k) => (
+              <Text
+                key={k}
+                style={{
+                  color: k == active ? COLORS.primary : '#C4D6FB',
+                  marginRight: 8,
+                }}>
+                ⬤
+              </Text>
+            ))}
           </View>
-        </TechCart>
+        </View>
       </View>
     );
   };
