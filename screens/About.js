@@ -105,7 +105,7 @@ const About = ({navigation}) => {
   const renderBody = ({navigation}) => {
     return (
       <View style={{marginTop: 24}}>
-        <View style={{marginRight: 22, marginLeft: 22}}>
+        <View style={{marginRight: 22, marginLeft: 22, marginBottom: 50}}>
           <View style={{marginBottom: 12}}>
             <Text
               style={{
@@ -155,104 +155,106 @@ const About = ({navigation}) => {
             </Text>
           </PrimaryButton>
         </View>
-        <View style={{marginRight: 22, marginLeft: 22}}>
-          <View
-            style={{
-              marginTop: 24,
-              flexDirection: 'row',
-              position: 'relative',
-            }}>
-            <Text
-              style={{
-                fontSize: 28,
-                fontFamily: 'DMSans-Regular',
-                fontWeight: 'bold',
-              }}>
-              Clients Testimonial
-            </Text>
+        <View style={{backgroundColor: '#E7EBEF'}}>
+          <View style={{marginRight: 22, marginLeft: 22}}>
             <View
               style={{
+                marginTop: 24,
                 flexDirection: 'row',
-                alignItems: 'stretch',
-                justifyContent: 'space-between',
-                marginLeft: 24,
+                position: 'relative',
               }}>
-              <TouchableOpacity>
-                <View
-                  style={{
-                    height: 36,
-                    width: 36,
-                    borderRadius: 18,
-                    backgroundColor: COLORS.primary,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}>
-                  <Image
-                    source={icons.GoBack}
-                    style={{tintColor: COLORS.white, height: 16, width: 16}}
-                    resizeMode={'contain'}
-                  />
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity>
-                <View
-                  style={{
-                    height: 36,
-                    width: 36,
-                    borderRadius: 18,
-                    backgroundColor: COLORS.white,
-                    marginLeft: 5,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}>
-                  <Image
-                    source={icons.GoForward}
-                    style={{tintColor: COLORS.black, height: 16, width: 16}}
-                    resizeMode={'contain'}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-          <TechCart style={{height: 310}}>
-            <View style={{marginTop: 16, marginLeft: 16, marginRight: 16}}>
               <Text
                 style={{
-                  fontSize: SIZES.body3,
-                  color: COLORS.secondary,
-                  lineHeight: 24,
-                }}>
-                "Zakir Soft has been the best web development company I have
-                worked with. They have met or exceeded my expectations on every
-                project… They have allowed me to bring all of my projects
-                together under one roof and begin to develop an integrated
-                product and code base that can be leveraged across all of my
-                existing and forthcoming services.."
-              </Text>
-              <Text
-                style={{
-                  fontSize: 16,
+                  fontSize: 28,
                   fontFamily: 'DMSans-Regular',
                   fontWeight: 'bold',
-                  marginTop: 16,
                 }}>
-                Caroline Aumeran
+                Clients Testimonial
               </Text>
-              <Text
+              <View
                 style={{
-                  fontSize: SIZES.body3,
-                  color: COLORS.secondary,
-                  lineHeight: 24,
+                  flexDirection: 'row',
+                  alignItems: 'stretch',
+                  justifyContent: 'space-between',
+                  marginLeft: 24,
                 }}>
-                Head of Product Development
-              </Text>
+                <TouchableOpacity>
+                  <View
+                    style={{
+                      height: 36,
+                      width: 36,
+                      borderRadius: 18,
+                      backgroundColor: COLORS.primary,
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}>
+                    <Image
+                      source={icons.GoBack}
+                      style={{tintColor: COLORS.white, height: 16, width: 16}}
+                      resizeMode={'contain'}
+                    />
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                  <View
+                    style={{
+                      height: 36,
+                      width: 36,
+                      borderRadius: 18,
+                      backgroundColor: COLORS.white,
+                      marginLeft: 5,
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}>
+                    <Image
+                      source={icons.GoForward}
+                      style={{tintColor: COLORS.black, height: 16, width: 16}}
+                      resizeMode={'contain'}
+                    />
+                  </View>
+                </TouchableOpacity>
+              </View>
             </View>
-          </TechCart>
+            <TechCart style={{height: 310, marginBottom: 50}}>
+              <View style={{marginTop: 16, marginLeft: 16, marginRight: 16}}>
+                <Text
+                  style={{
+                    fontSize: SIZES.body3,
+                    color: COLORS.secondary,
+                    lineHeight: 24,
+                  }}>
+                  "Zakir Soft has been the best web development company I have
+                  worked with. They have met or exceeded my expectations on
+                  every project… They have allowed me to bring all of my
+                  projects together under one roof and begin to develop an
+                  integrated product and code base that can be leveraged across
+                  all of my existing and forthcoming services.."
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontFamily: 'DMSans-Regular',
+                    fontWeight: 'bold',
+                    marginTop: 16,
+                  }}>
+                  Caroline Aumeran
+                </Text>
+                <Text
+                  style={{
+                    fontSize: SIZES.body3,
+                    color: COLORS.secondary,
+                    lineHeight: 24,
+                  }}>
+                  Head of Product Development
+                </Text>
+              </View>
+            </TechCart>
+          </View>
         </View>
         <View style={{marginRight: 22, marginLeft: 22}}>
           <View
             style={{
-              marginTop: 24,
+              marginTop: 50,
               flexDirection: 'row',
               position: 'relative',
             }}>
