@@ -118,7 +118,7 @@ const Projects = ({navigation}) => {
                 <Image
                   source={item.Img}
                   resizeMode={'contain'}
-                  style={{height: 260, width: '100%'}}
+                  style={{height: 260, width: '100%', borderRadius: 10}}
                 />
 
                 <View style={{paddingTop: 16}}>
@@ -172,7 +172,7 @@ const Projects = ({navigation}) => {
                 <Image
                   source={item.Img}
                   resizeMode={'contain'}
-                  style={{height: 260, width: '100%'}}
+                  style={{height: 260, width: '100%', borderRadius: 10}}
                 />
 
                 <View style={{paddingTop: 16}}>
@@ -226,7 +226,7 @@ const Projects = ({navigation}) => {
                 <Image
                   source={item.Img}
                   resizeMode={'contain'}
-                  style={{height: 260, width: '100%'}}
+                  style={{height: 260, width: '100%', borderRadius: 10}}
                 />
 
                 <View style={{paddingTop: 16}}>
@@ -280,7 +280,7 @@ const Projects = ({navigation}) => {
                 <Image
                   source={item.Img}
                   resizeMode={'contain'}
-                  style={{height: 260, width: '100%'}}
+                  style={{height: 260, width: '100%', borderRadius: 10}}
                 />
 
                 <View style={{paddingTop: 16}}>
@@ -334,7 +334,7 @@ const Projects = ({navigation}) => {
                 <Image
                   source={item.Img}
                   resizeMode={'contain'}
-                  style={{height: 260, width: '100%'}}
+                  style={{height: 260, width: '100%', borderRadius: 10}}
                 />
 
                 <View style={{paddingTop: 16}}>
