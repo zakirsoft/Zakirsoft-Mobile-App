@@ -33,6 +33,7 @@ const loovum = require('../assets/images/Projects/loovum.png');
 const News = require('../assets/images/about/News.png');
 const FreelancerManagementSpa = require('../assets/images/Projects/FreelancerManagementSpa.png');
 const Cuckoos = require('../assets/images/Projects/Cuckoos.png');
+const Google = require('../assets/images/about/Google.png');
 
 export default {
   about_1,
@@ -70,4 +71,5 @@ export default {
   News,
   FreelancerManagementSpa,
   Cuckoos,
+  Google,
 };

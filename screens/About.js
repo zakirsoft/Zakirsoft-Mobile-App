@@ -228,7 +228,7 @@ const About = ({navigation}) => {
                   every project… They have allowed me to bring all of my
                   projects together under one roof and begin to develop an
                   integrated product and code base that can be leveraged across
-                  all of my existing and forthcoming services.."
+                  all of my existing and forthcoming services."
                 </Text>
                 <Text
                   style={{
@@ -239,14 +239,25 @@ const About = ({navigation}) => {
                   }}>
                   Caroline Aumeran
                 </Text>
-                <Text
+                <View
                   style={{
-                    fontSize: SIZES.body3,
-                    color: COLORS.secondary,
-                    lineHeight: 24,
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
                   }}>
-                  Head of Product Development
-                </Text>
+                  <Text
+                    style={{
+                      fontSize: 12,
+                      color: COLORS.secondary,
+                      lineHeight: 24,
+                    }}>
+                    Head of Product Development
+                  </Text>
+                  <Image
+                    source={images.Google}
+                    resizeMode={'contain'}
+                    style={{height: 20, width: 64}}
+                  />
+                </View>
               </View>
             </TechCart>
           </View>
