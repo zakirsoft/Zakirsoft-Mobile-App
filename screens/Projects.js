@@ -470,7 +470,7 @@ const Projects = ({navigation}) => {
 
     return (
       <View style={{flex: 1}}>
-        <View style={{height: '5%', backgroundColor: COLORS.ScreenColor}}>
+        <View style={{height: 44, backgroundColor: COLORS.ScreenColor}}>
           <View>{flartlist()}</View>
         </View>
         <View style={{flex: 1}}>
