@@ -308,6 +308,32 @@ const About = ({navigation}) => {
     );
   };
   const renderNews = () => {
+    const NewsData = [
+      {
+        id: 1,
+        image: images.News,
+        title: 'We Just Redesign Our Website',
+        description:
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+        link: 'https://zakirsoft.com/',
+      },
+      {
+        id: 2,
+        image: images.News,
+        title: 'We Just Redesign Our Website',
+        description:
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+        link: 'https://zakirsoft.com/',
+      },
+      {
+        id: 3,
+        image: images.News,
+        title: 'We Just Redesign Our Website',
+        description:
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+        link: 'https://zakirsoft.com/',
+      },
+    ];
     return (
       <View style={{marginRight: 22, marginLeft: 22}}>
         <View
@@ -478,7 +504,7 @@ const About = ({navigation}) => {
                 paddingTop: 4,
                 textAlign: 'center',
               }}>
-              We are open to Hire skilled Professionals. send your CV to us and
+              We are open to hire skilled professionals send your CV to us and
               get hried.
             </Text>
           </View>
