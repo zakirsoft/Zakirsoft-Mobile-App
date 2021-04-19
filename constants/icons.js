@@ -12,6 +12,10 @@ export const Call = require('../assets/icons/call.png');
 export const Message = require('../assets/icons/Message.png');
 export const pointer = require('../assets/icons/pointer.png');
 export const placeholder = require('../assets/icons/placeholder.png');
+export const facebook = require('../assets/icons/social/facebook.png');
+export const github = require('../assets/icons/social/github.png');
+export const linkdin = require('../assets/icons/social/linkdin.png');
+export const twitter = require('../assets/icons/social/twitter.png');
 
 export default {
   Home,
@@ -28,4 +32,8 @@ export default {
   Message,
   pointer,
   placeholder,
+  facebook,
+  github,
+  linkdin,
+  twitter,
 };
