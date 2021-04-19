@@ -251,7 +251,12 @@ const NewsDetails = ({route, navigation}) => {
           }}>
           {longDescription}
         </Text>
-        <View style={{marginTop: 24}}>
+        <View
+          style={{
+            marginTop: 24,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+          }}>
           <PrimaryButton
             style={{width: 110}}
             onPress={() => navigation.navigate('Contact')}>
@@ -264,7 +269,36 @@ const NewsDetails = ({route, navigation}) => {
               Contact
             </Text>
           </PrimaryButton>
-          <View></View>
+          <View style={{flexDirection: 'row'}}>
+            <TouchableOpacity>
+              <Image
+                source={icons.facebook}
+                resizeMode={'contain'}
+                style={{height: 40, width: 40, marginLeft: 4}}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image
+                source={icons.twitter}
+                resizeMode={'contain'}
+                style={{height: 40, width: 40, marginLeft: 4}}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image
+                source={icons.linkdin}
+                resizeMode={'contain'}
+                style={{height: 40, width: 40, marginLeft: 4}}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image
+                source={icons.github}
+                resizeMode={'contain'}
+                style={{height: 40, width: 40, marginLeft: 4}}
+              />
+            </TouchableOpacity>
+          </View>
         </View>
         {renderNews()}
       </View>
