@@ -313,6 +313,8 @@ const About = ({navigation}) => {
         title: 'We Just Redesign Our Website',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+        longDescription:
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
         link: 'https://zakirsoft.com/',
       },
       {
@@ -321,6 +323,8 @@ const About = ({navigation}) => {
         title: 'Zakirsoft hired new Designer',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+        longDescription:
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
         link: 'https://zakirsoft.com/',
       },
       {
@@ -329,6 +333,8 @@ const About = ({navigation}) => {
         title: 'We announced 100M invesment',
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+        longDescription:
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
         link: 'https://zakirsoft.com/',
       },
     ];
@@ -384,7 +390,7 @@ const About = ({navigation}) => {
             <TouchableOpacity
               style={{marginTop: 20}}
               onPress={() => {
-                Linking.openURL(item.link);
+                navigation.navigate('NewsDetails', item);
               }}>
               <View style={{flexDirection: 'row'}}>
                 <Text
