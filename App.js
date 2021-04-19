@@ -19,6 +19,7 @@ import Tabs from './navigation/Tabs';
 import {COLORS, icons, images} from './constants';
 import {Logo} from './Styles/Screen';
 import Onboarding from './screens/Onboarding';
+import NewsDetails from './screens/NewsDetails';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -110,6 +111,26 @@ const App = () => {
                     resizeMode={'contain'}
                     style={{height: 15, width: 30, tintColor: COLORS.black}}
                   />
+                ),
+              }}
+            />
+            <Stack.Screen
+              name="NewsDetails"
+              component={NewsDetails}
+              options={{
+                headerStyle: {
+                  // shadowColor: COLORS.white,
+                  elevation: 0,
+                  backgroundColor: COLORS.ScreenColor,
+                },
+                headerTitle: false,
+                headerLeft: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
                 ),
               }}
             />
@@ -246,6 +267,26 @@ const App = () => {
                     resizeMode={'contain'}
                     style={{height: 15, width: 30, tintColor: COLORS.black}}
                   />
+                ),
+              }}
+            />
+            <Stack.Screen
+              name="NewsDetails"
+              component={NewsDetails}
+              options={{
+                headerStyle: {
+                  // shadowColor: COLORS.white,
+                  elevation: 0,
+                  backgroundColor: COLORS.ScreenColor,
+                },
+                headerTitle: false,
+                headerLeft: () => (
+                  <View style={{margin: 24}}>
+                    <Image
+                      source={images.logo}
+                      style={{height: 24, width: 120}}
+                    />
+                  </View>
                 ),
               }}
             />
