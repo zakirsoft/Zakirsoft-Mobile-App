@@ -18,6 +18,7 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import {ProjectDetails} from '../screens';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
+import Header from '../components/Header';
 
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
@@ -480,7 +481,12 @@ const Projects = ({navigation}) => {
     );
   };
 
-  return <View style={{flex: 1}}>{TabView()}</View>;
+  return (
+    <>
+      <Header />
+      <View style={{flex: 1}}>{TabView()}</View>
+    </>
+  );
 };
 
 export default Projects;

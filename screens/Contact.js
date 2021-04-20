@@ -12,6 +12,8 @@ import {COLORS, icons} from '../constants';
 import {PrimaryButton} from '../Styles/Screen';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import call from 'react-native-phone-call';
+import Header from '../components/Header';
+import ContactHeader from '../components/ContactHeader';
 
 const Contact = () => {
   // useEffect(() => {
@@ -20,7 +22,7 @@ const Contact = () => {
 
   const renderMap = () => {
     return (
-      <View style={{height: 397}}>
+      <View style={{height: 397, marginTop: 10}}>
         <MapView
           initialRegion={{
             latitude: 23.774905,
@@ -244,10 +246,13 @@ const Contact = () => {
   );
 
   return (
-    <ScrollView>
-      {renderMap()}
-      {renderInfo()}
-    </ScrollView>
+    <>
+      <ContactHeader />
+      <ScrollView style={{backgroundColor: COLORS.ScreenColor}}>
+        {renderMap()}
+        {renderInfo()}
+      </ScrollView>
+    </>
   );
 };
 

@@ -35,7 +35,7 @@ const LiveProjects = () => {
 
   const renderItem = ({item}) => {
     return (
-      <View>
+      <View style={{backgroundColor: COLORS.ScreenColor}}>
         <View
           style={{
             marginTop: 80,

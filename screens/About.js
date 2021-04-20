@@ -11,6 +11,7 @@ import {
   Linking,
   ScrollView,
 } from 'react-native';
+import Header from '../components/Header';
 import {COLORS, images, SIZES, FONTS, icons} from '../constants';
 import {Screen, Logo, PrimaryButton, TechCart} from '../Styles/Screen';
 
@@ -626,14 +627,17 @@ const About = ({navigation}) => {
   };
 
   return (
-    <ScrollView style={{backgroundColor: COLORS.ScreenColor}}>
-      {renderFlatlist()}
-      {/* {renderDots()} */}
-      {renderBody({navigation})}
-      {renderTestimonial()}
-      {renderNews()}
-      {renderBottom()}
-    </ScrollView>
+    <>
+      <Header />
+      <ScrollView style={{backgroundColor: COLORS.ScreenColor}}>
+        {renderFlatlist()}
+        {/* {renderDots()} */}
+        {renderBody({navigation})}
+        {renderTestimonial()}
+        {renderNews()}
+        {renderBottom()}
+      </ScrollView>
+    </>
   );
 };
 

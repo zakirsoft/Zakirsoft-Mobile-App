@@ -40,17 +40,10 @@ const App = () => {
     return null;
   } else if (isFirstLaunch === true) {
     return (
-      // <NavigationContainer>
-      //   <Stack.Navigator screenOptions={{headerShown: false}}>
-      //     <Stack.Screen name="Onboarding" component={Onboarding} />
-      //     <Stack.Screen name="Home" component={Tabs} />
-      //   </Stack.Navigator>
-      // </NavigationContainer>
-
       <>
         <NavigationContainer>
           <Stack.Navigator
-            screenOptions={{headerShown: true}}
+            screenOptions={{headerShown: false}}
             initialRouteName={Onboarding}>
             <Stack.Screen
               name="Onboarding"
@@ -68,6 +61,7 @@ const App = () => {
                   elevation: 0,
                   backgroundColor: COLORS.ScreenColor,
                 },
+
                 headerTitle: false,
                 headerLeft: () => (
                   <View style={{margin: 24}}>
@@ -88,6 +82,7 @@ const App = () => {
                   elevation: 0,
                   backgroundColor: COLORS.ScreenColor,
                 },
+                headerShown: true,
                 headerTitle: false,
                 headerRight: () => (
                   <View style={{margin: 24}}>
@@ -123,6 +118,7 @@ const App = () => {
                   elevation: 0,
                   backgroundColor: COLORS.ScreenColor,
                 },
+                headerShown: true,
                 headerTitle: false,
                 headerLeft: () => (
                   <View style={{margin: 24}}>
@@ -143,6 +139,7 @@ const App = () => {
                   elevation: 0,
                   backgroundColor: COLORS.ScreenColor,
                 },
+                headerShown: true,
                 headerTitle: false,
                 headerRight: () => (
                   <View style={{margin: 24}}>
@@ -178,6 +175,7 @@ const App = () => {
                   elevation: 0,
                   backgroundColor: COLORS.ScreenColor,
                 },
+                headerShown: true,
                 headerTitle: false,
                 headerRight: () => (
                   <View style={{margin: 24}}>
@@ -213,7 +211,7 @@ const App = () => {
       <>
         <NavigationContainer>
           <Stack.Navigator
-            screenOptions={{headerShown: true}}
+            screenOptions={{headerShown: false}}
             initialRouteName={Home}>
             <Stack.Screen
               name="Home"
@@ -244,6 +242,7 @@ const App = () => {
                   elevation: 0,
                   backgroundColor: COLORS.ScreenColor,
                 },
+                headerShown: true,
                 headerTitle: false,
                 headerRight: () => (
                   <View style={{margin: 24}}>
@@ -279,6 +278,7 @@ const App = () => {
                   elevation: 0,
                   backgroundColor: COLORS.ScreenColor,
                 },
+                headerShown: true,
                 headerTitle: false,
                 headerLeft: () => (
                   <View style={{margin: 24}}>
@@ -316,6 +316,7 @@ const App = () => {
                     />
                   </View>
                 ),
+                headerShown: true,
                 headerBackImage: () => (
                   <Image
                     source={icons.GoBack}
@@ -343,6 +344,7 @@ const App = () => {
                     />
                   </View>
                 ),
+                headerShown: true,
                 headerRight: () => (
                   <View style={{margin: 24}}>
                     <Image
