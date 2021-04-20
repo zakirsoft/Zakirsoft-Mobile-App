@@ -137,20 +137,57 @@ const About = ({navigation}) => {
               we also have eCommerce systems for your online business.
             </Text>
           </View>
-
-          <PrimaryButton
-            style={{marginTop: 20}}
-            // onPress={() => navigation.navigate('Contact')}
-            onPress={() => navigation.navigate('Contact')}>
-            <Text
-              style={{
-                fontSize: SIZES.body3,
-                fontWeight: 'bold',
-                color: COLORS.white,
-              }}>
-              Contact Us
-            </Text>
-          </PrimaryButton>
+          <View
+            style={{
+              marginTop: 24,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+            }}>
+            <PrimaryButton
+              style={{}}
+              // onPress={() => navigation.navigate('Contact')}
+              onPress={() => navigation.navigate('Contact')}>
+              <Text
+                style={{
+                  fontSize: SIZES.body3,
+                  fontWeight: 'bold',
+                  color: COLORS.white,
+                }}>
+                Contact Us
+              </Text>
+            </PrimaryButton>
+            <View style={{flexDirection: 'row'}}>
+              <TouchableOpacity>
+                <Image
+                  source={icons.facebook}
+                  resizeMode={'contain'}
+                  style={{height: 40, width: 40, marginLeft: 4}}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Image
+                  source={icons.twitter}
+                  resizeMode={'contain'}
+                  style={{height: 40, width: 40, marginLeft: 4}}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Image
+                  source={icons.linkdin}
+                  resizeMode={'contain'}
+                  style={{height: 40, width: 40, marginLeft: 4}}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Image
+                  source={icons.github}
+                  resizeMode={'contain'}
+                  style={{height: 40, width: 40, marginLeft: 4}}
+                />
+              </TouchableOpacity>
+            </View>
+          </View>
         </View>
       </View>
     );

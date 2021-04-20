@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {
   FlatList,
   Image,
+  Linking,
   ScrollView,
   StyleSheet,
   Text,
@@ -256,6 +257,7 @@ const NewsDetails = ({route, navigation}) => {
             marginTop: 24,
             flexDirection: 'row',
             justifyContent: 'space-between',
+            alignItems: 'center',
           }}>
           <PrimaryButton
             style={{width: 110}}
@@ -270,28 +272,36 @@ const NewsDetails = ({route, navigation}) => {
             </Text>
           </PrimaryButton>
           <View style={{flexDirection: 'row'}}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL('https://www.facebook.com/zakirsoft20')
+              }>
               <Image
                 source={icons.facebook}
                 resizeMode={'contain'}
                 style={{height: 40, width: 40, marginLeft: 4}}
               />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => Linking.openURL('https://www.twitter.com')}>
               <Image
                 source={icons.twitter}
                 resizeMode={'contain'}
                 style={{height: 40, width: 40, marginLeft: 4}}
               />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL('https://www.linkedin.com/company/zakirsoft')
+              }>
               <Image
                 source={icons.linkdin}
                 resizeMode={'contain'}
                 style={{height: 40, width: 40, marginLeft: 4}}
               />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => Linking.openURL('https://github.com/zakirsoft')}>
               <Image
                 source={icons.github}
                 resizeMode={'contain'}
