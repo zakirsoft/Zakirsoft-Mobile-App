@@ -62,6 +62,8 @@ const NewsDetails = ({route, navigation}) => {
             height: 450,
             width: 350,
             marginBottom: 20,
+            marginLeft: 20,
+            marginRight: 20,
           }}>
           {/* <View style={{justifyContent: 'center'}}> */}
           <Image
@@ -139,6 +141,8 @@ const NewsDetails = ({route, navigation}) => {
             marginTop: 52,
             flexDirection: 'row',
             position: 'relative',
+            marginRight: 22,
+            marginLeft: 22,
           }}>
           <Text
             style={{
@@ -231,7 +235,12 @@ const NewsDetails = ({route, navigation}) => {
         <Image
           source={image}
           resizeMode={'contain'}
-          style={{height: 260, width: '100%'}}
+          style={{
+            height: 260,
+            width: '100%',
+            borderTopLeftRadius: 10,
+            borderTopRightRadius: 10,
+          }}
         />
         <Text
           style={{
@@ -310,8 +319,8 @@ const NewsDetails = ({route, navigation}) => {
             </TouchableOpacity>
           </View>
         </View>
-        {renderNews()}
       </View>
+      {renderNews()}
     </ScrollView>
   );
 };
