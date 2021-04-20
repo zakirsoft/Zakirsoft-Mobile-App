@@ -1,5 +1,6 @@
 import React from 'react';
 import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
+import LiveProjects from '../components/LiveProjects';
 import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, Logo, PrimaryButton, SecondaryButton} from '../Styles/Screen';
 
@@ -94,6 +95,7 @@ const Home = ({navigation}) => {
           </SecondaryButton>
         </View>
       </View>
+      <LiveProjects />
     </Screen>
   );
 };
