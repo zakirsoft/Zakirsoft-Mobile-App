@@ -13,7 +13,7 @@ const Home = ({navigation}) => {
           top: -5,
           marginRight: 22,
           marginLeft: 22,
-          marginBottom: 75,
+          // marginBottom: 75,
         }}>
         <View>
           <Image
