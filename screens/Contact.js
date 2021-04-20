@@ -8,18 +8,17 @@ import {
   Text,
   View,
 } from 'react-native';
-import {COLORS, images, SIZES, FONTS, icons} from '../constants';
-import {Screen, Logo, PrimaryButton} from '../Styles/Screen';
+import {COLORS, icons} from '../constants';
+import {PrimaryButton} from '../Styles/Screen';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import call from 'react-native-phone-call';
 
 const Contact = () => {
-  useEffect(() => {
-    renderMap();
-  }, []);
+  // useEffect(() => {
+  //   renderMap();
+  // }, []);
 
   const renderMap = () => {
-    LogBox.ignoreAllLogs();
     return (
       <View style={{height: 397}}>
         <MapView
