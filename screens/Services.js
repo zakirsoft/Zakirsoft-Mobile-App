@@ -375,8 +375,8 @@ const Services = () => {
                 <IconText>Type Script</IconText>
               </IconWrapper>
             </IconViewWrapper>
-            <IconViewWrapper>
-              {/* vue */}
+            <IconViewWrapper style={{justifyContent: 'space-evenly'}}>
+              {/* react */}
               <IconWrapper>
                 <Image
                   source={images.react}
@@ -385,32 +385,14 @@ const Services = () => {
                 />
                 <IconText>React</IconText>
               </IconWrapper>
-              {/* css */}
+              {/* tailwind */}
               <IconWrapper>
                 <Image
-                  source={images.css}
+                  source={images.Tailwind}
                   resizeMode={'center'}
                   style={{height: 40, width: 40}}
                 />
-                <IconText>CSS 3</IconText>
-              </IconWrapper>
-              {/* html */}
-              <IconWrapper>
-                <Image
-                  source={images.html}
-                  resizeMode={'center'}
-                  style={{height: 40, width: 40}}
-                />
-                <IconText>HTML 5</IconText>
-              </IconWrapper>
-              {/* ts */}
-              <IconWrapper>
-                <Image
-                  source={images.ts}
-                  resizeMode={'center'}
-                  style={{height: 40, width: 40}}
-                />
-                <IconText>Type Script</IconText>
+                <IconText>Tailwind CSS</IconText>
               </IconWrapper>
             </IconViewWrapper>
           </TechCart>
