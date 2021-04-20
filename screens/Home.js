@@ -9,7 +9,7 @@ const Home = ({navigation}) => {
   return (
     <>
       <Header />
-      <ScrollView>
+      <ScrollView style={{backgroundColor: COLORS.ScreenColor}}>
         <View
           style={{
             flexDirection: 'column',
