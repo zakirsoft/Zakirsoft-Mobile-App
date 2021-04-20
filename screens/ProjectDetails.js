@@ -101,7 +101,12 @@ const ProjectDetails = ({route}) => {
             <Image
               source={icons.RightArrow}
               resizeMode={'contain'}
-              style={{width: 20, height: 10, tintColor: COLORS.white}}
+              style={{
+                width: 20,
+                height: 10,
+                top: 2,
+                tintColor: COLORS.white,
+              }}
             />
           </View>
         </View>

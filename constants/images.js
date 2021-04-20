@@ -36,6 +36,10 @@ const Cuckoos = require('../assets/images/Projects/Cuckoos.png');
 const Google = require('../assets/images/about/Google.png');
 const News_2 = require('../assets/images/about/News_1.jpg');
 const News_3 = require('../assets/images/about/News_2.jpg');
+const codeSikhi_Logo = require('../assets/images/Projects/live/codeSikhi_Logo.png');
+const codeSikhi_SS = require('../assets/images/Projects/live/codeSikhi_SS.png');
+const EchoTemplate_Logo = require('../assets/images/Projects/live/EchoTemplate_Logo.png');
+const EchoTemplate_SS = require('../assets/images/Projects/live/EchoTemplate_SS.png');
 
 export default {
   about_1,
@@ -76,4 +80,8 @@ export default {
   FreelancerManagementSpa,
   Cuckoos,
   Google,
+  codeSikhi_Logo,
+  codeSikhi_SS,
+  EchoTemplate_Logo,
+  EchoTemplate_SS,
 };

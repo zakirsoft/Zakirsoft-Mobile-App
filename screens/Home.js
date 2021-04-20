@@ -6,8 +6,15 @@ import {Screen, Logo, PrimaryButton, SecondaryButton} from '../Styles/Screen';
 
 const Home = ({navigation}) => {
   return (
-    <Screen>
-      <View style={{flexDirection: 'column', top: -5}}>
+    <ScrollView>
+      <View
+        style={{
+          flexDirection: 'column',
+          top: -5,
+          marginRight: 22,
+          marginLeft: 22,
+          marginBottom: 75,
+        }}>
         <View>
           <Image
             source={images.home}
@@ -96,7 +103,7 @@ const Home = ({navigation}) => {
         </View>
       </View>
       <LiveProjects />
-    </Screen>
+    </ScrollView>
   );
 };
 
