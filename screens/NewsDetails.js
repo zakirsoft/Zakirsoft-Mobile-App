@@ -150,7 +150,7 @@ const NewsDetails = ({route, navigation}) => {
               fontFamily: 'DMSans-Regular',
               fontWeight: 'bold',
             }}>
-            Our Latest News
+            Related News
           </Text>
           <View
             style={{
