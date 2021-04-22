@@ -17,17 +17,26 @@ const Onboarding = ({navigation}) => {
             <Image
               source={images.onboarding_1}
               resizeMode={'contain'}
-              style={{height: 434, width: SIZES.width}}
+              style={{
+                height: 350,
+                width: SIZES.width,
+                position: 'relative',
+                bottom: 100,
+              }}
             />
           ),
           titleStyles: {
             fontFamily: 'DMSans-Regular',
             fontSize: 28,
             fontWeight: 'bold',
+            position: 'relative',
+            bottom: 100,
           },
           subTitleStyles: {
             fontFamily: 'DMSans-Regular',
             fontSize: 16,
+            position: 'relative',
+            bottom: 100,
           },
           title: 'We are here to grow your business',
           subtitle:
@@ -39,17 +48,26 @@ const Onboarding = ({navigation}) => {
             <Image
               source={images.onboarding_2}
               resizeMode={'contain'}
-              style={{height: 434, width: SIZES.width}}
+              style={{
+                height: 434,
+                width: SIZES.width,
+                position: 'relative',
+                bottom: 100,
+              }}
             />
           ),
           titleStyles: {
             fontFamily: 'DMSans-Regular',
             fontSize: 28,
             fontWeight: 'bold',
+            position: 'relative',
+            bottom: 100,
           },
           subTitleStyles: {
             fontFamily: 'DMSans-Regular',
             fontSize: 16,
+            position: 'relative',
+            bottom: 100,
           },
           title:
             'We design and Develop web apps & Mobile Apps that get you real results.',
@@ -62,17 +80,26 @@ const Onboarding = ({navigation}) => {
             <Image
               source={images.onboarding_3}
               resizeMode={'contain'}
-              style={{height: 434, width: SIZES.width}}
+              style={{
+                height: 434,
+                width: SIZES.width,
+                position: 'relative',
+                bottom: 100,
+              }}
             />
           ),
           titleStyles: {
             fontFamily: 'DMSans-Regular',
             fontSize: 28,
             fontWeight: 'bold',
+            position: 'relative',
+            bottom: 100,
           },
           subTitleStyles: {
             fontFamily: 'DMSans-Regular',
             fontSize: 16,
+            position: 'relative',
+            bottom: 100,
           },
           title: 'Who We are',
           subtitle:

@@ -29,6 +29,7 @@ const Career = ({navigation}) => {
             welcome. Send your cv at - zakirsoft20@gmail.com
           </Text>
           <PrimaryButton
+            activeOpacity={0.8}
             style={{marginTop: 20}}
             onPress={() => navigation.navigate('CareerDetails')}>
             <Text
@@ -64,6 +65,7 @@ const Career = ({navigation}) => {
             Send your cv here - zakirsoft20@gmail.com
           </Text>
           <PrimaryButton
+            activeOpacity={0.8}
             style={{marginTop: 20}}
             onPress={() => navigation.navigate('CareerDetails')}>
             <Text

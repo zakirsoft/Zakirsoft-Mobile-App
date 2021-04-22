@@ -81,7 +81,7 @@ const CareerDetails = () => {
             />
           </View>
           <View style={{marginTop: 20, flexDirection: 'row-reverse'}}>
-            <PrimaryButton style={{width: 166}}>
+            <PrimaryButton activeOpacity={0.8} style={{width: 166}}>
               <View
                 style={{
                   flexDirection: 'row',

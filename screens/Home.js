@@ -76,6 +76,7 @@ const Home = ({navigation}) => {
               top: -55,
             }}>
             <PrimaryButton
+              activeOpacity={0.8}
               style={{marginRight: 8}}
               onPress={() => navigation.navigate('Contact')}>
               <Text
@@ -88,6 +89,7 @@ const Home = ({navigation}) => {
               </Text>
             </PrimaryButton>
             <SecondaryButton
+              activeOpacity={0.7}
               style={{
                 borderColor: COLORS.lightGray,
                 borderWidth: 1,

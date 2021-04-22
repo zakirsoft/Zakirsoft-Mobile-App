@@ -32,6 +32,7 @@ const ContactHeader = () => {
             marginRight: 15,
           }}>
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() =>
               Linking.openURL('https://www.facebook.com/zakirsoft20')
             }>
@@ -42,14 +43,7 @@ const ContactHeader = () => {
             />
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => Linking.openURL('https://www.twitter.com')}>
-            <Image
-              source={icons.twitter}
-              resizeMode={'contain'}
-              style={{height: 40, width: 40, marginLeft: 4}}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() =>
               Linking.openURL('https://www.linkedin.com/company/zakirsoft')
             }>
@@ -60,6 +54,7 @@ const ContactHeader = () => {
             />
           </TouchableOpacity>
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => Linking.openURL('https://github.com/zakirsoft')}>
             <Image
               source={icons.github}

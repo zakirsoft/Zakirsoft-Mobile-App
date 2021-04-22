@@ -123,6 +123,7 @@ const LiveProjects = () => {
               {item.description}
             </Text>
             <PrimaryButton
+              activeOpacity={0.8}
               style={{marginTop: 24, width: 219, marginBottom: 24}}
               onPress={() => Linking.openURL(item.link)}>
               <View
