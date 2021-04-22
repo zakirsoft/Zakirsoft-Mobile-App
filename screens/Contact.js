@@ -1,11 +1,13 @@
 import React, {useEffect} from 'react';
 import {
+  Alert,
   Image,
   LogBox,
   SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
+  TouchableWithoutFeedback,
   View,
 } from 'react-native';
 import {COLORS, icons} from '../constants';
@@ -14,6 +16,7 @@ import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import call from 'react-native-phone-call';
 import Header from '../components/Header';
 import ContactHeader from '../components/ContactHeader';
+import Clipboard from '@react-native-clipboard/clipboard';
 
 const Contact = () => {
   // useEffect(() => {
@@ -185,17 +188,32 @@ const Contact = () => {
                 }}
               />
             </View>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Text
-                style={{
-                  fontFamily: 'DMSans-Regular',
-                  fontSize: 16,
-                  color: COLORS.black,
-                  marginLeft: 10,
-                }}>
-                zakirsoft20@gmail.com
-              </Text>
-            </View>
+            <TouchableWithoutFeedback
+              onPress={() =>
+                Alert.alert('Zakir Soft', 'Copy zakirsoft20@gmail.com', [
+                  {
+                    text: 'Cancel',
+                    onPress: () => console.log('Cancel Pressed'),
+                    style: 'cancel',
+                  },
+                  {
+                    text: 'OK',
+                    onPress: () => Clipboard.setString('zakirsoft20@gmail.com'),
+                  },
+                ])
+              }>
+              <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Text
+                  style={{
+                    fontFamily: 'DMSans-Regular',
+                    fontSize: 16,
+                    color: COLORS.black,
+                    marginLeft: 10,
+                  }}>
+                  zakirsoft20@gmail.com
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>
           </View>
         </View>
         <View
