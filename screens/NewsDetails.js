@@ -96,6 +96,7 @@ const NewsDetails = ({route, navigation}) => {
               {item.description}
             </Text>
             <TouchableOpacity
+              activeOpacity={0.8}
               style={{marginTop: 20}}
               onPress={() => {
                 navigation.navigate('NewsDetails', item);
@@ -143,6 +144,7 @@ const NewsDetails = ({route, navigation}) => {
             position: 'relative',
             marginRight: 22,
             marginLeft: 22,
+            justifyContent: 'space-between',
           }}>
           <Text
             style={{
@@ -159,7 +161,7 @@ const NewsDetails = ({route, navigation}) => {
               justifyContent: 'space-between',
               marginLeft: 56,
             }}>
-            <TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.8}>
               <View
                 style={{
                   height: 36,
@@ -176,7 +178,7 @@ const NewsDetails = ({route, navigation}) => {
                 />
               </View>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.8}>
               <View
                 style={{
                   height: 36,
@@ -282,6 +284,7 @@ const NewsDetails = ({route, navigation}) => {
           </PrimaryButton>
           <View style={{flexDirection: 'row'}}>
             <TouchableOpacity
+              activeOpacity={0.8}
               onPress={() =>
                 Linking.openURL('https://www.facebook.com/zakirsoft20')
               }>
@@ -292,14 +295,7 @@ const NewsDetails = ({route, navigation}) => {
               />
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => Linking.openURL('https://www.twitter.com')}>
-              <Image
-                source={icons.twitter}
-                resizeMode={'contain'}
-                style={{height: 40, width: 40, marginLeft: 4}}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity
+              activeOpacity={0.8}
               onPress={() =>
                 Linking.openURL('https://www.linkedin.com/company/zakirsoft')
               }>
@@ -310,6 +306,7 @@ const NewsDetails = ({route, navigation}) => {
               />
             </TouchableOpacity>
             <TouchableOpacity
+              activeOpacity={0.8}
               onPress={() => Linking.openURL('https://github.com/zakirsoft')}>
               <Image
                 source={icons.github}
