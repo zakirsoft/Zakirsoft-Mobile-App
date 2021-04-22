@@ -160,6 +160,7 @@ const About = ({navigation}) => {
             </PrimaryButton>
             <View style={{flexDirection: 'row'}}>
               <TouchableOpacity
+                activeOpacity={0.8}
                 onPress={() =>
                   Linking.openURL('https://www.facebook.com/zakirsoft20')
                 }>
@@ -170,14 +171,7 @@ const About = ({navigation}) => {
                 />
               </TouchableOpacity>
               <TouchableOpacity
-                onPress={() => Linking.openURL('https://www.twitter.com')}>
-                <Image
-                  source={icons.twitter}
-                  resizeMode={'contain'}
-                  style={{height: 40, width: 40, marginLeft: 4}}
-                />
-              </TouchableOpacity>
-              <TouchableOpacity
+                activeOpacity={0.8}
                 onPress={() =>
                   Linking.openURL('https://www.linkedin.com/company/zakirsoft')
                 }>
@@ -188,6 +182,7 @@ const About = ({navigation}) => {
                 />
               </TouchableOpacity>
               <TouchableOpacity
+                activeOpacity={0.8}
                 onPress={() => Linking.openURL('https://github.com/zakirsoft')}>
                 <Image
                   source={icons.github}
@@ -300,7 +295,7 @@ const About = ({navigation}) => {
                 justifyContent: 'space-between',
                 marginLeft: 24,
               }}>
-              <TouchableOpacity>
+              <TouchableOpacity activeOpacity={0.8}>
                 <View
                   style={{
                     height: 36,
@@ -317,7 +312,7 @@ const About = ({navigation}) => {
                   />
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity activeOpacity={0.8}>
                 <View
                   style={{
                     height: 36,
@@ -434,6 +429,7 @@ const About = ({navigation}) => {
               {item.description}
             </Text>
             <TouchableOpacity
+              activeOpacity={0.8}
               style={{marginTop: 20}}
               onPress={() => {
                 navigation.navigate('NewsDetails', item);
@@ -497,7 +493,7 @@ const About = ({navigation}) => {
               justifyContent: 'space-between',
               marginLeft: 56,
             }}>
-            <TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.8}>
               <View
                 style={{
                   height: 36,
@@ -514,7 +510,7 @@ const About = ({navigation}) => {
                 />
               </View>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.8}>
               <View
                 style={{
                   height: 36,
