@@ -205,7 +205,7 @@ const Projects = ({navigation}) => {
     };
 
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, marginBottom: 30}}>
         <FlatList
           data={AllCategories2}
           renderItem={renderItem}
@@ -260,7 +260,7 @@ const Projects = ({navigation}) => {
     };
 
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, marginBottom: 30}}>
         <FlatList
           data={AllCategories}
           renderItem={renderItem}
@@ -315,7 +315,7 @@ const Projects = ({navigation}) => {
     };
 
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, marginBottom: 30}}>
         <FlatList
           data={AllCategories2}
           renderItem={renderItem}
@@ -370,7 +370,7 @@ const Projects = ({navigation}) => {
     };
 
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, marginBottom: 30}}>
         <FlatList
           data={AllCategories}
           renderItem={renderItem}
@@ -476,7 +476,7 @@ const Projects = ({navigation}) => {
     };
 
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, backgroundColor: COLORS.ScreenColor}}>
         <View style={{height: 44, backgroundColor: COLORS.ScreenColor}}>
           <View>{flartlist()}</View>
         </View>
