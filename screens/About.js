@@ -280,6 +280,7 @@ const About = ({navigation}) => {
               position: 'relative',
               marginRight: 22,
               marginLeft: 22,
+              justifyContent: 'space-between',
             }}>
             <Text
               style={{
