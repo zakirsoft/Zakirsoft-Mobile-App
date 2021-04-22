@@ -112,6 +112,7 @@ const Projects = ({navigation}) => {
             backgroundColor: COLORS.ScreenColor,
           }}>
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => navigation.navigate('ProjectDetails', item)}
             style={{marginLeft: 22, marginRight: 22}}>
             <View>
@@ -149,7 +150,7 @@ const Projects = ({navigation}) => {
     };
 
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, marginBottom: 30}}>
         <FlatList
           data={AllCategories}
           renderItem={renderItem}
@@ -166,6 +167,7 @@ const Projects = ({navigation}) => {
             backgroundColor: COLORS.ScreenColor,
           }}>
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => navigation.navigate('ProjectDetails', item)}
             style={{marginLeft: 22, marginRight: 22}}>
             <View>
@@ -220,6 +222,7 @@ const Projects = ({navigation}) => {
             backgroundColor: COLORS.ScreenColor,
           }}>
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => navigation.navigate('ProjectDetails', item)}
             style={{marginLeft: 22, marginRight: 22}}>
             <View>
@@ -274,6 +277,7 @@ const Projects = ({navigation}) => {
             backgroundColor: COLORS.ScreenColor,
           }}>
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => navigation.navigate('ProjectDetails', item)}
             style={{marginLeft: 22, marginRight: 22}}>
             <View>
@@ -328,6 +332,7 @@ const Projects = ({navigation}) => {
             backgroundColor: COLORS.ScreenColor,
           }}>
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => navigation.navigate('ProjectDetails', item)}
             style={{marginLeft: 22, marginRight: 22}}>
             <View>
@@ -409,6 +414,7 @@ const Projects = ({navigation}) => {
           }}>
           <View>
             <TouchableOpacity
+              activeOpacity={0.8}
               style={{
                 height: '100%',
                 width: '110%',
