@@ -146,6 +146,7 @@ const About = ({navigation}) => {
               alignItems: 'center',
             }}>
             <PrimaryButton
+              activeOpacity={0.8}
               style={{}}
               // onPress={() => navigation.navigate('Contact')}
               onPress={() => navigation.navigate('Contact')}>
@@ -606,6 +607,7 @@ const About = ({navigation}) => {
             </Text>
           </View>
           <PrimaryButton
+            activeOpacity={0.8}
             style={{marginTop: 16}}
             onPress={() => navigation.navigate('Career')}>
             <Text

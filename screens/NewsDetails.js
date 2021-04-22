@@ -271,6 +271,7 @@ const NewsDetails = ({route, navigation}) => {
             alignItems: 'center',
           }}>
           <PrimaryButton
+            activeOpacity={0.8}
             style={{width: 110}}
             onPress={() => navigation.navigate('Contact')}>
             <Text
