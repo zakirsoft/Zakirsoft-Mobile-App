@@ -175,7 +175,7 @@ const Contact = () => {
                 alignItems: 'center',
               }}>
               <Image
-                source={icons.Call}
+                source={icons.Message}
                 resizeMode={'contain'}
                 style={{
                   height: 22,
@@ -209,6 +209,7 @@ const Contact = () => {
             marginTop: 16,
           }}>
           <PrimaryButton
+            activeOpacity={0.8}
             style={{width: '100%'}}
             onPress={() => {
               const args = {
