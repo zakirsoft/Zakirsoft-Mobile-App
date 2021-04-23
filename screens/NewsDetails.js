@@ -60,7 +60,7 @@ const NewsDetails = ({route, navigation}) => {
         <TechCart
           style={{
             height: 450,
-            width: 350,
+            width: SIZES.width - 44,
             marginBottom: 20,
             marginLeft: 20,
             marginRight: 20,

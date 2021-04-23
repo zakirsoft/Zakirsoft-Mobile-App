@@ -190,12 +190,7 @@ const Contact = () => {
             </View>
             <TouchableWithoutFeedback
               onPress={() =>
-                Alert.alert('Zakir Soft', 'Copy zakirsoft20@gmail.com', [
-                  {
-                    text: 'Cancel',
-                    onPress: () => console.log('Cancel Pressed'),
-                    style: 'cancel',
-                  },
+                Alert.alert('Zakir Soft', 'Email Address Copied!', [
                   {
                     text: 'OK',
                     onPress: () => Clipboard.setString('zakirsoft20@gmail.com'),

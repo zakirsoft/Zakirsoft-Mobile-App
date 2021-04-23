@@ -222,7 +222,7 @@ const About = ({navigation}) => {
           <TechCart
             style={{
               height: 310,
-              width: 350,
+              width: SIZES.width - 44,
               marginBottom: 50,
               marginLeft: 22,
               marginRight: 22,
@@ -395,7 +395,7 @@ const About = ({navigation}) => {
         <TechCart
           style={{
             height: 450,
-            width: 350,
+            width: SIZES.width - 44,
             marginBottom: 20,
             marginLeft: 22,
             marginRight: 22,
