@@ -45,11 +45,11 @@ export const SIZES = {
   width,
   height,
 
-  nLargeTitle: wp('12%'),
-  nTitle: wp('7%'),
-  nNewsTitle: hp('2.5%'),
-  nBodyText: wp('4%'),
-  nLargeLineHeight: hp('6.9%'),
+  nLargeTitle: width / 8.1,
+  nTitle: width / 15,
+  nNewsTitle: width / 20,
+  nBodyText: width / 26,
+
   nMinimulLineheight: hp('2.7%'),
   nMarginTop: hp('2%'),
   // nTitle:hp("3%"),

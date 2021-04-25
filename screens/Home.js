@@ -30,7 +30,7 @@ const Home = ({navigation}) => {
               style={{
                 fontFamily: 'DMSans-Bold',
                 fontSize: SIZES.nLargeTitle,
-                lineHeight: SIZES.nLargeLineHeight,
+                lineHeight: SIZES.height / 13.5,
                 // fontWeight: 'bold',
               }}>
               We are here to grow your business.
@@ -61,11 +61,15 @@ const Home = ({navigation}) => {
             }}>
             <PrimaryButton
               activeOpacity={0.8}
-              style={{marginRight: 8}}
+              style={{
+                marginRight: 8,
+                height: SIZES.height / 15.6,
+                width: SIZES.width / 2.8,
+              }}
               onPress={() => navigation.navigate('Contact')}>
               <Text
                 style={{
-                  fontSize: SIZES.body3,
+                  fontSize: SIZES.nBodyText,
                   fontWeight: 'bold',
                   color: COLORS.white,
                 }}>
@@ -78,11 +82,13 @@ const Home = ({navigation}) => {
                 borderColor: COLORS.lightGray,
                 borderWidth: 1,
                 borderRadius: 4,
+                height: SIZES.height / 15.6,
+                width: SIZES.width / 2.8,
               }}
               onPress={() => navigation.navigate('Projects')}>
               <Text
                 style={{
-                  fontSize: SIZES.body3,
+                  fontSize: SIZES.nBodyText,
                   fontWeight: 'bold',
                   color: COLORS.black,
                 }}>
