@@ -7,16 +7,17 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {COLORS, icons, images} from '../constants';
+import {COLORS, icons, images, SIZES} from '../constants';
 
 const ContactHeader = () => {
   return (
     <View
       style={{
         backgroundColor: COLORS.ScreenColor,
-        height: 50,
+        height: SIZES.height / 15,
         width: '100%',
         justifyContent: 'center',
+        // flex: 1,
       }}>
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         {/* company Logo */}
@@ -27,11 +28,18 @@ const ContactHeader = () => {
         <View
           style={{
             flexDirection: 'row',
-            justifyContent: 'center',
+            justifyContent: 'space-between',
             alignItems: 'center',
-            marginRight: 15,
+            marginRight: SIZES.width / 30,
+            height: '100%',
+            width: SIZES.width / 3,
+            // flex: 1,
           }}>
           <TouchableOpacity
+            style={{
+              height: '40%',
+              width: '33.3%',
+            }}
             activeOpacity={0.8}
             onPress={() =>
               Linking.openURL('https://www.facebook.com/zakirsoft20')
@@ -39,10 +47,14 @@ const ContactHeader = () => {
             <Image
               source={icons.facebook}
               resizeMode={'contain'}
-              style={{height: 40, width: 40, marginLeft: 4}}
+              style={{height: '100%', width: '100%'}}
             />
           </TouchableOpacity>
           <TouchableOpacity
+            style={{
+              height: '40%',
+              width: '33.3%',
+            }}
             activeOpacity={0.8}
             onPress={() =>
               Linking.openURL('https://www.linkedin.com/company/zakirsoft')
@@ -50,16 +62,20 @@ const ContactHeader = () => {
             <Image
               source={icons.linkdin}
               resizeMode={'contain'}
-              style={{height: 40, width: 40, marginLeft: 4}}
+              style={{height: '100%', width: '100%'}}
             />
           </TouchableOpacity>
           <TouchableOpacity
+            style={{
+              height: '40%',
+              width: '33.3%',
+            }}
             activeOpacity={0.8}
             onPress={() => Linking.openURL('https://github.com/zakirsoft')}>
             <Image
               source={icons.github}
               resizeMode={'contain'}
-              style={{height: 40, width: 40, marginLeft: 4}}
+              style={{height: '100%', width: '100%'}}
             />
           </TouchableOpacity>
         </View>
