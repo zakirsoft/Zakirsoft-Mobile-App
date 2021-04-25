@@ -40,12 +40,12 @@ const About = ({navigation}) => {
     <View
       style={{
         flex: 1,
-        height: 250,
+        height: SIZES.height / 3,
       }}>
       <Image
         source={item.Img}
         style={{
-          height: 250,
+          height: '100%',
           width: SIZES.width,
           borderRadius: 10,
         }}

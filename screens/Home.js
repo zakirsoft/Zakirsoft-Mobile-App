@@ -22,35 +22,18 @@ const Home = ({navigation}) => {
             <Image
               source={images.home}
               resizeMode="contain"
-              style={{height: 365, width: '100%', top: -10}}
+              style={{height: SIZES.height / 2.2, width: '100%'}}
             />
           </View>
           <View style={{flexDirection: 'column', top: -55}}>
             <Text
               style={{
                 fontFamily: 'DMSans-Bold',
-                fontSize: SIZES.largeTitle,
+                fontSize: SIZES.nLargeTitle,
+                lineHeight: SIZES.nLargeLineHeight,
                 // fontWeight: 'bold',
               }}>
-              We are here to
-            </Text>
-            <Text
-              style={{
-                fontFamily: 'DMSans-Bold',
-                fontSize: SIZES.largeTitle,
-                // fontWeight: 'bold',
-                top: -10,
-              }}>
-              grow your
-            </Text>
-            <Text
-              style={{
-                fontFamily: 'DMSans-Bold',
-                fontSize: SIZES.largeTitle,
-                // fontWeight: 'bold',
-                top: -15,
-              }}>
-              business.
+              We are here to grow your business.
             </Text>
           </View>
           <View
@@ -62,9 +45,10 @@ const Home = ({navigation}) => {
             }}>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 color: COLORS.secondary,
-                lineHeight: 24,
+                lineHeight: SIZES.nMinimulLineheight,
+                marginTop: SIZES.nMarginTop,
               }}>
               As a software company we develop innovatives website & software
               solutions. We are proud of what we do.
@@ -73,7 +57,7 @@ const Home = ({navigation}) => {
           <View
             style={{
               flexDirection: 'row',
-              top: -55,
+              top: -50,
             }}>
             <PrimaryButton
               activeOpacity={0.8}

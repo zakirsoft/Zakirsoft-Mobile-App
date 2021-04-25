@@ -45,9 +45,13 @@ export const SIZES = {
   width,
   height,
 
+  nLargeTitle: wp('12%'),
   nTitle: wp('7%'),
-  nNewsTitle: wp('5%'),
+  nNewsTitle: hp('2.5%'),
   nBodyText: wp('4%'),
+  nLargeLineHeight: hp('6.9%'),
+  nMinimulLineheight: hp('2.7%'),
+  nMarginTop: hp('2%'),
   // nTitle:hp("3%"),
 };
 
