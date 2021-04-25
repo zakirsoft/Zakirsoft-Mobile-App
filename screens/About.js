@@ -14,6 +14,10 @@ import {
 import Header from '../components/Header';
 import {COLORS, images, SIZES, FONTS, icons} from '../constants';
 import {Screen, Logo, PrimaryButton, TechCart} from '../Styles/Screen';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const AboutImgData = [
   {
@@ -107,7 +111,7 @@ const About = ({navigation}) => {
           <View style={{marginBottom: 12}}>
             <Text
               style={{
-                fontSize: 20,
+                fontSize: SIZES.nNewsTitle,
                 fontFamily: 'DMSans-Regular',
                 fontWeight: 'bold',
               }}>
@@ -117,7 +121,7 @@ const About = ({navigation}) => {
           <View>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 color: COLORS.secondary,
                 lineHeight: 24,
               }}>
@@ -130,7 +134,7 @@ const About = ({navigation}) => {
             </Text>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 color: COLORS.secondary,
                 lineHeight: 24,
                 paddingTop: 15,
@@ -152,7 +156,7 @@ const About = ({navigation}) => {
               onPress={() => navigation.navigate('Contact')}>
               <Text
                 style={{
-                  fontSize: SIZES.body3,
+                  fontSize: SIZES.nBodyText,
                   fontWeight: 'bold',
                   color: COLORS.white,
                 }}>
@@ -230,7 +234,7 @@ const About = ({navigation}) => {
             <View style={{marginTop: 16, marginLeft: 16, marginRight: 16}}>
               <Text
                 style={{
-                  fontSize: SIZES.body3,
+                  fontSize: SIZES.nBodyText,
                   color: COLORS.secondary,
                   lineHeight: 24,
                 }}>
@@ -238,7 +242,7 @@ const About = ({navigation}) => {
               </Text>
               <Text
                 style={{
-                  fontSize: 16,
+                  fontSize: SIZES.nBodyText,
                   fontFamily: 'DMSans-Regular',
                   fontWeight: 'bold',
                   marginTop: 16,
@@ -252,7 +256,7 @@ const About = ({navigation}) => {
                 }}>
                 <Text
                   style={{
-                    fontSize: 12,
+                    fontSize: SIZES.nBodyText - 2,
                     color: COLORS.secondary,
                     lineHeight: 24,
                   }}>
@@ -281,10 +285,11 @@ const About = ({navigation}) => {
               marginRight: 22,
               marginLeft: 22,
               justifyContent: 'space-between',
+              alignItems: 'center',
             }}>
             <Text
               style={{
-                fontSize: 28,
+                fontSize: SIZES.nTitle,
                 fontFamily: 'DMSans-Regular',
                 fontWeight: 'bold',
               }}>
@@ -415,7 +420,7 @@ const About = ({navigation}) => {
           <View style={{marginTop: 24, marginLeft: 16}}>
             <Text
               style={{
-                fontSize: 20,
+                fontSize: SIZES.nNewsTitle,
                 fontFamily: 'DMSans-Regular',
                 fontWeight: 'bold',
               }}>
@@ -423,7 +428,7 @@ const About = ({navigation}) => {
             </Text>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 color: COLORS.secondary,
                 lineHeight: 24,
                 paddingTop: 8,
@@ -439,7 +444,7 @@ const About = ({navigation}) => {
               <View style={{flexDirection: 'row'}}>
                 <Text
                   style={{
-                    fontSize: 16,
+                    fontSize: SIZES.nBodyText,
                     fontFamily: 'DMSans-Regular',
                     fontWeight: 'bold',
                     color: COLORS.primary,
@@ -483,7 +488,7 @@ const About = ({navigation}) => {
           }}>
           <Text
             style={{
-              fontSize: 28,
+              fontSize: SIZES.nTitle,
               fontFamily: 'DMSans-Regular',
               fontWeight: 'bold',
             }}>
@@ -583,7 +588,7 @@ const About = ({navigation}) => {
           }}>
           <Text
             style={{
-              fontSize: 28,
+              fontSize: SIZES.nTitle,
               fontFamily: 'DMSans-Regular',
               fontWeight: 'bold',
               color: COLORS.white,
@@ -598,7 +603,7 @@ const About = ({navigation}) => {
             }}>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 color: COLORS.secondary,
                 lineHeight: 24,
                 paddingTop: 4,
@@ -614,7 +619,7 @@ const About = ({navigation}) => {
             onPress={() => navigation.navigate('Career')}>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 fontWeight: 'bold',
                 color: COLORS.white,
               }}>

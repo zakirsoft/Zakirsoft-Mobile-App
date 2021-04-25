@@ -1,5 +1,9 @@
 import {Dimensions} from 'react-native';
 const {width, height} = Dimensions.get('window');
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 export const COLORS = {
   // base colors
@@ -40,6 +44,11 @@ export const SIZES = {
   // app dimensions
   width,
   height,
+
+  nTitle: wp('7%'),
+  nNewsTitle: wp('5%'),
+  nBodyText: wp('4%'),
+  // nTitle:hp("3%"),
 };
 
 export const FONTS = {
