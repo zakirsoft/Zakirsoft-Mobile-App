@@ -57,30 +57,32 @@ const NewsDetails = ({route, navigation}) => {
     };
     const renderItem = ({item}) => {
       return (
-        <TechCart
+        <View
           style={{
-            height: 450,
-            width: SIZES.width - 44,
+            // height: 450,
+            backgroundColor: COLORS.white,
+            width: SIZES.width - 40,
             marginBottom: 20,
             marginLeft: 20,
             marginRight: 20,
+            borderRadius: 10,
           }}>
           {/* <View style={{justifyContent: 'center'}}> */}
           <Image
             source={item.image}
             resizeMode={'cover'}
             style={{
-              height: 260,
+              height: SIZES.height / 3,
               width: '100%',
               borderTopLeftRadius: 10,
               borderTopRightRadius: 10,
             }}
           />
           {/* </View> */}
-          <View style={{marginTop: 24, marginLeft: 16}}>
+          <View style={{marginTop: SIZES.height / 45, marginLeft: 16}}>
             <Text
               style={{
-                fontSize: 20,
+                fontSize: SIZES.nNewsTitle,
                 fontFamily: 'DMSans-Regular',
                 fontWeight: 'bold',
               }}>
@@ -88,7 +90,7 @@ const NewsDetails = ({route, navigation}) => {
             </Text>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 color: COLORS.secondary,
                 lineHeight: 24,
                 paddingTop: 8,
@@ -97,14 +99,15 @@ const NewsDetails = ({route, navigation}) => {
             </Text>
             <TouchableOpacity
               activeOpacity={0.8}
-              style={{marginTop: 20}}
+              style={{marginTop: SIZES.height / 45}}
               onPress={() => {
                 navigation.navigate('NewsDetails', item);
               }}>
-              <View style={{flexDirection: 'row'}}>
+              <View
+                style={{flexDirection: 'row', marginBottom: SIZES.height / 45}}>
                 <Text
                   style={{
-                    fontSize: 16,
+                    fontSize: SIZES.nBodyText,
                     fontFamily: 'DMSans-Regular',
                     fontWeight: 'bold',
                     color: COLORS.primary,
@@ -122,8 +125,8 @@ const NewsDetails = ({route, navigation}) => {
                     source={icons.RightArrow}
                     resizeMode={'contain'}
                     style={{
-                      width: 20,
-                      height: 11,
+                      height: SIZES.nBodyText,
+                      width: SIZES.nBodyText,
                       tintColor: COLORS.primary,
                     }}
                   />
@@ -131,7 +134,7 @@ const NewsDetails = ({route, navigation}) => {
               </View>
             </TouchableOpacity>
           </View>
-        </TechCart>
+        </View>
       );
     };
 
@@ -139,16 +142,17 @@ const NewsDetails = ({route, navigation}) => {
       <View style={{}}>
         <View
           style={{
-            marginTop: 52,
+            marginTop: SIZES.height / 7,
             flexDirection: 'row',
             position: 'relative',
             marginRight: 22,
             marginLeft: 22,
+            marginBottom: SIZES.height / 25,
             justifyContent: 'space-between',
           }}>
           <Text
             style={{
-              fontSize: 28,
+              fontSize: SIZES.nTitle,
               fontFamily: 'DMSans-Regular',
               fontWeight: 'bold',
             }}>
@@ -159,7 +163,7 @@ const NewsDetails = ({route, navigation}) => {
               flexDirection: 'row',
               alignItems: 'stretch',
               justifyContent: 'space-between',
-              marginLeft: 56,
+              // marginLeft: 56,
             }}>
             <TouchableOpacity activeOpacity={0.8}>
               <View
