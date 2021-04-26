@@ -63,8 +63,8 @@ const Home = ({navigation}) => {
               activeOpacity={0.8}
               style={{
                 marginRight: 8,
-                height: SIZES.height / 15.6,
-                width: SIZES.width / 2.8,
+                height: SIZES.nPrimaryButtonHeight,
+                width: SIZES.nPrimaryButtonWidth,
               }}
               onPress={() => navigation.navigate('Contact')}>
               <Text
@@ -82,8 +82,8 @@ const Home = ({navigation}) => {
                 borderColor: COLORS.lightGray,
                 borderWidth: 1,
                 borderRadius: 4,
-                height: SIZES.height / 15.6,
-                width: SIZES.width / 2.8,
+                height: SIZES.nPrimaryButtonHeight,
+                width: SIZES.nPrimaryButtonWidth,
               }}
               onPress={() => navigation.navigate('Projects')}>
               <Text

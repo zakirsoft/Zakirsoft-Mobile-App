@@ -49,9 +49,13 @@ export const SIZES = {
   nTitle: width / 15,
   nNewsTitle: width / 20,
   nBodyText: width / 26,
+  nBodyText2: width / 22,
 
-  nMinimulLineheight: hp('2.7%'),
-  nMarginTop: hp('2%'),
+  nPrimaryButtonHeight: height / 15.6,
+  nPrimaryButtonWidth: width / 2.8,
+
+  nMinimulLineheight: height / 35,
+  nMarginTop: height / 45,
   // nTitle:hp("3%"),
 };
 
