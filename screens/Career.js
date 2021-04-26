@@ -6,12 +6,16 @@ import {Screen, Logo, TechCart, PrimaryButton} from '../Styles/Screen';
 const Career = ({navigation}) => {
   return (
     <Screen>
-      <TechCart style={{height: 263}}>
+      <View
+        style={{
+          backgroundColor: COLORS.white,
+          borderRadius: 10,
+        }}>
         <View style={{marginTop: 24, marginLeft: 24, marginRight: 24}}>
           <Text
             style={{
-              fontFamily: FONTS.H2,
-              fontSize: SIZES.h2,
+              fontFamily: 'DMSans-Regular',
+              fontSize: SIZES.nTitle - 2,
               fontWeight: 'bold',
             }}>
             Senior UI/UX Designer
@@ -19,9 +23,9 @@ const Career = ({navigation}) => {
           <Text
             style={{
               fontFamily: 'DMSans-Regular',
-              fontSize: 14,
+              fontSize: SIZES.nBodyText,
               color: COLORS.secondary,
-              lineHeight: 21,
+              lineHeight: SIZES.nMinimulLineheight,
               marginTop: 8,
             }}>
             We need someone who is familiar and able to create a Design System,
@@ -30,11 +34,16 @@ const Career = ({navigation}) => {
           </Text>
           <PrimaryButton
             activeOpacity={0.8}
-            style={{marginTop: 20}}
+            style={{
+              marginTop: SIZES.height / 45,
+              height: SIZES.nPrimaryButtonHeight,
+              width: SIZES.nPrimaryButtonWidth,
+              marginBottom: 20,
+            }}
             onPress={() => navigation.navigate('CareerDetails')}>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 fontWeight: 'bold',
                 color: COLORS.white,
               }}>
@@ -42,13 +51,19 @@ const Career = ({navigation}) => {
             </Text>
           </PrimaryButton>
         </View>
-      </TechCart>
-      <TechCart style={{height: 217}}>
+      </View>
+
+      <View
+        style={{
+          backgroundColor: COLORS.white,
+          marginTop: SIZES.height / 20,
+          borderRadius: 10,
+        }}>
         <View style={{marginTop: 24, marginLeft: 24, marginRight: 24}}>
           <Text
             style={{
-              fontFamily: FONTS.H2,
-              fontSize: SIZES.h2,
+              fontFamily: 'DMSans-Regular',
+              fontSize: SIZES.nTitle - 2,
               fontWeight: 'bold',
             }}>
             Laravel Web Development
@@ -56,9 +71,9 @@ const Career = ({navigation}) => {
           <Text
             style={{
               fontFamily: 'DMSans-Regular',
-              fontSize: 14,
+              fontSize: SIZES.nBodyText,
               color: COLORS.secondary,
-              lineHeight: 21,
+              lineHeight: SIZES.nMinimulLineheight,
               marginTop: 8,
             }}>
             We need someone having experience in PHP, MySQL, Laravel & Vue.js.
@@ -66,11 +81,16 @@ const Career = ({navigation}) => {
           </Text>
           <PrimaryButton
             activeOpacity={0.8}
-            style={{marginTop: 20}}
+            style={{
+              marginTop: SIZES.height / 45,
+              height: SIZES.nPrimaryButtonHeight,
+              width: SIZES.nPrimaryButtonWidth,
+              marginBottom: 20,
+            }}
             onPress={() => navigation.navigate('CareerDetails')}>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 fontWeight: 'bold',
                 color: COLORS.white,
               }}>
@@ -78,7 +98,7 @@ const Career = ({navigation}) => {
             </Text>
           </PrimaryButton>
         </View>
-      </TechCart>
+      </View>
     </Screen>
   );
 };
