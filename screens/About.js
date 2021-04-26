@@ -362,7 +362,7 @@ const About = ({navigation}) => {
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
         longDescription:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
         link: 'https://zakirsoft.com/',
       },
       {
@@ -372,7 +372,7 @@ const About = ({navigation}) => {
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
         longDescription:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
         link: 'https://zakirsoft.com/',
       },
       {
@@ -382,7 +382,7 @@ const About = ({navigation}) => {
         description:
           'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
         longDescription:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
+          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
         link: 'https://zakirsoft.com/',
       },
     ];

@@ -225,6 +225,7 @@ const NewsDetails = ({route, navigation}) => {
                 style={{
                   color: k == active ? COLORS.primary : '#C4D6FB',
                   marginRight: 8,
+                  fontSize: SIZES.nBodyText,
                 }}>
                 ⬤
               </Text>
@@ -240,9 +241,9 @@ const NewsDetails = ({route, navigation}) => {
       <View style={{marginLeft: 22, marginRight: 22}}>
         <Image
           source={image}
-          resizeMode={'contain'}
+          // resizeMode={'contain'}
           style={{
-            height: 260,
+            height: SIZES.height / 3,
             width: '100%',
             borderTopLeftRadius: 10,
             borderTopRightRadius: 10,
@@ -251,36 +252,39 @@ const NewsDetails = ({route, navigation}) => {
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 24,
+            fontSize: SIZES.nTitle,
             fontWeight: 'bold',
-            marginTop: 12,
+            marginTop: SIZES.height / 50,
           }}>
           {title}
         </Text>
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 14,
+            fontSize: SIZES.nBodyText,
             color: COLORS.secondary,
-            marginTop: 12,
-            lineHeight: 21,
+            marginTop: SIZES.height / 60,
+            lineHeight: SIZES.nMinimulLineheight,
           }}>
           {longDescription}
         </Text>
         <View
           style={{
-            marginTop: 24,
+            marginTop: SIZES.height / 25,
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
           }}>
           <PrimaryButton
             activeOpacity={0.8}
-            style={{width: 110}}
+            style={{
+              height: SIZES.nPrimaryButtonHeight,
+              width: SIZES.nPrimaryButtonWidth,
+            }}
             onPress={() => navigation.navigate('Contact')}>
             <Text
               style={{
-                fontSize: SIZES.body3,
+                fontSize: SIZES.nBodyText,
                 fontWeight: 'bold',
                 color: COLORS.white,
               }}>
@@ -296,7 +300,11 @@ const NewsDetails = ({route, navigation}) => {
               <Image
                 source={icons.facebook}
                 resizeMode={'contain'}
-                style={{height: 40, width: 40, marginLeft: 4}}
+                style={{
+                  height: SIZES.nPrimaryButtonHeight,
+                  width: 40,
+                  marginLeft: SIZES.width / 100,
+                }}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -307,7 +315,11 @@ const NewsDetails = ({route, navigation}) => {
               <Image
                 source={icons.linkdin}
                 resizeMode={'contain'}
-                style={{height: 40, width: 40, marginLeft: 4}}
+                style={{
+                  height: SIZES.nPrimaryButtonHeight,
+                  width: 40,
+                  marginLeft: SIZES.width / 100,
+                }}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -316,7 +328,11 @@ const NewsDetails = ({route, navigation}) => {
               <Image
                 source={icons.github}
                 resizeMode={'contain'}
-                style={{height: 40, width: 40, marginLeft: 4}}
+                style={{
+                  height: SIZES.nPrimaryButtonHeight,
+                  width: 40,
+                  marginLeft: SIZES.width / 100,
+                }}
               />
             </TouchableOpacity>
           </View>
