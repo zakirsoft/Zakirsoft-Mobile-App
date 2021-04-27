@@ -10,7 +10,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import {COLORS, icons} from '../constants';
+import {COLORS, icons, SIZES} from '../constants';
 import {PrimaryButton} from '../Styles/Screen';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import call from 'react-native-phone-call';
@@ -25,7 +25,7 @@ const Contact = () => {
 
   const renderMap = () => {
     return (
-      <View style={{height: 397}}>
+      <View style={{height: SIZES.height / 2}}>
         <MapView
           initialRegion={{
             latitude: 23.774905,
@@ -42,7 +42,7 @@ const Contact = () => {
             <Image
               source={icons.placeholder}
               resizeMode={'contain'}
-              style={{height: 65, width: 45}}
+              style={{height: SIZES.height / 15, width: SIZES.width / 8}}
             />
           </Marker>
         </MapView>
@@ -52,15 +52,17 @@ const Contact = () => {
 
   const renderInfo = () => (
     <>
-      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+      <View style={{}}>
         <View
           style={{
-            width: '90%',
-            height: 240,
+            // width: '90%',
+            // height: 240,
             borderRadius: 10,
+
             top: -40,
             backgroundColor: COLORS.white,
-            // marginLeft: 24,
+            marginLeft: '5%',
+            marginRight: '5%',
             position: 'relative',
           }}>
           <View
@@ -68,12 +70,12 @@ const Contact = () => {
               flexDirection: 'row',
               marginLeft: 16,
               marginTop: 16,
-              marginBottom: 16,
+              marginBottom: '5%',
             }}>
             <View
               style={{
-                height: 48,
-                width: 48,
+                height: SIZES.height / 16,
+                width: SIZES.width / 8,
                 borderRadius: 10,
                 backgroundColor: COLORS.ScreenColor,
                 justifyContent: 'center',
@@ -83,18 +85,23 @@ const Contact = () => {
                 source={icons.Location}
                 resizeMode={'contain'}
                 style={{
-                  height: 22,
-                  width: 18,
+                  height: '80%',
+                  width: '40%',
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}
               />
             </View>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '80%',
+              }}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
-                  fontSize: 16,
+                  fontSize: SIZES.nBodyText,
                   color: COLORS.black,
                   marginLeft: 10,
                 }}>
@@ -104,7 +111,7 @@ const Contact = () => {
           </View>
           <View
             style={{
-              width: 330,
+              width: '90%',
               alignItems: 'center',
               justifyContent: 'center',
               backgroundColor: COLORS.ScreenColor,
@@ -117,12 +124,12 @@ const Contact = () => {
               flexDirection: 'row',
               marginLeft: 16,
               marginTop: 16,
-              marginBottom: 16,
+              marginBottom: '5%',
             }}>
             <View
               style={{
-                height: 48,
-                width: 48,
+                height: SIZES.height / 16,
+                width: SIZES.width / 8,
                 borderRadius: 10,
                 backgroundColor: COLORS.ScreenColor,
                 justifyContent: 'center',
@@ -132,8 +139,8 @@ const Contact = () => {
                 source={icons.Call}
                 resizeMode={'contain'}
                 style={{
-                  height: 22,
-                  width: 18,
+                  height: '80%',
+                  width: '40%',
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}
@@ -143,7 +150,7 @@ const Contact = () => {
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
-                  fontSize: 16,
+                  fontSize: SIZES.nBodyText,
                   color: COLORS.black,
                   marginLeft: 10,
                 }}>
@@ -153,7 +160,7 @@ const Contact = () => {
           </View>
           <View
             style={{
-              width: 330,
+              width: '90%',
               alignItems: 'center',
               justifyContent: 'center',
               backgroundColor: COLORS.ScreenColor,
@@ -166,12 +173,12 @@ const Contact = () => {
               flexDirection: 'row',
               marginLeft: 16,
               marginTop: 16,
-              marginBottom: 16,
+              marginBottom: '5%',
             }}>
             <View
               style={{
-                height: 48,
-                width: 48,
+                height: SIZES.height / 16,
+                width: SIZES.width / 8,
                 borderRadius: 10,
                 backgroundColor: COLORS.ScreenColor,
                 justifyContent: 'center',
@@ -181,8 +188,8 @@ const Contact = () => {
                 source={icons.Message}
                 resizeMode={'contain'}
                 style={{
-                  height: 22,
-                  width: 18,
+                  height: '80%',
+                  width: '40%',
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}
@@ -201,7 +208,7 @@ const Contact = () => {
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
-                    fontSize: 16,
+                    fontSize: SIZES.nBodyText,
                     color: COLORS.black,
                     marginLeft: 10,
                   }}>
@@ -214,16 +221,19 @@ const Contact = () => {
         <View
           style={{
             width: '90%',
-            height: 240,
+            // height: 240,
             borderRadius: 10,
             top: -40,
+            marginLeft: '5%',
+            marginRight: '5%',
+            position: 'relative',
             // marginLeft: 24,
             // position: 'relative',
             marginTop: 16,
           }}>
           <PrimaryButton
             activeOpacity={0.8}
-            style={{width: '100%'}}
+            style={{width: '100%', height: '34%'}}
             onPress={() => {
               const args = {
                 number: '01625 592566',
@@ -241,11 +251,11 @@ const Contact = () => {
               <Image
                 source={icons.Call}
                 resizeMode={'contain'}
-                style={{height: 18, width: 18, tintColor: COLORS.white}}
+                style={{height: '100%', width: '5%', tintColor: COLORS.white}}
               />
               <Text
                 style={{
-                  fontSize: 16,
+                  fontSize: SIZES.nBodyText,
                   fontWeight: 'bold',
                   color: COLORS.white,
                   paddingLeft: 4,
