@@ -68,7 +68,7 @@ export const cImage = styled.Image`
 `;
 export const ProjectView = styled.View`
   width: 100%;
-  height: 318px;
+  /* height: 318px; */
   background-color: #ebf1f7;
   margin-top: 24px;
   border-radius: 10px;

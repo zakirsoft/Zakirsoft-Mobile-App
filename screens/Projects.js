@@ -110,33 +110,43 @@ const Projects = ({navigation}) => {
         <View
           style={{
             backgroundColor: COLORS.ScreenColor,
+            marginBottom: '3%',
           }}>
           <TouchableOpacity
             activeOpacity={0.8}
             onPress={() => navigation.navigate('ProjectDetails', item)}
-            style={{marginLeft: 22, marginRight: 22}}>
+            style={{
+              width: '90%',
+              // height: SIZES.height / 2.5,
+              marginLeft: '5%',
+              marginRight: '5%',
+            }}>
             <View>
               <ProjectView>
                 <Image
                   source={item.Img}
-                  resizeMode={'contain'}
-                  style={{height: 260, width: '100%', borderRadius: 10}}
+                  // resizeMode={'contain'}
+                  style={{
+                    width: '100%',
+                    height: SIZES.height / 3,
+                    borderRadius: 10,
+                  }}
                 />
 
-                <View style={{paddingTop: 16}}>
+                <View style={{marginTop: '1%'}}>
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
-                      fontSize: 12,
+                      fontSize: SIZES.nBodyText - 2,
                       color: COLORS.secondary,
                     }}>
                     {item.Category}
                   </Text>
                   <Text
                     style={{
-                      paddingTop: 2,
+                      paddingTop: '1%',
                       fontFamily: 'DMSans-Regular',
-                      fontSize: 20,
+                      fontSize: SIZES.nNewsTitle,
                       color: COLORS.primary,
                     }}>
                     {item.Title}
@@ -150,7 +160,7 @@ const Projects = ({navigation}) => {
     };
 
     return (
-      <View style={{flex: 1, marginBottom: 30}}>
+      <View style={{flex: 1}}>
         <FlatList
           data={AllCategories}
           renderItem={renderItem}
