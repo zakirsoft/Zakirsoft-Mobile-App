@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Button, Image, Linking} from 'react-native';
+import {View, Text, Button, Image, Linking, ScrollView} from 'react-native';
 import {COLORS, icons, SIZES} from '../constants';
 import {PrimaryButton, Screen} from '../Styles/Screen';
 
@@ -14,19 +14,19 @@ const ProjectDetails = ({route}) => {
     //   <Image source={Img} resizeMode={'cover'} />
     // </View>
 
-    <Screen>
+    <ScrollView>
       <View style={{marginBottom: 24}}>
         <Image
           source={Img}
           resizeMode={'contain'}
-          style={{width: '100%', height: 270, borderRadius: 10}}
+          style={{width: '100%', height: SIZES.height / 3, borderRadius: 10}}
         />
       </View>
-      <View>
+      <View style={{marginRight: '5%', marginLeft: '5%'}}>
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 24,
+            fontSize: SIZES.nNewsTitle,
             fontWeight: 'bold',
           }}>
           {Title}
@@ -34,17 +34,18 @@ const ProjectDetails = ({route}) => {
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 16,
+            fontSize: SIZES.nBodyText,
             color: COLORS.secondary,
-            marginTop: 8,
+            marginTop: SIZES.height / 100,
+            lineHeight: SIZES.nMinimulLineheight,
           }}>
           {Description}
         </Text>
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 16,
-            marginTop: 16,
+            fontSize: SIZES.nBodyText,
+            marginTop: SIZES.height / 60,
             fontWeight: 'bold',
           }}>
           Our Role
@@ -52,17 +53,18 @@ const ProjectDetails = ({route}) => {
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 16,
+            fontSize: SIZES.nBodyText,
             color: COLORS.secondary,
-            marginTop: 8,
+            lineHeight: SIZES.nMinimulLineheight,
+            marginTop: SIZES.height / 100,
           }}>
           {Roles}
         </Text>
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 16,
-            marginTop: 16,
+            fontSize: SIZES.nBodyText,
+            marginTop: SIZES.height / 60,
             fontWeight: 'bold',
           }}>
           Tool Used
@@ -70,22 +72,28 @@ const ProjectDetails = ({route}) => {
         <Text
           style={{
             fontFamily: 'DMSans-Regular',
-            fontSize: 16,
+            fontSize: SIZES.nBodyText,
             color: COLORS.secondary,
-            marginTop: 8,
+            lineHeight: SIZES.nMinimulLineheight,
+            marginTop: SIZES.height / 100,
           }}>
           {ToolUsed}
         </Text>
       </View>
       <PrimaryButton
         activeOpacity={0.8}
-        style={{marginTop: 10, width: 204, marginBottom: 10}}
+        style={{
+          marginLeft: '5%',
+          marginTop: 10,
+          width: SIZES.width / 2,
+          marginBottom: 10,
+        }}
         onPress={() => Linking.openURL(URL)}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <View style={{justifyContent: 'center'}}>
             <Text
               style={{
-                fontSize: 16,
+                fontSize: SIZES.nBodyText,
                 fontFamily: 'DMSans-Regular',
                 fontWeight: 'bold',
                 color: COLORS.white,
@@ -103,16 +111,16 @@ const ProjectDetails = ({route}) => {
               source={icons.RightArrow}
               resizeMode={'contain'}
               style={{
-                width: 20,
-                height: 10,
-                top: 2,
+                width: SIZES.nBodyText,
+                height: SIZES.nBodyText,
+                top: 1,
                 tintColor: COLORS.white,
               }}
             />
           </View>
         </View>
       </PrimaryButton>
-    </Screen>
+    </ScrollView>
   );
 };
 export default ProjectDetails;
