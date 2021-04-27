@@ -94,8 +94,8 @@ const Contact = () => {
             </View>
             <View
               style={{
-                justifyContent: 'center',
-                alignItems: 'center',
+                // justifyContent: 'center',
+                // alignItems: 'center',
                 width: '80%',
               }}>
               <Text
