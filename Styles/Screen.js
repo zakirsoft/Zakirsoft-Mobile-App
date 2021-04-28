@@ -31,9 +31,9 @@ export const SecondaryButton = styled.TouchableOpacity`
 `;
 export const ServicesCart = styled.View`
   width: 100%;
-  height: 340px;
+  /* height: 340px; */
   background-color: #ffffff;
-  margin-right: 54px;
+  /* margin-right: 54px; */
   border-radius: 10px;
   margin-top: 24px;
 `;

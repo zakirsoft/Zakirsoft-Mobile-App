@@ -28,32 +28,33 @@ const Services = () => {
           <View
             style={{
               flexDirection: 'column',
-              paddingRight: 20,
-              paddingLeft: 20,
+              paddingRight: '5%',
+              paddingLeft: '5%',
             }}>
             <View style={{paddingTop: 20}}>
               <Image
                 source={images.s_frontend}
-                style={{height: 90, width: 85}}
+                resizeMode={'contain'}
+                // style={{height: SIZES.height / 9, width: 85}}
               />
             </View>
             <View style={{paddingTop: 16}}>
               <Text
                 style={{
-                  fontFamily: FONTS.H2,
-                  fontSize: SIZES.h2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nTitle,
                   fontWeight: 'bold',
                 }}>
                 Frontend Development
               </Text>
             </View>
-            <View style={{paddingTop: 8}}>
+            <View style={{paddingTop: 8, marginBottom: '5%'}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
-                  fontSize: 14,
+                  fontSize: SIZES.nBodyText,
                   color: COLORS.secondary,
-                  lineHeight: 21,
+                  lineHeight: SIZES.nMinimulLineheight + 2,
                 }}>
                 Front-end web development is the practice of converting data to
                 a graphical interface, through the use of HTML, CSS, and
@@ -68,20 +69,21 @@ const Services = () => {
           <View
             style={{
               flexDirection: 'column',
-              paddingRight: 20,
-              paddingLeft: 20,
+              paddingRight: '5%',
+              paddingLeft: '5%',
             }}>
             <View style={{paddingTop: 20}}>
               <Image
                 source={images.s_backend}
-                style={{height: 90, width: 90}}
+                resizeMode={'contain'}
+                // style={{height: 90, width: 90}}
               />
             </View>
-            <View style={{paddingTop: 16}}>
+            <View style={{paddingTop: 16, marginBottom: '5%'}}>
               <Text
                 style={{
-                  fontFamily: FONTS.H2,
-                  fontSize: SIZES.h2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nTitle,
                   fontWeight: 'bold',
                 }}>
                 Backend Development
@@ -91,9 +93,9 @@ const Services = () => {
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
-                  fontSize: 14,
+                  fontSize: SIZES.nBodyText,
                   color: COLORS.secondary,
-                  lineHeight: 21,
+                  lineHeight: SIZES.nMinimulLineheight + 2,
                 }}>
                 A back-end web developer is responsible for server-side web
                 application logic and integration of the work front-end web
