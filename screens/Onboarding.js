@@ -16,12 +16,12 @@ const Onboarding = ({navigation}) => {
           image: (
             <Image
               source={images.onboarding_1}
-              resizeMode={'contain'}
+              // resizeMode={'contain'}
               style={{
-                height: 350,
-                width: SIZES.width,
+                height: SIZES.height / 2,
+                width: SIZES.width / 2,
                 position: 'relative',
-                bottom: 100,
+                bottom: '15%',
               }}
             />
           ),
@@ -43,16 +43,16 @@ const Onboarding = ({navigation}) => {
             'As a software company we develop innovatives website & software solutions. We are proud of what we do.',
         },
         {
-          backgroundColor: COLORS.black,
+          backgroundColor: COLORS.primary,
           image: (
             <Image
               source={images.onboarding_2}
-              resizeMode={'contain'}
+              // resizeMode={'center'}
               style={{
-                height: 434,
+                height: SIZES.height / 2,
                 width: SIZES.width,
                 position: 'relative',
-                bottom: 100,
+                bottom: '15%',
               }}
             />
           ),
@@ -69,22 +69,21 @@ const Onboarding = ({navigation}) => {
             position: 'relative',
             bottom: 100,
           },
-          title:
-            'We design and Develop web apps & Mobile Apps that get you real results.',
+          title: 'We Develop Apps that get you real results.',
           subtitle:
             'Zakirsoft specialize in working directly with other organizations to create sustainable partnerships.',
         },
         {
-          backgroundColor: COLORS.ScreenColor,
+          backgroundColor: COLORS.primary,
           image: (
             <Image
               source={images.onboarding_3}
-              resizeMode={'contain'}
+              // resizeMode={'center'}
               style={{
-                height: 434,
+                height: SIZES.height / 2,
                 width: SIZES.width,
                 position: 'relative',
-                bottom: 100,
+                bottom: '15%',
               }}
             />
           ),
