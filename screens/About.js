@@ -223,13 +223,15 @@ const About = ({navigation}) => {
     const renderItem = ({item}) => {
       return (
         <View>
-          <TechCart
+          <View
             style={{
-              height: 310,
+              // height: 310,
               width: SIZES.width - 44,
               marginBottom: 50,
               marginLeft: 22,
               marginRight: 22,
+              borderRadius: 10,
+              backgroundColor: COLORS.white,
             }}>
             <View style={{marginTop: 16, marginLeft: 16, marginRight: 16}}>
               <Text
@@ -253,6 +255,7 @@ const About = ({navigation}) => {
                 style={{
                   flexDirection: 'row',
                   justifyContent: 'space-between',
+                  marginBottom: '5%',
                 }}>
                 <Text
                   style={{
@@ -269,7 +272,7 @@ const About = ({navigation}) => {
                 />
               </View>
             </View>
-          </TechCart>
+          </View>
         </View>
       );
     };
@@ -282,10 +285,11 @@ const About = ({navigation}) => {
               marginTop: 24,
               flexDirection: 'row',
               position: 'relative',
-              marginRight: 22,
-              marginLeft: 22,
+              marginRight: '5%',
+              marginLeft: '5%',
               justifyContent: 'space-between',
               alignItems: 'center',
+              marginBottom: '5%',
             }}>
             <Text
               style={{
@@ -397,13 +401,15 @@ const About = ({navigation}) => {
     };
     const renderItem = ({item}) => {
       return (
-        <TechCart
+        <View
           style={{
-            height: 450,
+            // height: 450,
             width: SIZES.width - 44,
             marginBottom: 20,
             marginLeft: 22,
             marginRight: 22,
+            backgroundColor: COLORS.white,
+            borderRadius: 10,
           }}>
           {/* <View style={{justifyContent: 'center'}}> */}
           <Image
@@ -441,7 +447,7 @@ const About = ({navigation}) => {
               onPress={() => {
                 navigation.navigate('NewsDetails', item);
               }}>
-              <View style={{flexDirection: 'row'}}>
+              <View style={{flexDirection: 'row', marginBottom: '5%'}}>
                 <Text
                   style={{
                     fontSize: SIZES.nBodyText,
@@ -471,7 +477,7 @@ const About = ({navigation}) => {
               </View>
             </TouchableOpacity>
           </View>
-        </TechCart>
+        </View>
       );
     };
 
@@ -482,9 +488,10 @@ const About = ({navigation}) => {
             marginTop: 50,
             flexDirection: 'row',
             position: 'relative',
-            marginRight: 22,
-            marginLeft: 22,
+            marginRight: '5%',
+            marginLeft: '5%',
             justifyContent: 'space-between',
+            marginBottom: '5%',
           }}>
           <Text
             style={{
