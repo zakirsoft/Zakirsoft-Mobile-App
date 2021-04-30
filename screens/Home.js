@@ -16,7 +16,7 @@ const Home = ({navigation}) => {
             top: -5,
             marginRight: '5%',
             marginLeft: '5%',
-            // height: SIZES.height,
+            height: SIZES.height - 60,
             // marginBottom: 75,
           }}>
           <View>
@@ -32,6 +32,7 @@ const Home = ({navigation}) => {
                 fontFamily: 'DMSans-Bold',
                 fontSize: SIZES.nLargeTitle,
                 lineHeight: SIZES.height / 13.5,
+
                 // fontWeight: 'bold',
               }}>
               We are here to grow your business.
@@ -48,7 +49,7 @@ const Home = ({navigation}) => {
               style={{
                 fontSize: SIZES.nBodyText,
                 color: COLORS.secondary,
-                lineHeight: SIZES.nMinimulLineheight,
+                // lineHeight: SIZES.nMinimulLineheight,
                 marginTop: SIZES.nMarginTop,
               }}>
               As a software company we develop innovatives website & software

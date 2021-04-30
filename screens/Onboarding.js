@@ -50,7 +50,7 @@ const Onboarding = ({navigation}) => {
               // resizeMode={'center'}
               style={{
                 height: SIZES.height / 2,
-                width: SIZES.width,
+                width: SIZES.width / 2,
                 position: 'relative',
                 bottom: '15%',
               }}
@@ -81,7 +81,7 @@ const Onboarding = ({navigation}) => {
               // resizeMode={'center'}
               style={{
                 height: SIZES.height / 2,
-                width: SIZES.width,
+                width: SIZES.width / 2,
                 position: 'relative',
                 bottom: '15%',
               }}
