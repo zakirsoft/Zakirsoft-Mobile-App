@@ -184,8 +184,8 @@ const LiveProjects = () => {
           // marginBottom: 24,
           flexDirection: 'row',
           position: 'relative',
-          marginRight: 22,
-          marginLeft: 22,
+          marginRight: '5%',
+          marginLeft: '5%',
           justifyContent: 'space-between',
           alignItems: 'center',
         }}>
@@ -215,7 +215,7 @@ const LiveProjects = () => {
                 marginBottom: 30,
                 top: 25,
               }}>
-              <View style={{marginTop: 182, marginLeft: 20, marginRight: 20}}>
+              <View style={{marginTop: '45%', marginLeft: 20, marginRight: 20}}>
                 <Image
                   source={item.project_Logo}
                   resizeMode={'contain'}
@@ -341,7 +341,7 @@ const LiveProjects = () => {
                 </PrimaryButton>
               </View>
             </View>
-            <View style={{bottom: 600}}>
+            <View style={{bottom: '98%'}}>
               <Image
                 source={item.project_SS}
                 resizeMode={'contain'}
