@@ -81,7 +81,7 @@ const Onboarding = ({navigation}) => {
               // resizeMode={'center'}
               style={{
                 height: SIZES.height / 2,
-                width: SIZES.width / 2,
+                width: SIZES.width,
                 position: 'relative',
                 bottom: '15%',
               }}
