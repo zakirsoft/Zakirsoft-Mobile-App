@@ -89,7 +89,7 @@ const Services = () => {
                 Backend Development
               </Text>
             </View>
-            <View style={{paddingTop: 8}}>
+            <View style={{paddingTop: 8, marginBottom: '5%'}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
@@ -106,33 +106,33 @@ const Services = () => {
             </View>
           </View>
         </ServicesCart>
-        <ServicesCart style={{height: 360}}>
+        <ServicesCart style={{}}>
           <View
             style={{
               flexDirection: 'column',
-              paddingRight: 20,
-              paddingLeft: 20,
+              paddingRight: '5%',
+              paddingLeft: '5%',
             }}>
             <View style={{paddingTop: 20}}>
-              <Image source={images.s_spa} style={{height: 90, width: 135}} />
+              <Image source={images.s_spa} resizeMode={'contain'} style={{}} />
             </View>
             <View style={{paddingTop: 16}}>
               <Text
                 style={{
-                  fontFamily: FONTS.H2,
-                  fontSize: SIZES.h2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nTitle,
                   fontWeight: 'bold',
                 }}>
                 SPA Development
               </Text>
             </View>
-            <View style={{paddingTop: 8}}>
+            <View style={{paddingTop: 8, marginBottom: '5%'}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
-                  fontSize: 14,
+                  fontSize: SIZES.nBodyText,
                   color: COLORS.secondary,
-                  lineHeight: 21,
+                  lineHeight: SIZES.nMinimulLineheight,
                 }}>
                 A single-page application (SPA) is a web Application or website
                 that interacts with the user by dynamically rewriting the
@@ -144,33 +144,33 @@ const Services = () => {
             </View>
           </View>
         </ServicesCart>
-        <ServicesCart style={{height: 370}}>
+        <ServicesCart style={{}}>
           <View
             style={{
               flexDirection: 'column',
-              paddingRight: 20,
-              paddingLeft: 20,
+              paddingRight: '5%',
+              paddingLeft: '5%',
             }}>
             <View style={{paddingTop: 20}}>
-              <Image source={images.s_pwa} style={{height: 90, width: 141}} />
+              <Image source={images.s_pwa} resizeMode={'contain'} style={{}} />
             </View>
             <View style={{paddingTop: 16}}>
               <Text
                 style={{
-                  fontFamily: FONTS.H2,
-                  fontSize: SIZES.h2,
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nTitle,
                   fontWeight: 'bold',
                 }}>
                 PWA Development
               </Text>
             </View>
-            <View style={{paddingTop: 8}}>
+            <View style={{paddingTop: 8, marginBottom: '5%'}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
-                  fontSize: 14,
+                  fontSize: SIZES.nBodyText,
                   color: COLORS.secondary,
-                  lineHeight: 21,
+                  lineHeight: SIZES.nMinimulLineheight,
                 }}>
                 Progressive web apps (PWA) has in combination of the best
                 features of the site and mobile application built-in it. In
@@ -192,7 +192,7 @@ const Services = () => {
             numberOfLines={1}
             style={{
               fontFamily: 'DMSans-Regular',
-              fontSize: 28,
+              fontSize: SIZES.nTitle,
               fontWeight: 'bold',
               // marginRight: 79,
               // marginLeft: 79,
