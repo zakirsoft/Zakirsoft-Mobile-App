@@ -33,149 +33,6 @@ const LiveProjects = () => {
     },
   ];
 
-  const renderItem = ({item}) => {
-    // return (
-    //   <View key={} style={{backgroundColor: COLORS.ScreenColor}}>
-    //     <View
-    //       style={{
-    //         marginTop: 80,
-    //         backgroundColor: COLORS.white,
-    //         height: 530,
-    //         marginRight: 22,
-    //         marginLeft: 22,
-    //         borderRadius: 10,
-    //         marginBottom: 30,
-    //         top: 25,
-    //       }}>
-    //       <View style={{marginTop: 182, marginLeft: 20, marginRight: 20}}>
-    //         <Image
-    //           source={item.project_Logo}
-    //           resizeMode={'contain'}
-    //           style={{
-    //             height: 16,
-    //             width: '40%',
-    //           }}
-    //         />
-    //         <Text
-    //           style={{
-    //             fontFamily: 'DMSans-Regular',
-    //             fontSize: 26,
-    //             fontWeight: 'bold',
-    //             marginTop: 8,
-    //           }}>
-    //           {item.name}
-    //         </Text>
-    //         <View
-    //           style={{
-    //             flexDirection: 'row',
-    //             // justifyContent: 'space-between',
-    //             marginTop: 16,
-    //           }}>
-    //           <View style={{flexDirection: 'column'}}>
-    //             <Text
-    //               style={{
-    //                 fontFamily: 'DMSans-Regular',
-    //                 fontSize: 16,
-    //                 fontWeight: 'bold',
-    //               }}>
-    //               {item.firstNumber}
-    //             </Text>
-    //             <Text
-    //               style={{
-    //                 fontFamily: 'DMSans-Regular',
-    //                 fontSize: 16,
-    //                 fontWeight: 'bold',
-    //                 color: COLORS.secondary,
-    //                 marginTop: 6,
-    //               }}>
-    //               {item.firstNumberTitle}
-    //             </Text>
-    //           </View>
-    //           <View style={{flexDirection: 'column', marginLeft: 61}}>
-    //             <Text
-    //               style={{
-    //                 fontFamily: 'DMSans-Regular',
-    //                 fontSize: 16,
-    //                 fontWeight: 'bold',
-    //               }}>
-    //               {item.secondNumber}
-    //             </Text>
-    //             <Text
-    //               style={{
-    //                 fontFamily: 'DMSans-Regular',
-    //                 fontSize: 16,
-    //                 fontWeight: 'bold',
-    //                 color: COLORS.secondary,
-    //                 marginTop: 6,
-    //               }}>
-    //               {item.secondNumberTitle}
-    //             </Text>
-    //           </View>
-    //         </View>
-    //         <Text
-    //           style={{
-    //             fontFamily: 'DMSans-Regular',
-    //             fontSize: 14,
-    //             lineHeight: 21,
-    //             color: COLORS.secondary,
-    //             marginTop: 16,
-    //           }}>
-    //           {item.description}
-    //         </Text>
-    //         <PrimaryButton
-    //           activeOpacity={0.8}
-    //           style={{marginTop: 24, width: 219, marginBottom: 24}}
-    //           onPress={() => Linking.openURL(item.link)}>
-    //           <View
-    //             style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-    //             <View style={{justifyContent: 'center'}}>
-    //               <Text
-    //                 style={{
-    //                   fontSize: 16,
-    //                   fontFamily: 'DMSans-Regular',
-    //                   fontWeight: 'bold',
-    //                   color: COLORS.white,
-    //                 }}>
-    //                 Launch {item.name}
-    //               </Text>
-    //             </View>
-    //             <View
-    //               style={{
-    //                 justifyContent: 'center',
-    //                 alignItems: 'center',
-    //                 marginLeft: 5,
-    //               }}>
-    //               <Image
-    //                 source={icons.RightArrow}
-    //                 resizeMode={'contain'}
-    //                 style={{
-    //                   width: 20,
-    //                   height: 10,
-    //                   top: 2,
-    //                   tintColor: COLORS.white,
-    //                 }}
-    //               />
-    //             </View>
-    //           </View>
-    //         </PrimaryButton>
-    //       </View>
-    //     </View>
-    //     <View style={{bottom: 600}}>
-    //       <Image
-    //         source={item.project_SS}
-    //         // resizeMode={'cover'}
-    //         style={{
-    //           height: 220,
-    //           width: '98%',
-    //           marginLeft: 4,
-    //           position: 'absolute',
-    //         }}
-    //       />
-    //     </View>
-    //   </View>
-    // );
-  };
-
   return (
     <>
       <View
@@ -229,7 +86,7 @@ const LiveProjects = () => {
                     fontFamily: 'DMSans-Regular',
                     fontSize: SIZES.nTitle,
                     fontWeight: 'bold',
-                    marginTop: 8,
+                    marginTop: '5%',
                   }}>
                   {item.name}
                 </Text>
@@ -237,7 +94,7 @@ const LiveProjects = () => {
                   style={{
                     flexDirection: 'row',
                     // justifyContent: 'space-between',
-                    marginTop: 16,
+                    marginTop: '5%',
                   }}>
                   <View style={{flexDirection: 'column'}}>
                     <Text
@@ -254,7 +111,7 @@ const LiveProjects = () => {
                         fontSize: SIZES.nBodyText2,
                         fontWeight: 'bold',
                         color: COLORS.secondary,
-                        marginTop: 6,
+                        marginTop: '2%',
                       }}>
                       {item.firstNumberTitle}
                     </Text>
@@ -278,7 +135,7 @@ const LiveProjects = () => {
                         fontSize: SIZES.nBodyText2,
                         fontWeight: 'bold',
                         color: COLORS.secondary,
-                        marginTop: 6,
+                        marginTop: '2%',
                       }}>
                       {item.secondNumberTitle}
                     </Text>
@@ -290,7 +147,7 @@ const LiveProjects = () => {
                     fontSize: SIZES.nBodyText,
                     lineHeight: 21,
                     color: COLORS.secondary,
-                    marginTop: 16,
+                    marginTop: '5%',
                   }}>
                   {item.description}
                 </Text>
@@ -298,8 +155,8 @@ const LiveProjects = () => {
                   style={{
                     height: SIZES.height / 15,
                     width: SIZES.width / 2,
-                    marginBottom: 24,
-                    marginTop: 24,
+                    marginBottom: '8%',
+                    marginTop: '5%',
                   }}
                   activeOpacity={0.8}
                   // style={{marginTop: 24, width: 219, }}
@@ -324,7 +181,7 @@ const LiveProjects = () => {
                       style={{
                         justifyContent: 'center',
                         alignItems: 'center',
-                        marginLeft: 5,
+                        marginLeft: '2%',
                       }}>
                       <Image
                         source={icons.RightArrow}

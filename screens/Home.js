@@ -16,7 +16,7 @@ const Home = ({navigation}) => {
             top: -5,
             marginRight: '5%',
             marginLeft: '5%',
-            height: SIZES.height,
+            // height: SIZES.height,
             // marginBottom: 75,
           }}>
           <View>
