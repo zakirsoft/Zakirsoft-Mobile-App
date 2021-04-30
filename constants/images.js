@@ -12,23 +12,23 @@ const s_backend = require('../assets/images/servicesimage/backend.png');
 const s_frontend = require('../assets/images/servicesimage/frontend.png');
 const s_pwa = require('../assets/images/servicesimage/pwa.png');
 const s_spa = require('../assets/images/servicesimage/spa.png');
-const Algolia = require('../assets/images/technology/Backendimages/Algolia.png');
-const Elasticsearch = require('../assets/images/technology/Backendimages/Elasticsearch.png');
-const firebase = require('../assets/images/technology/Backendimages/firebase.png');
-const laravel = require('../assets/images/technology/Backendimages/laravel.png');
-const MySQL = require('../assets/images/technology/Backendimages/MySQL.png');
-const php = require('../assets/images/technology/Backendimages/php.png');
-const Redis = require('../assets/images/technology/Backendimages/Redis.png');
-const css = require('../assets/images/technology/frontendimages/css.png');
-const html = require('../assets/images/technology/frontendimages/html.png');
-const react = require('../assets/images/technology/frontendimages/react.png');
-const Tailwind = require('../assets/images/technology/frontendimages/Tailwind.png');
-const ts = require('../assets/images/technology/frontendimages/ts.png');
-const vue = require('../assets/images/technology/frontendimages/vue.png');
-const ai = require('../assets/images/technology/UIUX/ai.png');
-const xd = require('../assets/images/technology/UIUX/xd.png');
-const figma = require('../assets/images/technology/UIUX/figma.png');
-const ps = require('../assets/images/technology/UIUX/ps.png');
+// const Algolia = require('../assets/images/technology/Backendimages/Algolia.png');
+// const Elasticsearch = require('../assets/images/technology/Backendimages/Elasticsearch.png');
+// const firebase = require('../assets/images/technology/Backendimages/firebase.png');
+// const laravel = require('../assets/images/technology/Backendimages/laravel.png');
+// const MySQL = require('../assets/images/technology/Backendimages/MySQL.png');
+// const php = require('../assets/images/technology/Backendimages/php.png');
+// const Redis = require('../assets/images/technology/Backendimages/Redis.png');
+// const css = require('../assets/images/technology/frontendimages/css.png');
+// const html = require('../assets/images/technology/frontendimages/html.png');
+// const react = require('../assets/images/technology/frontendimages/react.png');
+// const Tailwind = require('../assets/images/technology/frontendimages/Tailwind.png');
+// const ts = require('../assets/images/technology/frontendimages/ts.png');
+// const vue = require('../assets/images/technology/frontendimages/vue.png');
+// const ai = require('../assets/images/technology/UIUX/ai.png');
+// const xd = require('../assets/images/technology/UIUX/xd.png');
+// const figma = require('../assets/images/technology/UIUX/figma.png');
+// const ps = require('../assets/images/technology/UIUX/ps.png');
 const loovum = require('../assets/images/Projects/loovum.png');
 const News_1 = require('../assets/images/about/News.png');
 const FreelancerManagementSpa = require('../assets/images/Projects/Screenshot.png');
@@ -56,23 +56,23 @@ export default {
   s_frontend,
   s_pwa,
   s_spa,
-  Algolia,
-  Elasticsearch,
-  firebase,
-  laravel,
-  MySQL,
-  php,
-  Redis,
-  css,
-  html,
-  react,
-  Tailwind,
-  ts,
-  vue,
-  ai,
-  xd,
-  figma,
-  ps,
+  // Algolia,
+  // Elasticsearch,
+  // firebase,
+  // laravel,
+  // MySQL,
+  // php,
+  // Redis,
+  // css,
+  // html,
+  // react,
+  // Tailwind,
+  // ts,
+  // vue,
+  // ai,
+  // xd,
+  // figma,
+  // ps,
   loovum,
   News_1,
   News_2,
