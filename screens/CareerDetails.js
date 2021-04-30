@@ -6,21 +6,21 @@ import {PrimaryButton, Screen, TechCart} from '../Styles/Screen';
 const CareerDetails = () => {
   return (
     <Screen>
-      <TechCart style={{height: 516}}>
-        <View style={{marginTop: 20, marginLeft: 20, marginRight: 20}}>
+      <View style={{backgroundColor: COLORS.white, borderRadius: 10}}>
+        <View style={{marginTop: '5%', marginLeft: '5%', marginRight: '5%'}}>
           <View style={{justifyContent: 'center', alignItems: 'center'}}>
             <Text
               style={{
                 fontFamily: 'DMSans-Bold',
-                fontSize: 20,
-                fontWeight: 'bold',
+                fontSize: SIZES.nNewsTitle,
+                // fontWeight: 'bold',
               }}>
               Please answer these questions
             </Text>
             <TextInput
               placeholder="Full Name"
               style={{
-                height: 48,
+                // height: SIZES.height / 15,
                 width: '100%',
                 borderColor: COLORS.secondary,
                 borderWidth: 1,
@@ -30,24 +30,25 @@ const CareerDetails = () => {
             />
             <TextInput
               placeholder="Email"
+              autoCompleteType="email"
               style={{
-                height: 48,
+                // height: 48,
                 width: '100%',
                 borderColor: COLORS.secondary,
                 borderWidth: 1,
                 borderRadius: 5,
-                marginTop: 16,
+                marginTop: '5%',
               }}
             />
             <TextInput
               placeholder="Portfolio Link"
               style={{
-                height: 48,
+                // height: 48,
                 width: '100%',
                 borderColor: COLORS.secondary,
                 borderWidth: 1,
                 borderRadius: 5,
-                marginTop: 16,
+                marginTop: '5%',
               }}
             />
             <View
@@ -58,8 +59,9 @@ const CareerDetails = () => {
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
-                  fontSize: 12,
+                  fontSize: SIZES.nBodyText * 0.8,
                   paddingTop: 4,
+                  color: COLORS.secondary,
                 }}>
                 Dribbble, Github or any other publicly accessible link.
               </Text>
@@ -76,12 +78,18 @@ const CareerDetails = () => {
                 borderColor: COLORS.secondary,
                 borderWidth: 1,
                 borderRadius: 5,
-                marginTop: 16,
+                marginTop: '5%',
               }}
             />
           </View>
           <View style={{marginTop: 20, flexDirection: 'row-reverse'}}>
-            <PrimaryButton activeOpacity={0.8} style={{width: 166}}>
+            <PrimaryButton
+              activeOpacity={0.8}
+              style={{
+                width: SIZES.width / 2.5,
+                height: SIZES.height / 15,
+                marginBottom: '7%',
+              }}>
               <View
                 style={{
                   flexDirection: 'row',
@@ -90,7 +98,7 @@ const CareerDetails = () => {
                 }}>
                 <Text
                   style={{
-                    fontSize: SIZES.body3,
+                    fontSize: SIZES.nBodyText,
                     fontWeight: 'bold',
                     color: COLORS.white,
                   }}>
@@ -100,8 +108,8 @@ const CareerDetails = () => {
                   source={icons.RightArrow}
                   resizeMode={'contain'}
                   style={{
-                    height: 10,
-                    width: 24,
+                    height: SIZES.nBodyText,
+                    width: SIZES.nBodyText,
                     tintColor: COLORS.white,
                     marginLeft: 12,
                   }}
@@ -110,7 +118,8 @@ const CareerDetails = () => {
             </PrimaryButton>
           </View>
         </View>
-      </TechCart>
+      </View>
+      <View style={{height: 50}}></View>
     </Screen>
   );
 };
