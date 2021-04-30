@@ -63,8 +63,8 @@ const Services = () => {
           <View
             style={{
               flexDirection: 'column',
-              paddingRight: '5%',
-              paddingLeft: '5%',
+              paddingRight: 18,
+              paddingLeft: 18,
             }}>
             <View style={{paddingTop: 20}}>
               <Image
@@ -83,7 +83,7 @@ const Services = () => {
                 Frontend Development
               </Text>
             </View>
-            <View style={{paddingTop: 8, marginBottom: '5%'}}>
+            <View style={{paddingTop: 8, marginBottom: 15}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
@@ -104,8 +104,8 @@ const Services = () => {
           <View
             style={{
               flexDirection: 'column',
-              paddingRight: '5%',
-              paddingLeft: '5%',
+              paddingRight: 18,
+              paddingLeft: 18,
             }}>
             <View style={{paddingTop: 20}}>
               <Image
@@ -114,7 +114,7 @@ const Services = () => {
                 // style={{height: 90, width: 90}}
               />
             </View>
-            <View style={{paddingTop: 16, marginBottom: '5%'}}>
+            <View style={{paddingTop: 16, marginBottom: 10}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
@@ -124,7 +124,7 @@ const Services = () => {
                 Backend Development
               </Text>
             </View>
-            <View style={{paddingTop: 8, marginBottom: '5%'}}>
+            <View style={{paddingTop: 8, marginBottom: 15}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
@@ -161,7 +161,7 @@ const Services = () => {
                 SPA Development
               </Text>
             </View>
-            <View style={{paddingTop: 8, marginBottom: '5%'}}>
+            <View style={{paddingTop: 8, marginBottom: 10}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
@@ -183,8 +183,8 @@ const Services = () => {
           <View
             style={{
               flexDirection: 'column',
-              paddingRight: '5%',
-              paddingLeft: '5%',
+              paddingRight: 15,
+              paddingLeft: 15,
             }}>
             <View style={{paddingTop: 20}}>
               <Image source={images.s_pwa} resizeMode={'contain'} style={{}} />
@@ -199,7 +199,7 @@ const Services = () => {
                 PWA Development
               </Text>
             </View>
-            <View style={{paddingTop: 8, marginBottom: '5%'}}>
+            <View style={{paddingTop: 8, marginBottom: 15}}>
               <Text
                 style={{
                   fontFamily: 'DMSans-Regular',
