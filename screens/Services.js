@@ -986,7 +986,7 @@ const Services = () => {
           </View>
         </View>
 
-        <View style={{height: 50}}></View>
+        <View style={{height: 20}}></View>
       </Screen>
     </>
   );
