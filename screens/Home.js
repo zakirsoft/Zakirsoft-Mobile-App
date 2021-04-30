@@ -14,8 +14,9 @@ const Home = ({navigation}) => {
           style={{
             flexDirection: 'column',
             top: -5,
-            marginRight: 22,
-            marginLeft: 22,
+            marginRight: '5%',
+            marginLeft: '5%',
+            height: SIZES.height,
             // marginBottom: 75,
           }}>
           <View>
@@ -41,7 +42,7 @@ const Home = ({navigation}) => {
               flexDirection: 'column',
               top: -65,
               // paddingLeft: 25,
-              paddingRight: 24,
+              // paddingRight: 24,
             }}>
             <Text
               style={{
@@ -62,7 +63,7 @@ const Home = ({navigation}) => {
             <PrimaryButton
               activeOpacity={0.8}
               style={{
-                marginRight: 8,
+                marginRight: '2%',
                 height: SIZES.nPrimaryButtonHeight,
                 width: SIZES.nPrimaryButtonWidth,
               }}
