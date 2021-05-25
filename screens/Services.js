@@ -878,6 +878,7 @@ const Services = () => {
                   React Native
                 </Text>
               </View>
+
               {/* Expo  */}
               <View
                 style={{
@@ -895,6 +896,7 @@ const Services = () => {
                   Expo
                 </Text>
               </View>
+
               {/* React navigation */}
               <View
                 style={{
