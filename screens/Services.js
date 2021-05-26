@@ -1,25 +1,8 @@
 import React from 'react';
-import {
-  Image,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import Header from '../components/Header';
 import {COLORS, images, SIZES, FONTS} from '../constants';
-import {
-  Screen,
-  Logo,
-  ServicesCart,
-  TechCart,
-  IconViewWrapper,
-  IconWrapper,
-  IconText,
-} from '../Styles/Screen';
-// _____________________________________________________
-
+import {Screen, ServicesCart} from '../Styles/Screen';
 const Services = () => {
   return (
     <>
@@ -33,11 +16,7 @@ const Services = () => {
               paddingLeft: 18,
             }}>
             <View style={{paddingTop: 20}}>
-              <Image
-                source={images.s_frontend}
-                resizeMode={'contain'}
-                // style={{height: SIZES.height / 9, width: 85}}
-              />
+              <Image source={images.s_frontend} resizeMode={'contain'} />
             </View>
             <View style={{paddingTop: 16}}>
               <Text
