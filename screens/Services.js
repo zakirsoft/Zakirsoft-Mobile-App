@@ -244,7 +244,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Figma width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.figma}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
 
                 <Text
                   style={{
@@ -262,7 +269,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Xd width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.Xd}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -279,10 +293,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Illustrator
-                  width={SIZES.width / 10}
-                  height={SIZES.height / 25}
-                /> */}
+                <Image
+                  source={images.illustrator}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -299,10 +317,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Photoshop
-                  width={SIZES.width / 10}
-                  height={SIZES.height / 25}
-                /> */}
+                <Image
+                  source={images.photoshop}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -356,10 +378,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Javascript
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.Javascript}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
 
                   <Text
                     style={{
@@ -377,7 +403,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Vuejs width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.Vuejs}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -394,7 +427,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Nuxtjs width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.Nuxtjs}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -411,10 +451,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Bootstrap5
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.Bootstrap}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -441,7 +485,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Sass width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.sass}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
 
                   <Text
                     style={{
@@ -459,7 +510,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <CSS3 width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.CSS3}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -476,10 +534,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Webpack
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.webpack}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -496,7 +558,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <JQuery width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.jQuery}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -524,7 +593,14 @@ const Services = () => {
                     alignItems: 'center',
                     marginRight: '10%',
                   }}>
-                  {/* <Npm width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.npm}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
 
                   <Text
                     style={{
@@ -542,7 +618,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Yarn width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.yarn}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
 
                   <Text
                     style={{
@@ -598,10 +681,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Algolia
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.Algolia}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
 
                   <Text
                     style={{
@@ -619,10 +706,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Elasticsearch
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.Elasticsearch}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -639,10 +730,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Laravel
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.laravel}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -659,10 +754,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Liveware
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.Liveware}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -690,7 +789,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Mysql width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.mysql}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
 
                   <Text
                     style={{
@@ -708,7 +814,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Php width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.php}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -725,10 +838,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <PHPUnit
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.PHPUnit}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -745,7 +862,14 @@ const Services = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  {/* <Redis width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                  <Image
+                    source={images.redis}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
                   <Text
                     style={{
                       fontFamily: 'DMSans-Regular',
@@ -773,10 +897,14 @@ const Services = () => {
                     alignItems: 'center',
                     marginRight: '5%',
                   }}>
-                  {/* <RestAPI
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                  <Image
+                    source={images.RestAPI}
+                    resizeMode={'contain'}
+                    style={{
+                      height: SIZES.height / 25,
+                      width: SIZES.width / 10,
+                    }}
+                  />
 
                   <Text
                     style={{
@@ -833,7 +961,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Reactjs width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.reactNative}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
 
                 <Text
                   style={{
@@ -852,7 +987,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Expo width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.expo}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -870,10 +1012,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <ReactNavigation
-                  width={SIZES.width / 10}
-                  height={SIZES.height / 25}
-                /> */}
+                <Image
+                  source={images.ReactNavigation}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -890,7 +1036,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Aws width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.aws}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -911,7 +1064,6 @@ const Services = () => {
                 paddingTop: '5%',
                 marginBottom: '5%',
               }}>
-              {/* Firebase */}
               <View
                 style={{
                   flexDirection: 'column',
@@ -919,7 +1071,14 @@ const Services = () => {
                   alignItems: 'center',
                   marginRight: '5%',
                 }}>
-                {/* <Firebase width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.firebase}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
 
                 <Text
                   style={{
@@ -930,17 +1089,21 @@ const Services = () => {
                   Firebase
                 </Text>
               </View>
-              {/* GOOGLE APIs  */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <GoogleAPIs
-                  width={SIZES.width / 10}
-                  height={SIZES.height / 25}
-                /> */}
+                <Image
+                  source={images.GoogleAPIs}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -995,7 +1158,14 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Reactjs width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.docker}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
 
                 <Text
                   style={{
@@ -1007,14 +1177,20 @@ const Services = () => {
                 </Text>
               </View>
 
-              {/* Expo  */}
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Expo width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.netlify}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1025,17 +1201,20 @@ const Services = () => {
                 </Text>
               </View>
 
-              {/* React navigation */}
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <ReactNavigation
-                  width={SIZES.width / 10}
-                  height={SIZES.height / 25}
-                /> */}
+                <Image
+                  source={images.ubuntu}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1045,21 +1224,28 @@ const Services = () => {
                   Ubuntu
                 </Text>
               </View>
-              {/* Aws */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Aws width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.forge}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
                     fontSize: SIZES.nBodyText,
                     paddingTop: '2%',
                   }}>
-                  Digital Ocean
+                  Forge
                 </Text>
               </View>
             </View>
@@ -1073,7 +1259,6 @@ const Services = () => {
                 paddingTop: '5%',
                 marginBottom: '5%',
               }}>
-              {/* Firebase */}
               <View
                 style={{
                   flexDirection: 'column',
@@ -1081,7 +1266,14 @@ const Services = () => {
                   alignItems: 'center',
                   marginRight: '5%',
                 }}>
-                {/* <Firebase width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.digitalocean}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
 
                 <Text
                   style={{
@@ -1089,20 +1281,24 @@ const Services = () => {
                     fontSize: SIZES.nBodyText,
                     paddingTop: '2%',
                   }}>
-                  Forge
+                  Digital Ocean
                 </Text>
               </View>
-              {/* GOOGLE APIs  */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <GoogleAPIs
-                  width={SIZES.width / 10}
-                  height={SIZES.height / 25}
-                /> */}
+                <Image
+                  source={images.nginx}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1150,17 +1346,20 @@ const Services = () => {
                 paddingTop: '5%',
                 marginBottom: '5%',
               }}>
-              {/* Algolia */}
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Algolia
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                <Image
+                  source={images.github}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
 
                 <Text
                   style={{
@@ -1171,17 +1370,21 @@ const Services = () => {
                   Github
                 </Text>
               </View>
-              {/* Elasticsearch  */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Elasticsearch
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                <Image
+                  source={images.git}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1191,17 +1394,21 @@ const Services = () => {
                   Git
                 </Text>
               </View>
-              {/* LARAVEL */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Laravel
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                <Image
+                  source={images.googleDrive}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1211,17 +1418,21 @@ const Services = () => {
                   Google Drive
                 </Text>
               </View>
-              {/* Liveware */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Liveware
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                <Image
+                  source={images.mega}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1242,14 +1453,20 @@ const Services = () => {
                 paddingTop: '5%',
                 marginBottom: '5%',
               }}>
-              {/* mySql */}
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Mysql width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.notion}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
 
                 <Text
                   style={{
@@ -1260,14 +1477,21 @@ const Services = () => {
                   Notion
                 </Text>
               </View>
-              {/* php  */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Php width={SIZES.width / 10} height={SIZES.height / 25} /> */}
+                <Image
+                  source={images.slack}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1277,17 +1501,21 @@ const Services = () => {
                   Slack
                 </Text>
               </View>
-              {/* PHP UNIT */}
+
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <PHPUnit
-                    width={SIZES.width / 10}
-                    height={SIZES.height / 25}
-                  /> */}
+                <Image
+                  source={images.terminal}
+                  resizeMode={'contain'}
+                  style={{
+                    height: SIZES.height / 25,
+                    width: SIZES.width / 10,
+                  }}
+                />
                 <Text
                   style={{
                     fontFamily: 'DMSans-Regular',
@@ -1297,16 +1525,15 @@ const Services = () => {
                   Terminal
                 </Text>
               </View>
-              {/* redis */}
+              {/* Trello */}
               <View
                 style={{
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                {/* <Redis width={SIZES.width / 10} height={SIZES.height / 25} /> */}
                 <Image
-                  source={require('../assets/images/technology/SVG/Others/trello.png')}
+                  source={images.trello}
                   resizeMode={'contain'}
                   style={{
                     height: SIZES.height / 25,

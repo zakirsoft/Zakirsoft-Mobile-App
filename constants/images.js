@@ -43,7 +43,7 @@ const aws = require('../assets/images/technology/SVG/mobi/aws-2.png');
 const expo = require('../assets/images/technology/SVG/mobi/expo-seeklogo.com.png');
 const firebase = require('../assets/images/technology/SVG/mobi/firebase-1.png');
 const GoogleAPIs = require('../assets/images/technology/SVG/mobi/GoogleAPIs.png');
-const react = require('../assets/images/technology/SVG/mobi/react-2.png');
+const reactNative = require('../assets/images/technology/SVG/mobi/react-2.png');
 const ReactNavigation = require('../assets/images/technology/SVG/mobi/ReactNavigation.png');
 // Server images
 const digitalocean = require('../assets/images/technology/SVG/Server/digitalocean.png');
@@ -127,7 +127,7 @@ export default {
   expo,
   firebase,
   GoogleAPIs,
-  react,
+  reactNative,
   ReactNavigation,
   figma,
   illustrator,
