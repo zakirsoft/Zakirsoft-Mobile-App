@@ -228,7 +228,7 @@ const Services = () => {
                 }}>
                 <Image
                   source={images.figma}
-                  // resizeMode={'contain'}
+                  resizeMode={'contain'}
                   style={{
                     height: height,
                     width: width,
