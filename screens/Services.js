@@ -1544,7 +1544,6 @@ const Services = () => {
               }}></View>
           </View>
         </View>
-
         {/* ____________________________________adding extra space */}
         <View style={{height: 20}}></View>
       </Screen>
