@@ -4,6 +4,9 @@ import Header from '../components/Header';
 import {COLORS, images, SIZES, FONTS} from '../constants';
 import {Screen, ServicesCart} from '../Styles/Screen';
 const Services = () => {
+  const height = SIZES.height / 25;
+  const width = SIZES.width / 10;
+
   return (
     <>
       <Header />
@@ -225,10 +228,10 @@ const Services = () => {
                 }}>
                 <Image
                   source={images.figma}
-                  resizeMode={'contain'}
+                  // resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
 
@@ -252,8 +255,8 @@ const Services = () => {
                   source={images.Xd}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -276,8 +279,8 @@ const Services = () => {
                   source={images.illustrator}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -300,8 +303,8 @@ const Services = () => {
                   source={images.photoshop}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -361,8 +364,8 @@ const Services = () => {
                     source={images.Javascript}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
 
@@ -386,8 +389,8 @@ const Services = () => {
                     source={images.Vuejs}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -410,8 +413,8 @@ const Services = () => {
                     source={images.Nuxtjs}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -434,8 +437,8 @@ const Services = () => {
                     source={images.Bootstrap}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -468,8 +471,8 @@ const Services = () => {
                     source={images.sass}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
 
@@ -493,8 +496,8 @@ const Services = () => {
                     source={images.CSS3}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -507,6 +510,7 @@ const Services = () => {
                   </Text>
                 </View>
                 {/* Webpack */}
+
                 <View
                   style={{
                     flexDirection: 'column',
@@ -517,8 +521,8 @@ const Services = () => {
                     source={images.webpack}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -541,8 +545,8 @@ const Services = () => {
                     source={images.jQuery}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -576,8 +580,8 @@ const Services = () => {
                     source={images.npm}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
 
@@ -601,8 +605,8 @@ const Services = () => {
                     source={images.yarn}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
 
@@ -664,8 +668,8 @@ const Services = () => {
                     source={images.Algolia}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
 
@@ -689,8 +693,8 @@ const Services = () => {
                     source={images.Elasticsearch}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -713,8 +717,8 @@ const Services = () => {
                     source={images.laravel}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -737,8 +741,8 @@ const Services = () => {
                     source={images.Liveware}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -772,8 +776,8 @@ const Services = () => {
                     source={images.mysql}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
 
@@ -797,8 +801,8 @@ const Services = () => {
                     source={images.php}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -821,8 +825,8 @@ const Services = () => {
                     source={images.PHPUnit}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -845,8 +849,8 @@ const Services = () => {
                     source={images.redis}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
                   <Text
@@ -880,8 +884,8 @@ const Services = () => {
                     source={images.RestAPI}
                     resizeMode={'contain'}
                     style={{
-                      height: SIZES.height / 25,
-                      width: SIZES.width / 10,
+                      height: height,
+                      width: width,
                     }}
                   />
 
@@ -944,8 +948,8 @@ const Services = () => {
                   source={images.reactNative}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
 
@@ -970,8 +974,8 @@ const Services = () => {
                   source={images.expo}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -995,8 +999,8 @@ const Services = () => {
                   source={images.ReactNavigation}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1019,8 +1023,8 @@ const Services = () => {
                   source={images.aws}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1054,8 +1058,8 @@ const Services = () => {
                   source={images.firebase}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
 
@@ -1079,8 +1083,8 @@ const Services = () => {
                   source={images.GoogleAPIs}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1141,8 +1145,8 @@ const Services = () => {
                   source={images.docker}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
 
@@ -1166,8 +1170,8 @@ const Services = () => {
                   source={images.netlify}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1190,8 +1194,8 @@ const Services = () => {
                   source={images.ubuntu}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1214,8 +1218,8 @@ const Services = () => {
                   source={images.forge}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1249,8 +1253,8 @@ const Services = () => {
                   source={images.digitalocean}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
 
@@ -1274,8 +1278,8 @@ const Services = () => {
                   source={images.nginx}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1335,8 +1339,8 @@ const Services = () => {
                   source={images.github}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
 
@@ -1360,8 +1364,8 @@ const Services = () => {
                   source={images.git}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1384,8 +1388,8 @@ const Services = () => {
                   source={images.googleDrive}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1408,8 +1412,8 @@ const Services = () => {
                   source={images.mega}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1442,8 +1446,8 @@ const Services = () => {
                   source={images.notion}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
 
@@ -1467,8 +1471,8 @@ const Services = () => {
                   source={images.slack}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1491,8 +1495,8 @@ const Services = () => {
                   source={images.terminal}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
@@ -1515,8 +1519,8 @@ const Services = () => {
                   source={images.trello}
                   resizeMode={'contain'}
                   style={{
-                    height: SIZES.height / 25,
-                    width: SIZES.width / 10,
+                    height: height,
+                    width: width,
                   }}
                 />
                 <Text
