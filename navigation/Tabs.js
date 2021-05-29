@@ -22,6 +22,7 @@ const Tabs = () => {
   return (
     <Tab.Navigator
       tabBarOptions={{
+        showLabel: false,
         style: {
           //   backgroundColor: COLORS.White,
           borderTopRightRadius: SIZES.radius,
@@ -33,26 +34,28 @@ const Tabs = () => {
         component={Home}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={icons.Home}
-              resizeMode="contain"
-              style={{
-                width: 24,
-                height: 24,
-                tintColor: focused ? COLORS.primary : COLORS.secondary,
-              }}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <View>
-              <Text
+            <View style={{width: 50}}>
+              <Image
+                source={icons.Home}
+                resizeMode="contain"
                 style={{
-                  fontSize: 11,
-                  top: -5,
-                  color: focused ? COLORS.primary : COLORS.secondary,
-                }}>
-                Home
-              </Text>
+                  width: 24,
+                  height: 24,
+                  alignSelf: 'center',
+                  tintColor: focused ? COLORS.primary : COLORS.secondary,
+                }}
+              />
+              <View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    alignSelf: 'center',
+                    // top: -5,
+                    color: focused ? COLORS.primary : COLORS.secondary,
+                  }}>
+                  Home
+                </Text>
+              </View>
             </View>
           ),
         }}
@@ -62,26 +65,28 @@ const Tabs = () => {
         component={About}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={icons.About}
-              resizeMode="contain"
-              style={{
-                width: 24,
-                height: 24,
-                tintColor: focused ? COLORS.primary : COLORS.secondary,
-              }}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <View>
-              <Text
+            <View style={{width: 50}}>
+              <Image
+                source={icons.About}
+                resizeMode="contain"
                 style={{
-                  fontSize: 11,
-                  top: -5,
-                  color: focused ? COLORS.primary : COLORS.secondary,
-                }}>
-                About
-              </Text>
+                  width: 24,
+                  height: 24,
+                  alignSelf: 'center',
+                  tintColor: focused ? COLORS.primary : COLORS.secondary,
+                }}
+              />
+              <View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    alignSelf: 'center',
+                    // top: -5,
+                    color: focused ? COLORS.primary : COLORS.secondary,
+                  }}>
+                  About
+                </Text>
+              </View>
             </View>
           ),
         }}
@@ -91,26 +96,28 @@ const Tabs = () => {
         component={Projects}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={icons.Projects}
-              resizeMode="contain"
-              style={{
-                width: 24,
-                height: 24,
-                tintColor: focused ? COLORS.primary : COLORS.secondary,
-              }}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <View>
-              <Text
+            <View style={{width: 50}}>
+              <Image
+                source={icons.Projects}
+                resizeMode="contain"
                 style={{
-                  fontSize: 11,
-                  top: -5,
-                  color: focused ? COLORS.primary : COLORS.secondary,
-                }}>
-                Projects
-              </Text>
+                  width: 24,
+                  height: 24,
+                  alignSelf: 'center',
+                  tintColor: focused ? COLORS.primary : COLORS.secondary,
+                }}
+              />
+              <View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    alignSelf: 'center',
+                    // top: -5,
+                    color: focused ? COLORS.primary : COLORS.secondary,
+                  }}>
+                  Projects
+                </Text>
+              </View>
             </View>
           ),
         }}
@@ -120,26 +127,28 @@ const Tabs = () => {
         component={Services}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={icons.Services}
-              resizeMode="contain"
-              style={{
-                width: 24,
-                height: 24,
-                tintColor: focused ? COLORS.primary : COLORS.secondary,
-              }}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <View>
-              <Text
+            <View style={{width: 50}}>
+              <Image
+                source={icons.Services}
+                resizeMode="contain"
                 style={{
-                  fontSize: 11,
-                  top: -5,
-                  color: focused ? COLORS.primary : COLORS.secondary,
-                }}>
-                Services
-              </Text>
+                  width: 24,
+                  height: 24,
+                  alignSelf: 'center',
+                  tintColor: focused ? COLORS.primary : COLORS.secondary,
+                }}
+              />
+              <View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    alignSelf: 'center',
+                    // top: -5,
+                    color: focused ? COLORS.primary : COLORS.secondary,
+                  }}>
+                  services
+                </Text>
+              </View>
             </View>
           ),
         }}
@@ -149,26 +158,28 @@ const Tabs = () => {
         component={Contact}
         options={{
           tabBarIcon: ({focused}) => (
-            <Image
-              source={icons.Contact}
-              resizeMode="contain"
-              style={{
-                width: 24,
-                height: 24,
-                tintColor: focused ? COLORS.primary : COLORS.secondary,
-              }}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <View>
-              <Text
+            <View style={{width: 50}}>
+              <Image
+                source={icons.Contact}
+                resizeMode="contain"
                 style={{
-                  fontSize: 11,
-                  top: -5,
-                  color: focused ? COLORS.primary : COLORS.secondary,
-                }}>
-                Contact
-              </Text>
+                  width: 24,
+                  height: 24,
+                  alignSelf: 'center',
+                  tintColor: focused ? COLORS.primary : COLORS.secondary,
+                }}
+              />
+              <View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    alignSelf: 'center',
+                    // top: -5,
+                    color: focused ? COLORS.primary : COLORS.secondary,
+                  }}>
+                  Contact
+                </Text>
+              </View>
             </View>
           ),
         }}
