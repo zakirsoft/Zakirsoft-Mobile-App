@@ -10,12 +10,12 @@ const LiveProjects = () => {
       project_SS: images.EchoTemplate_SS,
       project_Logo: images.EchoTemplate_Logo,
       name: 'Echotemplate',
-      firstNumber: '100+',
+      firstNumber: '15+',
       firstNumberTitle: 'Product Download',
-      secondNumber: '500+',
+      secondNumber: '372+',
       secondNumberTitle: 'Product View',
       description:
-        'Praesent porttitor quam lacus, quis rhoncus ligula iaculis pharetra. Phasellus vitae tellus justo. Donec tellus eros, feugiat vel augue vel, vehicula luctus ex. Vestibulum semper a ante at maximus. In fringilla condimentum mauris.',
+        'Echotemplate provides mobile-friendly HTML templates and UI/UX templates. You can find free templates that are thoroughly reviewed and tested. Echotemplate has the biggest collections of trendiest ready-to-use templates.',
       link: 'https://echotemplate.com/',
     },
     {
@@ -23,12 +23,12 @@ const LiveProjects = () => {
       project_SS: images.codeSikhi_SS,
       project_Logo: images.codeSikhi_Logo,
       name: 'Codeshiki',
-      firstNumber: '5+',
+      firstNumber: '3+',
       firstNumberTitle: 'Online Course',
-      secondNumber: '500+',
+      secondNumber: '1000+',
       secondNumberTitle: 'Students',
       description:
-        'আধুনিক টেকনোলজির সম্বনয়ে আমাদের কোর্সগুলো ডিজাইন করা হয়েছে । এই কোর্স গুলোর মাধ্যমে আপনি যেকোনো সফটওয়্যার ডিসাইন/ ডেভেলপ এর পাশাপাশি চাকরি বাজার এবং ফ্রিল্যান্সিং ক্যারিয়ারের বিষয়ে গাইডলাইন পাবেন।',
+        'Codeshikhi is an online learning platform with professional and experienced mentors. If you want to build your career in Web Development, Codeshikhi is the perfect choice for you. Codeshikhi offers the best courses on web design and development. Also, Codeshikhi.io offers freelancer seminar, freelancing training, and Internship facilities ',
       link: 'https://codeshikhi.io/',
     },
   ];
