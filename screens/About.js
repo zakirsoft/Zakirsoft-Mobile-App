@@ -362,32 +362,32 @@ const About = ({navigation}) => {
       {
         id: 1,
         image: images.News_1,
-        title: 'We Just Redesign Our Website',
+        title: 'Zakir Soft is now working on Product Development',
         description:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+          'Zakir Soft has just updated the design of their official website. Zafar Iqbal of the UI department worked on the project...',
         longDescription:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
+          'Zakir Soft has just updated the design of their official website. Zafar Iqbal of the UI department worked on the project and the front-end department implemented the next day.  Many new sections have been added here which you can visit now if you want from Zakir soft.com',
         link: 'https://zakirsoft.com/',
       },
       {
         id: 2,
         image: images.News_2,
-        title: 'Zakirsoft hired new Designer',
+        title: 'We are hiring',
         description:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+          'Zakir Software has hired Python Developer and React Developer for the new project and a new senior UI / UX designer and aslo hired...',
         longDescription:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
+          'Zakir Software has hired Python Developer and React Developer for the new project and a new senior UI / UX designer and aslo hired a video editor for CodeSikhi plartform. there working as to give the user best performance.',
         link: 'https://zakirsoft.com/',
       },
       {
         id: 3,
         image: images.News_3,
-        title: 'We announced 100M invesment',
+        title: 'Templatecookie.com Lunch',
         description:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi.',
+          'Templatecookie is a premium UI, HTML & Laravel Scripts Marketplace. We are working hard to make life easier with our Premium Products.',
         longDescription:
-          'Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi. Pellentesque sagittis,\n quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi Pellentesque sagittis, quam vel tincidunt ullamcorper, massa purus egestas libero, nec porttitor augue leo sed mi',
-        link: 'https://zakirsoft.com/',
+          'Since the begining we wanted to worked with digital products. During the last few months we have developed couple digital products. We are brining all the awesome products in once place and lunching our own marketplace Templatecookie.com. Let us all celebrate together and take advantage of our new marketplace. We hope we can bring awesome products to make your everyday life easier.',
+        link: 'https://templatecookie.com/',
       },
     ];
     const [active, setActive] = useState(0);
