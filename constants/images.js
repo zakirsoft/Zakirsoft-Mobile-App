@@ -1,7 +1,7 @@
-const about_1 = require('../assets/images/about/1.jpg');
-const about_2 = require('../assets/images/about/2.jpg');
-const about_3 = require('../assets/images/about/3.jpg');
-const about_4 = require('../assets/images/about/4.jpg');
+const about_1 = require('../assets/images/about/1.png');
+const about_2 = require('../assets/images/about/2.png');
+const about_3 = require('../assets/images/about/3.png');
+const about_4 = require('../assets/images/about/4.png');
 const home = require('../assets/images/home/home.png');
 const logo = require('../assets/images/logo/Logo.png');
 const splash = require('../assets/images/logo/Splash.png');
@@ -12,6 +12,8 @@ const s_backend = require('../assets/images/servicesimage/backend.png');
 const s_frontend = require('../assets/images/servicesimage/frontend.png');
 const s_pwa = require('../assets/images/servicesimage/pwa.png');
 const s_spa = require('../assets/images/servicesimage/spa.png');
+const s_MobileDevelopment = require('../assets/images/servicesimage/MobileDevelopment.png');
+const s_ui = require('../assets/images/servicesimage/ui-ux-design.png');
 // backend images
 const Algolia = require('../assets/images/Back/Algolia.png');
 const Elasticsearch = require('../assets/images/Back/Elasticsearch.png');
@@ -73,7 +75,6 @@ const codeSikhi_Logo = require('../assets/images/Projects/live/codeSikhi_Logo.pn
 const codeSikhi_SS = require('../assets/images/Projects/live/codeSikhi_SS.png');
 const EchoTemplate_Logo = require('../assets/images/Projects/live/EchoTemplate_Logo.png');
 const EchoTemplate_SS = require('../assets/images/Projects/live/EchoTemplate_SS.png');
-
 export default {
   about_1,
   about_2,
@@ -152,4 +153,6 @@ export default {
   Vuejs,
   webpack,
   yarn,
+  s_MobileDevelopment,
+  s_ui,
 };

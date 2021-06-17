@@ -39,11 +39,12 @@ const Services = () => {
                   color: COLORS.secondary,
                   lineHeight: SIZES.nMinimulLineheight + 2,
                 }}>
-                Front-end web development is the practice of converting data to
-                a graphical interface, through the use of HTML, CSS, and
-                JavaScript, so that users can view and interact with that data.
-                A front-end web developer is responsible for implementing visual
-                elements that users see and interact with in a web application.
+                Using HTML, CSS, JavaScript, and its frameworks, experienced
+                frontend developers can truly make miracles! We are here to
+                provide interactive frontend development services to build
+                custom, robust and secure applications for your business.
+                Smooth, fast and intuitive navigation comes as a guaranteed part
+                of our front-end programming services.
               </Text>
             </View>
           </View>
@@ -80,11 +81,16 @@ const Services = () => {
                   color: COLORS.secondary,
                   lineHeight: SIZES.nMinimulLineheight + 2,
                 }}>
-                A back-end web developer is responsible for server-side web
-                application logic and integration of the work front-end web
-                developers do. Back-end developers usually write web services
-                and APIs used by front-end developers and mobile application
-                developers.
+                You want software that functions immaculately. You want the
+                software that runs fast, doesn’t glitch and generates lucrative
+                ROI for your company and a ton of positive customer feedback.
+                Whether you need a complex distributed system or a simple
+                back-end to power-up a specific feature, we can help you! We
+                know how to build apps that offer scalable performance and
+                robust architecture, delivering an excellent experience to
+                end-users. We use modern and trendy technology that produces the
+                user-friendly experience combated with better performance. We
+                stuff your apps with the best brains
               </Text>
             </View>
           </View>
@@ -117,12 +123,14 @@ const Services = () => {
                   color: COLORS.secondary,
                   lineHeight: SIZES.nMinimulLineheight,
                 }}>
-                A single-page application (SPA) is a web Application or website
-                that interacts with the user by dynamically rewriting the
-                current web page with new data from the web server, instead of
-                the default method of the browser loading entire new pages. The
-                goal is faster transitions that make the website feel more like
-                a native app.
+                A single-page application (SPA) is a web app or site that fits
+                into one single page. SPA provides a more flexible, desktop-like
+                user-experience and gives better performance. Building Web
+                application that is interactive with robust & flexible
+                architecture. Single page application is the right choice if you
+                need a quick loading web application. We will transform your
+                large-scale and heavy web portal into a fast and responsive
+                single page application.
               </Text>
             </View>
           </View>
@@ -155,12 +163,113 @@ const Services = () => {
                   color: COLORS.secondary,
                   lineHeight: SIZES.nMinimulLineheight,
                 }}>
-                Progressive web apps (PWA) has in combination of the best
-                features of the site and mobile application built-in it. In
-                practice, this means that such a site can be accessed by users
-                as well as the application and the most interesting thing is an
-                Internet connection is not necessary for this. The installation
-                process can be done in one click directly from the browser.
+                We begin by understanding your unique business requirements,
+                strategize, analyze, design delightful experiences and timely
+                implement your solutions. We create PWA websites that load fast,
+                keep your visitors engaged, and improve your brand visibility
+                via cross-platform presence. Thus we ensure that PWA projects
+                delivered bring the best results and help your business grow.
+                With progressive web app development services, you will get a
+                fast and modern cost-effective alternative to native apps. Turn
+                your website into a progressive web app and quickly boost your
+                business.
+              </Text>
+            </View>
+          </View>
+        </ServicesCart>
+        <ServicesCart style={{}}>
+          <View
+            style={{
+              flexDirection: 'column',
+              paddingRight: 15,
+              paddingLeft: 15,
+            }}>
+            <View style={{paddingTop: 20}}>
+              <Image
+                source={images.s_ui}
+                resizeMode={'contain'}
+                style={{
+                  height: 70,
+                  width: 100,
+                }}
+              />
+            </View>
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nTitle,
+                  fontWeight: 'bold',
+                }}>
+                UI/UX Design
+              </Text>
+            </View>
+            <View style={{paddingTop: 8, marginBottom: 15}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nBodyText,
+                  color: COLORS.secondary,
+                  lineHeight: SIZES.nMinimulLineheight,
+                }}>
+                We bring peace to UI/UX design. You never have a second chance
+                to make a first impression. Your product can be complex but the
+                UI must be easy. An accessible and impressive design is a
+                powerful tool for growing faster than the competition, improving
+                customer acquisition, and boosting your conversions. We design
+                web and mobile templates that are useful, easy to use, and
+                delightful to interact with. It will give your customers the
+                right impression of your brand and will also convert loyal
+                visitors into happy customers. Trust us to deliver intuitive,
+                engaging, and aesthetic experience to the end-users of your
+                application.
+              </Text>
+            </View>
+          </View>
+        </ServicesCart>
+        <ServicesCart style={{}}>
+          <View
+            style={{
+              flexDirection: 'column',
+              paddingRight: 15,
+              paddingLeft: 15,
+            }}>
+            <View style={{paddingTop: 20}}>
+              <Image
+                source={images.s_MobileDevelopment}
+                resizeMode={'contain'}
+                style={{
+                  height: 100,
+                  width: 100,
+                }}
+              />
+            </View>
+            <View style={{paddingTop: 16}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nTitle,
+                  fontWeight: 'bold',
+                }}>
+                Apps Development
+              </Text>
+            </View>
+            <View style={{paddingTop: 8, marginBottom: 15}}>
+              <Text
+                style={{
+                  fontFamily: 'DMSans-Regular',
+                  fontSize: SIZES.nBodyText,
+                  color: COLORS.secondary,
+                  lineHeight: SIZES.nMinimulLineheight,
+                }}>
+                You want a team of mobile app developers who can dive into your
+                business ecosystem. Who can explore the market and understand
+                your needs, requirements and capabilities. Who can build a truly
+                custom strategy and unlock the full potential of mobile
+                technology for your company. Zakir Soft has extensive experience
+                in creating high performing, digitally transformative and
+                feature-packed native mobile applications for Android, iOS
+                devices and Cross-Platform.
               </Text>
             </View>
           </View>
