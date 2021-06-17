@@ -93,8 +93,8 @@ const LiveProjects = () => {
                 <View
                   style={{
                     flexDirection: 'row',
-                    // justifyContent: 'space-between',
-                    marginTop: '5%',
+                    justifyContent: 'space-between',
+                    paddingTop: '5%',
                   }}>
                   <View style={{flexDirection: 'column'}}>
                     <Text
@@ -119,7 +119,7 @@ const LiveProjects = () => {
                   <View
                     style={{
                       flexDirection: 'column',
-                      marginLeft: SIZES.width / 6,
+                      // marginLeft: SIZES.width / 6,
                     }}>
                     <Text
                       style={{
